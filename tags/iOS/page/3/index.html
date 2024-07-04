@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Tag: iOS - BlackCrystal</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="“#2196f3”"><meta name="application-name" content="BlackCrystal"><meta name="msapplication-TileImage" content="icons/touch-icon-iphone.png"><meta name="msapplication-TileColor" content="“#2196f3”"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="BlackCrystal"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="144x144" href="icons/touch-icon-iphone.png"><meta name="description" content="My description"><meta property="og:type" content="blog"><meta property="og:title" content="BlackCrystal"><meta property="og:url" content="https://justinqy.github.io/"><meta property="og:site_name" content="BlackCrystal"><meta property="og:description" content="My description"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://justinqy.github.io/img/og_image.png"><meta property="article:author" content="JustinQYB"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://justinqy.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://justinqy.github.io"},"headline":"BlackCrystal","image":["https://justinqy.github.io/img/og_image.png"],"author":{"@type":"Person","name":"JustinQYB"},"publisher":{"@type":"Organization","name":"BlackCrystal","logo":{"@type":"ImageObject","url":{"text":"⭐️ Programming Saves the World ⭐️"}}},"description":"My description"}</script><link rel="icon" href="/img/kitty.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">⭐️ Programming Saves the World ⭐️</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">TimeLine</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">iOS</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-07-03T16:00:00.000Z" title="7/4/2024, 12:00:00 AM">2024-07-04</time></span><span class="level-item">7 minutes read (About 1104 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/04/iOS_%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/">观察者模式</a></p><div class="content"><h3 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h3><h4 id="一-什么是观察者模式"><a href="#一-什么是观察者模式" class="headerlink" title="一. 什么是观察者模式"></a>一. 什么是观察者模式</h4><ol>
+<li>观察者模式定义：观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态上发生变化时，会通知所有观察者对象，使它们能够自动更新自己。</li>
+<li>iOS中实现观察者模式：Notification、KVO。</li>
+</ol>
+<h4 id="二-Notification-–-通知"><a href="#二-Notification-–-通知" class="headerlink" title="二. Notification – 通知"></a>二. Notification – 通知</h4><p>现有对象A和B，A对B的变化感兴趣，就注册为B的观察者，当B发生变化时通知A，告知B发生了变化。</p>
+<ol>
+<li><p>对于感兴趣的A来说，在A这里定义通知，也就是注册观察者（A就是观察者，定义怎么观察的以及观察到了会做些什么）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//注册观察者</span><br><span class="line">[[NSNotificationCenter defaultCenter] addObserver:self </span><br><span class="line"> 										 selector:@selector(notice:) 				 										 name:@&quot;tongzhi&quot; </span><br><span class="line"> 										   object:nil];</span><br><span class="line"></span><br><span class="line">//观察到变化后做什么事情</span><br><span class="line">- (void)notice:(id)sender &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, sender);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>对于变化源B来说，在B这里发出通知</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//创建通知对象</span><br><span class="line">//Name是通知的名称   object是通知的发布者，也就是发布通知的对象   userInfo是一些额外的信息， 字典类</span><br><span class="line">NSNotification *notification = [NSNotification notificationWithName:@&quot;tongzhi&quot;</span><br><span class="line">                               								 object:nil</span><br><span class="line">                               							   userInfo:nil];</span><br><span class="line"></span><br><span class="line">//发送通知</span><br><span class="line">[[NSNotificationCenter defaultCenter] postNotification:notification];</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>在dealloc中移除观察者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (void)dealloc &#123;</span><br><span class="line">    //根据name和object删除对应的观察者，如果object设置为nil，则删除所有name匹配的观察者</span><br><span class="line">    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;tongzhi&quot; object:nil];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="三-KVO-–-Key-Value-Observing"><a href="#三-KVO-–-Key-Value-Observing" class="headerlink" title="三. KVO – Key Value Observing"></a>三. KVO – Key Value Observing</h4><p>KVO，即键值观察，它是观察着模式的一种衍生。其基本思想是，对目标对象的<strong>某属性</strong>添加观察，当该属性发生变化时，会<strong>自动通知</strong>观察者。相比于NotificationCenter的post通知来说简单了许多。</p>
+<ol>
+<li><p>首先，给目标对象的属性添加观察</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (void)addObserver:self</span><br><span class="line">   		 forKeyPath:@&quot;name&quot;</span><br><span class="line">     	    options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld //能够记录旧值和新值</span><br><span class="line">            context:nil</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>其次，实现下面方法来接收通知（当被观察的属性发生变化时，观察者立马会得到通知）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (void)observeValueForKeyPath:(nullable NSString *)keyPath  //目标属性，需判断是否和自己所观察的属性一致</span><br><span class="line">				      ofObject:(nullable id)object           //目标对象，需判断是否和自己所观察的对象一致</span><br><span class="line">			  			change:(nullable NSDictionary&lt;NSString*, id&gt; *)change</span><br><span class="line">					   context:nil</span><br><span class="line">						</span><br><span class="line">//如果收到的通知经过判断不是自己要观察的，则将该情况交给父类处理，因为父类也有可能使用了KVO</span><br><span class="line">//[super observeValueForKeyPath:keyPath</span><br><span class="line">					   ofObject:object</span><br><span class="line">						 change:change</span><br><span class="line">						context:context];</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>最后，移除观察者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)removeObserver:self forKeyPath:@“name”;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="四-KVO的原理"><a href="#四-KVO的原理" class="headerlink" title="四. KVO的原理"></a>四. KVO的原理</h4><p>当某个类的对象第一次被观察时，系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中被观察属性的 setter 方法，在setter方法里使其具有通知机制。同时派生类还重写了 class 方法以“欺骗”外部调用者它就是起初的那个类。然后系统将这个对象的 isa 指针指向这个新诞生的派生类，因此这个对象就成为该派生类的对象了，因而在该对象上对 setter 的调用就会调用重写的 setter，从而激活键值通知机制。此外，派生类还重写了 dealloc 方法来释放资源。</p>
+<p>在重写的setter里，给属性赋值的前后分别调用了两个方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (void)willChangeValueForKey:(NSString *)key;  //赋值前</span><br><span class="line">- (void)didChangeValueForKey:(NSString *)key;   //赋值后</span><br></pre></td></tr></table></figure>
+
+<p>在 - (void)didChangeValueForKey:(NSString *)key; 方法中会调用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (void)observeValueForKeyPath:(nullable NSString *)keyPath</span><br><span class="line">				      ofObject:(nullable id)object          </span><br><span class="line">			  			change:(nullable NSDictionary&lt;NSString*, id&gt; *)change</span><br><span class="line">					   context:nil</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="五-KVO使用注意"><a href="#五-KVO使用注意" class="headerlink" title="五. KVO使用注意"></a>五. KVO使用注意</h4><h5 id="1-只有使用属性的setter方法，或通过key-path来设置属性值，观察者对象才会获得通知"><a href="#1-只有使用属性的setter方法，或通过key-path来设置属性值，观察者对象才会获得通知" class="headerlink" title="1. 只有使用属性的setter方法，或通过key-path来设置属性值，观察者对象才会获得通知"></a>1. 只有使用属性的setter方法，或通过key-path来设置属性值，观察者对象才会获得通知</h5><p>常见的几种设置方式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//1.遵循使用属性的setter方法</span><br><span class="line">self.name = @&quot;changed&quot;;</span><br><span class="line">[self setName:@&quot;changed&quot;];</span><br><span class="line"></span><br><span class="line">//2.通过key-path设置</span><br><span class="line">[self setValue:[NSString stringWithFormat:@&quot;changed&quot;] forKey:@&quot;name&quot;];</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-观察者在使用结束后一定要在dealloc中移除，否则会导致资源泄漏"><a href="#2-观察者在使用结束后一定要在dealloc中移除，否则会导致资源泄漏" class="headerlink" title="2. 观察者在使用结束后一定要在dealloc中移除，否则会导致资源泄漏"></a>2. 观察者在使用结束后一定要在dealloc中移除，否则会导致资源泄漏</h5><h5 id="3-通知方法（observeValueForKeyPath）中，change字典保存了属性变更的信息"><a href="#3-通知方法（observeValueForKeyPath）中，change字典保存了属性变更的信息" class="headerlink" title="3. 通知方法（observeValueForKeyPath）中，change字典保存了属性变更的信息"></a>3. 通知方法（observeValueForKeyPath）中，change字典保存了属性变更的信息</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NSLog(@&quot;the old value is %@&quot;, [change objectForKey:@&quot;old&quot;]);  //旧值</span><br><span class="line">NSLog(@&quot;the new value is %@&quot;, [change objectForKey:@&quot;new&quot;]);  //新值</span><br></pre></td></tr></table></figure>
+
+<p>[[单例模式]]</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-07-03T16:00:00.000Z" title="7/4/2024, 12:00:00 AM">2024-07-04</time></span><span class="level-item">5 minutes read (About 709 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/04/iOS_%E8%AF%AD%E9%9F%B3%E7%9B%B4%E6%92%AD%E5%8A%A8%E6%95%88%E9%9C%80%E6%B1%82%E8%AE%B0%E5%BD%95/">语音直播动效需求记录</a></p><div class="content"><h3 id="需求讲解"><a href="#需求讲解" class="headerlink" title="需求讲解"></a>需求讲解</h3><p>新需求：本次需求要实现的是在语音直播背景中添加主播的头像信息，并为头像添加一个动效，主播说话时动效播放。</p>
+<h3 id="怎么做"><a href="#怎么做" class="headerlink" title="怎么做"></a>怎么做</h3><h5 id="1-业务流程"><a href="#1-业务流程" class="headerlink" title="1. 业务流程"></a>1. 业务流程</h5><p>添加UIView，从本地获取主播头像图片信息用于展示</p>
+<p>①. 头像在哪一层&#x2F;与背景图的关系</p>
+<p>②. 如何获取主播头像</p>
+<p>③. 头像具体在整个屏幕中的布局</p>
+<p>↓</p>
+<p>为头像添加一段动效</p>
+<p>①. 用lottie给头像加动效</p>
+<p>②. 动效在收到“YES”后循环播放，直到收到”NO“后停止</p>
+<p>↓</p>
+<p>监听主播说话的状态，并根据在说话&#x2F;未说话的状态播放&#x2F;不播放动效</p>
+<p>主播端：①. 声音的监听 + 回调， NSTimer每间隔k秒检查当前监听状态 + 向aac中写值</p>
+<p>观众端：①. 如何判断当前观众是不是嘉宾，当前观众身份变成嘉宾时应如何获取</p>
+<p>​				②. 对于嘉宾和观众有不同的获取主播说话状态的方式 (主播-观众延迟5-10s，主播-嘉宾延迟1s左右)</p>
+<h5 id="2-布局添加"><a href="#2-布局添加" class="headerlink" title="2. 布局添加"></a>2. 布局添加</h5><p>用Masonry为头像视图添加布局</p>
+<h5 id="3-代码细节"><a href="#3-代码细节" class="headerlink" title="3. 代码细节"></a>3. 代码细节</h5><h6 id="1、在Pods-DevelopmentPods-gifLiveModule-Core下新建group，命名为AudioDynamicEffect（语音动效），实现三个类："><a href="#1、在Pods-DevelopmentPods-gifLiveModule-Core下新建group，命名为AudioDynamicEffect（语音动效），实现三个类：" class="headerlink" title="1、在Pods&#x2F;DevelopmentPods&#x2F;gifLiveModule&#x2F;Core下新建group，命名为AudioDynamicEffect（语音动效），实现三个类："></a>1、在Pods&#x2F;DevelopmentPods&#x2F;gifLiveModule&#x2F;Core下新建group，命名为AudioDynamicEffect（语音动效），实现三个类：</h6><p>①. KSAnchorAvatarImageView  用于实现主播头像</p>
+<p>②. KSLiveAnchorAudioDynamicEffectComponent  实现主播端向观众端发送当前语音状态，并根据语音状态在主播端直播间播放&#x2F;暂停动效</p>
+<p>③. KSLiveAudienceAudioDynamicEffectComponent  实现观众端接收主播端发送的信息并判定是否播放展示动效</p>
+<h6 id="2、使用KSGCDTimer对象用“fireWithDelay-interval-”-方法延迟，循环发送消息，由Arya提供获得当前主播是否在说话的信息，“KSULiveFlvStreamMessage”对象将该信息保存并设置消息的类型，在主播端调用“insertFlvMessage-”向直播流中写入数据，观众端使用“livePlayAdapterOutputFlvMessage：”方法接收主播端发送的数据并对应地播放-暂停动效"><a href="#2、使用KSGCDTimer对象用“fireWithDelay-interval-”-方法延迟，循环发送消息，由Arya提供获得当前主播是否在说话的信息，“KSULiveFlvStreamMessage”对象将该信息保存并设置消息的类型，在主播端调用“insertFlvMessage-”向直播流中写入数据，观众端使用“livePlayAdapterOutputFlvMessage：”方法接收主播端发送的数据并对应地播放-暂停动效" class="headerlink" title="2、使用KSGCDTimer对象用“fireWithDelay: interval:” 方法延迟，循环发送消息，由Arya提供获得当前主播是否在说话的信息，“KSULiveFlvStreamMessage”对象将该信息保存并设置消息的类型，在主播端调用“insertFlvMessage:”向直播流中写入数据，观众端使用“livePlayAdapterOutputFlvMessage：”方法接收主播端发送的数据并对应地播放&#x2F;暂停动效"></a>2、使用KSGCDTimer对象用“fireWithDelay: interval:” 方法延迟，循环发送消息，由Arya提供获得当前主播是否在说话的信息，“KSULiveFlvStreamMessage”对象将该信息保存并设置消息的类型，在主播端调用“insertFlvMessage:”向直播流中写入数据，观众端使用“livePlayAdapterOutputFlvMessage：”方法接收主播端发送的数据并对应地播放&#x2F;暂停动效</h6><h5 id="4-注意点"><a href="#4-注意点" class="headerlink" title="4. 注意点"></a>4. 注意点</h5><h6 id="1、点击头像是否有弹窗效果？"><a href="#1、点击头像是否有弹窗效果？" class="headerlink" title="1、点击头像是否有弹窗效果？"></a>1、点击头像是否有弹窗效果？</h6><h6 id="2、观众端当前如何判断当前观众是否是嘉宾？-如当前观众变成嘉宾如何知道？"><a href="#2、观众端当前如何判断当前观众是否是嘉宾？-如当前观众变成嘉宾如何知道？" class="headerlink" title="2、观众端当前如何判断当前观众是否是嘉宾？ 如当前观众变成嘉宾如何知道？"></a>2、观众端当前如何判断当前观众是否是嘉宾？ 如当前观众变成嘉宾如何知道？</h6><h6 id="3、主播端如何知道自己是否在说话？"><a href="#3、主播端如何知道自己是否在说话？" class="headerlink" title="3、主播端如何知道自己是否在说话？"></a>3、主播端如何知道自己是否在说话？</h6><h6 id="4、线程确认（主线程-子线程）、操作是否耗时"><a href="#4、线程确认（主线程-子线程）、操作是否耗时" class="headerlink" title="4、线程确认（主线程&#x2F;子线程）、操作是否耗时"></a>4、线程确认（主线程&#x2F;子线程）、操作是否耗时</h6><h3 id="Bad-Case"><a href="#Bad-Case" class="headerlink" title="Bad Case"></a>Bad Case</h3><h5 id="1-哪些情况下可能出问题？"><a href="#1-哪些情况下可能出问题？" class="headerlink" title="1. 哪些情况下可能出问题？"></a>1. 哪些情况下可能出问题？</h5><ul>
+<li>贴纸遮挡</li>
+<li>评论区遮挡</li>
+<li>观众端-直播间侧滑遮挡头像</li>
+<li>观众端-直播间小窗是否显示头像</li>
+<li>主播不说话时动效暂停还是隐藏</li>
+</ul>
+<h5 id="2-极限情况是什么？"><a href="#2-极限情况是什么？" class="headerlink" title="2. 极限情况是什么？"></a>2. 极限情况是什么？</h5><h5 id="3-适配那些场景"><a href="#3-适配那些场景" class="headerlink" title="3. 适配那些场景"></a>3. 适配那些场景</h5><p>语音直播间双端</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-07-03T16:00:00.000Z" title="7/4/2024, 12:00:00 AM">2024-07-04</time></span><span class="level-item">a minute read (About 160 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/04/iOS_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/">面向对象思想</a></p><div class="content"><h3 id="面向对象思想"><a href="#面向对象思想" class="headerlink" title="面向对象思想"></a>面向对象思想</h3><h4 id="1-面向对象和面向过程的区别"><a href="#1-面向对象和面向过程的区别" class="headerlink" title="1. 面向对象和面向过程的区别"></a>1. 面向对象和面向过程的区别</h4><ol>
+<li>面向过程强调功能行为，关注解决问题需要哪些步骤  (所有过程亲力亲为)</li>
+<li>面向对象将功能封装进对象，强调具备了功能的对象，关注的是解决问题需要哪些对象  (找到具有对应功能的对象，让对象去做事情)</li>
+</ol>
+<h4 id="2-面向对象思想在完成需求中的运用"><a href="#2-面向对象思想在完成需求中的运用" class="headerlink" title="2. 面向对象思想在完成需求中的运用"></a>2. 面向对象思想在完成需求中的运用</h4><ol>
+<li>先去找具有所需功能的对象来用</li>
+<li>如果该对象那个不存在，那么创建一个具有该功能的对象</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-07-03T16:00:00.000Z" title="7/4/2024, 12:00:00 AM">2024-07-04</time></span><span class="level-item">a few seconds read (About 26 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/04/iOS_%E9%9D%A2%E7%BB%8F/">面经</a></p><div class="content"><ol>
+<li>performSelector实现原理, 为什么通过这种方法调用不会崩</li>
+<li>点击事件响应链</li>
+</ol>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/tags/iOS/page/2/">Previous</a></div><div class="pagination-next is-invisible is-hidden-mobile"><a href="/tags/iOS/page/4/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/tags/iOS/">1</a></li><li><a class="pagination-link" href="/tags/iOS/page/2/">2</a></li><li><a class="pagination-link is-current" href="/tags/iOS/page/3/">3</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/cat1.jpg" alt="BlackCrystal"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">BlackCrystal</p><p class="is-size-6 is-block">Learner</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shenzhen, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Category</p><a href="/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/JustinQY" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/JustinQY"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div><div class="level is-mobile is-multiline"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&amp;id=64638&amp;auto=1&amp;height=66" allow="autoplay"></iframe></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="level-start"><span class="level-item">Python数据结构</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Python%E5%88%97%E8%A1%A8/"><span class="tag">Python列表</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/iOS/"><span class="tag">iOS</span><span class="tag">24</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-04T08:32:27.897Z">2024-07-04</time></p><p class="title"><a href="/2024/07/04/%E9%93%BE%E8%A1%A8/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-03T16:00:00.000Z">2024-07-04</time></p><p class="title"><a href="/2024/07/04/iOS_MJExtension/">MJExtension</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-03T16:00:00.000Z">2024-07-04</time></p><p class="title"><a href="/2024/07/04/iOS_MRC%E4%B8%8EARC/">MRC与ARC</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-03T16:00:00.000Z">2024-07-04</time></p><p class="title"><a href="/2024/07/04/iOS_NSThread/">NSThread</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-03T16:00:00.000Z">2024-07-04</time></p><p class="title"><a href="/2024/07/04/iOS_NSTimer/">NSTimer</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/07/"><span class="level-start"><span class="level-item">July 2024</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/06/"><span class="level-start"><span class="level-item">June 2024</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/05/"><span class="level-start"><span class="level-item">May 2024</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://flipped895.github.io/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">flipped</span></span><span class="level-right"><span class="level-item tag">flipped895.github.io</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">⭐️ Programming Saves the World ⭐️</a><p class="is-size-7"><span>&copy; 2024 JustinQYB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><script defer type="text/javascript" color="220,220,220" opacity="0.7" zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
