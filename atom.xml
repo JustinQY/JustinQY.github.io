@@ -167,30 +167,6 @@
   </entry>
   
   <entry>
-    <title>NSTimer</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_NSTimer/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_NSTimer/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-04T11:23:23.480Z</updated>
-    
-    
-      
-      
-    <summary type="html"></summary>
-      
-    
-    
-    
-    <category term="iOS语言" scheme="https://justinqy.github.io/categories/iOS%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>NSThread</title>
     <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/"/>
     <id>https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/</id>
@@ -211,6 +187,30 @@
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
     
     <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NSTimer</title>
+    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_NSTimer/"/>
+    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_NSTimer/</id>
+    <published>2024-07-03T16:00:00.000Z</published>
+    <updated>2024-07-04T11:23:23.480Z</updated>
+    
+    
+      
+      
+    <summary type="html"></summary>
+      
+    
+    
+    
+    <category term="iOS语言" scheme="https://justinqy.github.io/categories/iOS%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
+    
+    <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
     
   </entry>
   
