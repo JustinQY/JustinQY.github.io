@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2024-07-08T12:58:58.806Z</updated>
+  <updated>2024-07-12T07:35:13.405Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,14 +17,129 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>线性回归模型</title>
-    <link href="https://justinqy.github.io/2024/07/08/machine_learning/course/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://justinqy.github.io/2024/07/08/machine_learning/course/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B/</id>
+    <title>scikit_learn</title>
+    <link href="https://justinqy.github.io/2024/07/12/python/scikit-learn/"/>
+    <id>https://justinqy.github.io/2024/07/12/python/scikit-learn/</id>
+    <published>2024-07-12T07:30:45.000Z</published>
+    <updated>2024-07-12T07:35:13.405Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录scikit learn库的使用~~~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="第三方库" scheme="https://justinqy.github.io/categories/Python/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
+    
+    
+    <category term="第三方库" scheme="https://justinqy.github.io/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Logistic Regression(逻辑回归模型)</title>
+    <link href="https://justinqy.github.io/2024/07/11/machine_learning/course/logistic-regression/"/>
+    <id>https://justinqy.github.io/2024/07/11/machine_learning/course/logistic-regression/</id>
+    <published>2024-07-11T02:41:08.000Z</published>
+    <updated>2024-07-13T08:59:06.829Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;logistic regression model~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/categories/ML/"/>
+    
+    <category term="笔记" scheme="https://justinqy.github.io/categories/ML/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+    <category term="笔记" scheme="https://justinqy.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Useful Methods in Kaggle</title>
+    <link href="https://justinqy.github.io/2024/07/10/machine_learning/kaggle/useful-methods-in-Kaggle/"/>
+    <id>https://justinqy.github.io/2024/07/10/machine_learning/kaggle/useful-methods-in-Kaggle/</id>
+    <published>2024-07-10T09:00:57.000Z</published>
+    <updated>2024-07-13T08:59:55.231Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;methods in Kaggle~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/categories/ML/"/>
+    
+    <category term="kaggle" scheme="https://justinqy.github.io/categories/ML/kaggle/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+    <category term="kaggle" scheme="https://justinqy.github.io/tags/kaggle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kaggle新手入门指北</title>
+    <link href="https://justinqy.github.io/2024/07/08/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/"/>
+    <id>https://justinqy.github.io/2024/07/08/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/</id>
+    <published>2024-07-08T13:18:25.000Z</published>
+    <updated>2024-07-10T03:48:17.032Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Kaggle小白快速上手指北~~~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/categories/ML/"/>
+    
+    <category term="kaggle" scheme="https://justinqy.github.io/categories/ML/kaggle/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+    <category term="kaggle" scheme="https://justinqy.github.io/tags/kaggle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linear Regression(线性回归模型)</title>
+    <link href="https://justinqy.github.io/2024/07/08/machine_learning/course/linear-regression/"/>
+    <id>https://justinqy.github.io/2024/07/08/machine_learning/course/linear-regression/</id>
     <published>2024-07-08T05:36:00.000Z</published>
-    <updated>2024-07-08T12:58:58.806Z</updated>
+    <updated>2024-07-13T09:01:11.429Z</updated>
     
     
-    <summary type="html">&lt;p&gt;linear regression and gradient descent~&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;linear regression model~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/categories/ML/"/>
+    
+    <category term="笔记" scheme="https://justinqy.github.io/categories/ML/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+    <category term="笔记" scheme="https://justinqy.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML笔记_吴恩达机器学习课程</title>
+    <link href="https://justinqy.github.io/2024/07/06/machine_learning/course/ML%E7%AC%94%E8%AE%B0_%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/"/>
+    <id>https://justinqy.github.io/2024/07/06/machine_learning/course/ML%E7%AC%94%E8%AE%B0_%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/</id>
+    <published>2024-07-06T10:00:08.000Z</published>
+    <updated>2024-07-08T13:01:06.974Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;(持续更新中)吴恩达教授机器学习课程记录~~~&lt;/p&gt;</summary>
     
     
     
@@ -44,7 +159,7 @@
     <link href="https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/"/>
     <id>https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/</id>
     <published>2024-07-06T09:53:33.000Z</published>
-    <updated>2024-07-06T09:58:26.908Z</updated>
+    <updated>2024-07-10T04:56:36.409Z</updated>
     
     
     <summary type="html">&lt;p&gt;(待填坑)记录平常在leetcode和kaggle中python第三方库的使用~~~&lt;/p&gt;</summary>
@@ -197,29 +312,6 @@
   </entry>
   
   <entry>
-    <title>ML笔记_吴恩达机器学习课程</title>
-    <link href="https://justinqy.github.io/2024/07/04/machine_learning/course/ML%E7%AC%94%E8%AE%B0_%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/"/>
-    <id>https://justinqy.github.io/2024/07/04/machine_learning/course/ML%E7%AC%94%E8%AE%B0_%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/</id>
-    <published>2024-07-04T10:00:08.000Z</published>
-    <updated>2024-07-08T12:59:15.808Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;(持续更新中)吴恩达教授机器学习课程记录~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="ML" scheme="https://justinqy.github.io/categories/ML/"/>
-    
-    <category term="笔记" scheme="https://justinqy.github.io/categories/ML/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-    <category term="笔记" scheme="https://justinqy.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>iOS MJExtension</title>
     <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_MJExtension/"/>
     <id>https://justinqy.github.io/2024/07/04/iOS/iOS_MJExtension/</id>
@@ -245,6 +337,27 @@
   </entry>
   
   <entry>
+    <title>NSThread</title>
+    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/"/>
+    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/</id>
+    <published>2024-07-03T16:00:00.000Z</published>
+    <updated>2024-07-05T05:06:19.831Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;NSthread记录~~~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="iOS多线程" scheme="https://justinqy.github.io/categories/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    
+    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
+    
+    <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS之MRC与ARC</title>
     <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_MRC%E4%B8%8EARC/"/>
     <id>https://justinqy.github.io/2024/07/04/iOS/iOS_MRC%E4%B8%8EARC/</id>
@@ -265,27 +378,6 @@
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
     
     <category term="内存管理" scheme="https://justinqy.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NSThread</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_NSThread/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-05T05:06:19.831Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;NSthread记录~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS多线程" scheme="https://justinqy.github.io/categories/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
@@ -370,91 +462,6 @@
     
     
     <summary type="html">&lt;p&gt;多线程数据竞争demo~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS多线程" scheme="https://justinqy.github.io/categories/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>block</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_block/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_block/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-04T11:23:23.466Z</updated>
-    
-    
-      
-      
-    <summary type="html"></summary>
-      
-    
-    
-    
-    <category term="iOS语言" scheme="https://justinqy.github.io/categories/iOS%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>死锁</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_deadlock/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_deadlock/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-05T05:15:09.192Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;多线程死锁理解笔记(乱)~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS多线程" scheme="https://justinqy.github.io/categories/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gcd</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_gcd/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_gcd/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-05T05:15:24.808Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;多线程之gcd记录~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS多线程" scheme="https://justinqy.github.io/categories/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pthread</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_pthread/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_pthread/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-05T05:14:12.039Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;多线程pthread记录~~~&lt;/p&gt;</summary>
     
     
     
