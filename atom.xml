@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2024-07-16T08:19:58.143Z</updated>
+  <updated>2024-07-24T14:14:25.406Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代填坑项目</title>
+    <link href="https://justinqy.github.io/2024/07/24/machine_learning/%E4%BB%A3%E5%A1%AB%E5%9D%91%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://justinqy.github.io/2024/07/24/machine_learning/%E4%BB%A3%E5%A1%AB%E5%9D%91%E9%A1%B9%E7%9B%AE/</id>
+    <published>2024-07-24T09:24:50.000Z</published>
+    <updated>2024-07-24T14:14:25.406Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Todo List~~~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TODO" scheme="https://justinqy.github.io/categories/TODO/"/>
+    
+    
+    <category term="TODO" scheme="https://justinqy.github.io/tags/TODO/"/>
+    
+  </entry>
   
   <entry>
     <title>Neural Network Model (神经网络模型)</title>
@@ -455,29 +474,6 @@
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
     
     <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据竞争</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_datarace/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_datarace/</id>
-    <published>2024-07-03T16:00:00.000Z</published>
-    <updated>2024-07-13T09:30:18.792Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;多线程数据竞争demo~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/categories/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/categories/iOS/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="数据竞争" scheme="https://justinqy.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AB%9E%E4%BA%89/"/>
     
   </entry>
   
