@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2024-12-29T04:39:54.551Z</updated>
+  <updated>2025-01-03T22:10:05.132Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,14 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Some Convolutional Architectures</title>
-    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/other-convolutional-architectures/"/>
-    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/other-convolutional-architectures/</id>
+    <title>Architectures for Images Classifier</title>
+    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/"/>
+    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/</id>
     <published>2024-12-27T17:53:13.000Z</published>
-    <updated>2024-12-29T04:39:54.551Z</updated>
+    <updated>2025-01-03T22:10:05.132Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Introduction of other convolutional architectures, such as Residual Nets, Inception Nets, Mobile Nets and Efficient Nets.&lt;/p&gt;</summary>
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;Classic networks like LeNet-5, AlexNet and VGG;&lt;/li&gt;
+&lt;li&gt;Architectures like ResNet and Inception Net to improve performance of CNNs; &lt;/li&gt;
+&lt;li&gt;MobileNets to allow mobile devices to run apps of classifier systems; &lt;/li&gt;
+&lt;li&gt;Transfer Learning and Data Augmentation to start your system faster and make your classifier stronger.</summary>
     
     
     
@@ -33,6 +37,8 @@
     <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/"/>
     
     <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/CNN/"/>
+    
+    <category term="Image Classify" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/CNN/Image-Classify/"/>
     
     
   </entry>
