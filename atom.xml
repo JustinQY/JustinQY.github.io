@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-01-04T02:28:38.712Z</updated>
+  <updated>2025-01-07T00:27:20.078Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>object_detection_algorithms</title>
-    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/object-detection-algorithms/"/>
-    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/object-detection-algorithms/</id>
+    <title>Architectures for Object Detection</title>
+    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/architectures_for_object_detection/"/>
+    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/architectures_for_object_detection/</id>
     <published>2025-01-03T22:14:23.000Z</published>
-    <updated>2025-01-04T02:28:38.712Z</updated>
+    <updated>2025-01-07T00:27:20.078Z</updated>
     
     
     <summary type="html">&lt;ol&gt;
@@ -38,7 +38,7 @@
     
     <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/"/>
     
-    <category term="Image Classify" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/Image-Classify/"/>
+    <category term="Object Detection" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/Object-Detection/"/>
     
     
   </entry>
@@ -48,7 +48,7 @@
     <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/"/>
     <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/</id>
     <published>2024-12-27T17:53:13.000Z</published>
-    <updated>2025-01-03T22:33:09.235Z</updated>
+    <updated>2025-01-06T04:13:42.018Z</updated>
     
     
     <summary type="html">&lt;ol&gt;
