@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-01-07T00:27:20.078Z</updated>
+  <updated>2025-01-13T21:10:50.529Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Architectures for Object Detection</title>
-    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/architectures_for_object_detection/"/>
-    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/architectures_for_object_detection/</id>
+    <title>Neural Style Transfer</title>
+    <link href="https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/"/>
+    <id>https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/</id>
+    <published>2025-01-13T20:13:01.000Z</published>
+    <updated>2025-01-13T21:10:50.529Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Neural Style Transfer in deep learning&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Face Recognition</title>
+    <link href="https://justinqy.github.io/2025/01/11/AI/deep_learning/face_recognition/"/>
+    <id>https://justinqy.github.io/2025/01/11/AI/deep_learning/face_recognition/</id>
+    <published>2025-01-12T01:49:50.000Z</published>
+    <updated>2025-01-13T20:09:29.968Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Face Recognition&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
+    
+    <category term="Face Recognition" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/Face-Recognition/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Object Detection</title>
+    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/object_detection/"/>
+    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/object_detection/</id>
     <published>2025-01-03T22:14:23.000Z</published>
-    <updated>2025-01-07T00:27:20.078Z</updated>
+    <updated>2025-01-12T23:29:40.695Z</updated>
     
     
     <summary type="html">&lt;ol&gt;
@@ -30,25 +66,21 @@
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/"/>
-    
-    <category term="Object Detection" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/Object-Detection/"/>
+    <category term="Object Detection" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/Object-Detection/"/>
     
     
   </entry>
   
   <entry>
-    <title>Architectures for Images Classifier</title>
-    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/"/>
-    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/architectures_for_image_classifier/</id>
+    <title>Images Classifier</title>
+    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/image_classifier/"/>
+    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/image_classifier/</id>
     <published>2024-12-27T17:53:13.000Z</published>
-    <updated>2025-01-06T04:13:42.018Z</updated>
+    <updated>2025-01-12T23:29:40.691Z</updated>
     
     
     <summary type="html">&lt;ol&gt;
@@ -59,15 +91,11 @@
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/"/>
-    
-    <category term="Image Classify" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/CNN/Image-Classify/"/>
+    <category term="Image Classify" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/Image-Classify/"/>
     
     
   </entry>
@@ -77,22 +105,18 @@
     <link href="https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional-neural-network/"/>
     <id>https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional-neural-network/</id>
     <published>2024-12-16T02:29:56.000Z</published>
-    <updated>2025-01-03T22:33:09.232Z</updated>
+    <updated>2025-01-12T23:29:40.699Z</updated>
     
     
     <summary type="html">&lt;p&gt;Brief Introduction of Convolutional Neural Network, related architectures and computer vision practice&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/Deep-Learning/"/>
-    
-    <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Deep-Learning/Supervised-Learning/Deep-Learning/CNN/"/>
+    <category term="CNN" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CNN/"/>
     
     
   </entry>
@@ -102,36 +126,31 @@
     <link href="https://justinqy.github.io/2024/12/09/AI/deep_learning/CNN/"/>
     <id>https://justinqy.github.io/2024/12/09/AI/deep_learning/CNN/</id>
     <published>2024-12-09T20:51:33.000Z</published>
-    <updated>2025-01-03T22:33:09.237Z</updated>
+    <updated>2025-01-12T23:35:46.793Z</updated>
     
     
     <summary type="html">&lt;p&gt;Delete after finish YOLO algorithm.&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Supervised-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/AI/Supervised-Learning/Deep-Learning/"/>
-    
-    <category term="CNN" scheme="https://justinqy.github.io/categories/AI/Supervised-Learning/Deep-Learning/CNN/"/>
+    <category term="CNN" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CNN/"/>
     
     
   </entry>
   
   <entry>
-    <title>Terms_in_programming</title>
-    <link href="https://justinqy.github.io/2024/12/04/python/Terms-in-programming/"/>
-    <id>https://justinqy.github.io/2024/12/04/python/Terms-in-programming/</id>
+    <title>Terms in programming</title>
+    <link href="https://justinqy.github.io/2024/12/04/python/terms_in_python_programming/"/>
+    <id>https://justinqy.github.io/2024/12/04/python/terms_in_python_programming/</id>
     <published>2024-12-04T15:36:44.000Z</published>
-    <updated>2024-12-29T04:43:55.020Z</updated>
+    <updated>2025-01-12T23:39:39.700Z</updated>
     
     
-      
-      
-    <summary type="html"></summary>
-      
+    <summary type="html">&lt;p&gt;–&lt;/p&gt;</summary>
     
     
     
@@ -158,24 +177,6 @@
     
     
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS内存管理</title>
-    <link href="https://justinqy.github.io/2024/10/17/iOS/iOS%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    <id>https://justinqy.github.io/2024/10/17/iOS/iOS%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</id>
-    <published>2024-10-17T07:05:51.000Z</published>
-    <updated>2024-10-17T07:05:51.773Z</updated>
-    
-    
-      
-      
-    <summary type="html"></summary>
-      
-    
-    
-    
     
   </entry>
   
@@ -223,37 +224,33 @@
   
   <entry>
     <title>Neural Network Model (神经网络模型)</title>
-    <link href="https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural-network-model/"/>
-    <id>https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural-network-model/</id>
+    <link href="https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural_network_model/"/>
+    <id>https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural_network_model/</id>
     <published>2024-07-13T21:04:51.000Z</published>
-    <updated>2025-01-03T22:33:09.239Z</updated>
+    <updated>2025-01-12T23:34:50.469Z</updated>
     
     
     <summary type="html">&lt;p&gt;Neural Network Model~~~&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Standard Neural Network" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/Standard-Neural-Network/"/>
+    <category term="Standard Neural Network" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Standard-Neural-Network/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-    <category term="SNN" scheme="https://justinqy.github.io/tags/SNN/"/>
     
   </entry>
   
   <entry>
     <title>Scikit Learn Implementation</title>
-    <link href="https://justinqy.github.io/2024/07/12/python/scikit-learn/"/>
-    <id>https://justinqy.github.io/2024/07/12/python/scikit-learn/</id>
+    <link href="https://justinqy.github.io/2024/07/12/python/scikit_learn/"/>
+    <id>https://justinqy.github.io/2024/07/12/python/scikit_learn/</id>
     <published>2024-07-12T19:30:45.000Z</published>
-    <updated>2024-12-29T04:43:55.025Z</updated>
+    <updated>2025-01-12T23:37:09.930Z</updated>
     
     
     <summary type="html">&lt;p&gt;记录scikit learn库的使用~~~&lt;/p&gt;</summary>
@@ -267,55 +264,47 @@
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
     
-    <category term="scikit_learn" scheme="https://justinqy.github.io/tags/scikit-learn/"/>
+    <category term="scikit learn" scheme="https://justinqy.github.io/tags/scikit-learn/"/>
     
   </entry>
   
   <entry>
     <title>Logistic Regression (逻辑回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic-regression/"/>
-    <id>https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic-regression/</id>
+    <link href="https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic_regression/"/>
+    <id>https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic_regression/</id>
     <published>2024-07-11T14:41:08.000Z</published>
-    <updated>2025-01-03T22:33:09.229Z</updated>
+    <updated>2025-01-12T23:34:50.466Z</updated>
     
     
     <summary type="html">&lt;p&gt;logistic regression model~&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Logistic Regression" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/Logistic-Regression/"/>
+    <category term="Logistic Regression" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Logistic-Regression/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-    <category term="Logistic Regression" scheme="https://justinqy.github.io/tags/Logistic-Regression/"/>
     
   </entry>
   
   <entry>
     <title>Useful Methods in Kaggle</title>
-    <link href="https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful-methods-in-Kaggle/"/>
-    <id>https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful-methods-in-Kaggle/</id>
+    <link href="https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful_methods_in_Kaggle/"/>
+    <id>https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful_methods_in_Kaggle/</id>
     <published>2024-07-10T21:00:57.000Z</published>
-    <updated>2024-12-29T04:42:20.066Z</updated>
+    <updated>2025-01-12T23:34:50.459Z</updated>
     
     
     <summary type="html">&lt;p&gt;methods in Kaggle~&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Kaggle" scheme="https://justinqy.github.io/categories/Kaggle/"/>
     
-    <category term="Kaggle" scheme="https://justinqy.github.io/categories/AI/Kaggle/"/>
-    
-    
-    <category term="AI" scheme="https://justinqy.github.io/tags/AI/"/>
     
     <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
     
@@ -326,19 +315,15 @@
     <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/"/>
     <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/</id>
     <published>2024-07-09T01:18:25.000Z</published>
-    <updated>2024-12-29T04:42:20.063Z</updated>
+    <updated>2025-01-12T23:34:50.462Z</updated>
     
     
     <summary type="html">&lt;p&gt;Kaggle小白快速上手指北~~~&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Kaggle" scheme="https://justinqy.github.io/categories/Kaggle/"/>
     
-    <category term="Kaggle" scheme="https://justinqy.github.io/categories/AI/Kaggle/"/>
-    
-    
-    <category term="AI" scheme="https://justinqy.github.io/tags/AI/"/>
     
     <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
     
@@ -346,60 +331,33 @@
   
   <entry>
     <title>Linear Regression (线性回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear-regression/"/>
-    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear-regression/</id>
+    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear_regression/"/>
+    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear_regression/</id>
     <published>2024-07-08T17:36:00.000Z</published>
-    <updated>2025-01-03T22:33:09.238Z</updated>
+    <updated>2025-01-12T23:34:50.468Z</updated>
     
     
     <summary type="html">&lt;p&gt;linear regression model~&lt;/p&gt;</summary>
     
     
     
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Linear Regression" scheme="https://justinqy.github.io/categories/AI/Machine-Learning/Supervised-Learning/Linear-Regression/"/>
+    <category term="Linear Regression" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Linear-Regression/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
-    <category term="Linear Regression" scheme="https://justinqy.github.io/tags/Linear-Regression/"/>
-    
   </entry>
   
   <entry>
-    <title>Kaggle做题记录和题目索引</title>
-    <link href="https://justinqy.github.io/2024/07/06/AI/machine_learning/kaggle/Kaggle%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E9%A2%98%E7%9B%AE%E7%B4%A2%E5%BC%95/"/>
-    <id>https://justinqy.github.io/2024/07/06/AI/machine_learning/kaggle/Kaggle%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E9%A2%98%E7%9B%AE%E7%B4%A2%E5%BC%95/</id>
-    <published>2024-07-06T19:52:21.000Z</published>
-    <updated>2024-12-29T04:42:20.061Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="AI" scheme="https://justinqy.github.io/categories/AI/"/>
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/categories/AI/Kaggle/"/>
-    
-    
-    <category term="AI" scheme="https://justinqy.github.io/tags/AI/"/>
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第三方库使用整理</title>
+    <title>Python第三方库</title>
     <link href="https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/"/>
     <id>https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/</id>
-    <published>2024-07-06T09:53:33.000Z</published>
-    <updated>2024-07-18T05:55:13.447Z</updated>
+    <published>2024-07-06T21:53:33.000Z</published>
+    <updated>2025-01-16T15:59:59.594Z</updated>
     
     
     <summary type="html">&lt;p&gt;(待填坑)记录平常在leetcode和kaggle中python第三方库的使用~~~&lt;/p&gt;</summary>
@@ -414,6 +372,25 @@
     <category term="第三方库" scheme="https://justinqy.github.io/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kaggle做题记录和题目索引</title>
+    <link href="https://justinqy.github.io/2024/07/06/AI/machine_learning/kaggle/Kaggle%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E9%A2%98%E7%9B%AE%E7%B4%A2%E5%BC%95/"/>
+    <id>https://justinqy.github.io/2024/07/06/AI/machine_learning/kaggle/Kaggle%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E9%A2%98%E7%9B%AE%E7%B4%A2%E5%BC%95/</id>
+    <published>2024-07-06T19:52:21.000Z</published>
+    <updated>2025-01-12T23:34:50.464Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Kaggle" scheme="https://justinqy.github.io/categories/Kaggle/"/>
+    
+    
+    <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
     
   </entry>
   
@@ -456,29 +433,6 @@
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
     
     <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS网络之多线程</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS%E7%BD%91%E7%BB%9C%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS%E7%BD%91%E7%BB%9C%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</id>
-    <published>2024-07-04T14:40:48.000Z</published>
-    <updated>2024-07-05T05:17:38.578Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录iOS多线程开发的基本知识和使用方法, 积累iOS开发经验~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/categories/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/categories/iOS/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="多线程" scheme="https://justinqy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
