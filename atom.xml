@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-01-13T21:10:50.529Z</updated>
+  <updated>2025-01-18T00:44:53.570Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Model Evaluation</title>
+    <link href="https://justinqy.github.io/2025/01/17/AI/machine_learning/notes/model_evaluation/"/>
+    <id>https://justinqy.github.io/2025/01/17/AI/machine_learning/notes/model_evaluation/</id>
+    <published>2025-01-17T23:26:21.000Z</published>
+    <updated>2025-01-18T00:44:53.570Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Evaluate a model and decide what to do next.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
+    
+    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Model-Optimization/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Optimization for Gradient Descent and Learning Algorithm</title>
+    <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/"/>
+    <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/</id>
+    <published>2025-01-17T02:18:33.000Z</published>
+    <updated>2025-01-17T23:27:31.009Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Notions about gradient descent.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
+    
+    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Model-Optimization/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Neural Style Transfer</title>
@@ -224,21 +266,21 @@
   
   <entry>
     <title>Neural Network Model (神经网络模型)</title>
-    <link href="https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural_network_model/"/>
-    <id>https://justinqy.github.io/2024/07/13/AI/machine_learning/course/neural_network_model/</id>
+    <link href="https://justinqy.github.io/2024/07/13/AI/deep_learning/neural_network_model/"/>
+    <id>https://justinqy.github.io/2024/07/13/AI/deep_learning/neural_network_model/</id>
     <published>2024-07-13T21:04:51.000Z</published>
-    <updated>2025-01-12T23:34:50.469Z</updated>
+    <updated>2025-01-17T01:48:44.223Z</updated>
     
     
     <summary type="html">&lt;p&gt;Neural Network Model~~~&lt;/p&gt;</summary>
     
     
     
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
     
-    <category term="Standard Neural Network" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Standard-Neural-Network/"/>
+    <category term="Standard Neural Network" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/Standard-Neural-Network/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -270,10 +312,10 @@
   
   <entry>
     <title>Logistic Regression (逻辑回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic_regression/"/>
-    <id>https://justinqy.github.io/2024/07/11/AI/machine_learning/course/logistic_regression/</id>
+    <link href="https://justinqy.github.io/2024/07/11/AI/machine_learning/notes/logistic_regression/"/>
+    <id>https://justinqy.github.io/2024/07/11/AI/machine_learning/notes/logistic_regression/</id>
     <published>2024-07-11T14:41:08.000Z</published>
-    <updated>2025-01-12T23:34:50.466Z</updated>
+    <updated>2025-01-17T22:27:44.120Z</updated>
     
     
     <summary type="html">&lt;p&gt;logistic regression model~&lt;/p&gt;</summary>
@@ -331,10 +373,10 @@
   
   <entry>
     <title>Linear Regression (线性回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear_regression/"/>
-    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/course/linear_regression/</id>
+    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/notes/linear_regression/"/>
+    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/notes/linear_regression/</id>
     <published>2024-07-08T17:36:00.000Z</published>
-    <updated>2025-01-12T23:34:50.468Z</updated>
+    <updated>2025-01-17T02:20:18.408Z</updated>
     
     
     <summary type="html">&lt;p&gt;linear regression model~&lt;/p&gt;</summary>
@@ -391,48 +433,6 @@
     
     
     <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown 常用语法总结</title>
-    <link href="https://justinqy.github.io/2024/07/04/markdown/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>https://justinqy.github.io/2024/07/04/markdown/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</id>
-    <published>2024-07-05T02:40:50.000Z</published>
-    <updated>2024-12-29T04:44:09.966Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结了常用的markdown语法, 方便平常整理笔记时使用~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="markdown" scheme="https://justinqy.github.io/categories/markdown/"/>
-    
-    
-    <category term="markdown" scheme="https://justinqy.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ObjectiveC 小记</title>
-    <link href="https://justinqy.github.io/2024/07/04/iOS/iOS_ObjectiveC%E5%B0%8F%E8%AE%B0/"/>
-    <id>https://justinqy.github.io/2024/07/04/iOS/iOS_ObjectiveC%E5%B0%8F%E8%AE%B0/</id>
-    <published>2024-07-04T14:40:49.000Z</published>
-    <updated>2024-07-04T15:27:06.506Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录一些Objective-C的使用技巧和注意事项, 也算是对iOS开发生涯的总结~~~(in progress)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/categories/iOS/"/>
-    
-    <category term="Objective-C" scheme="https://justinqy.github.io/categories/iOS/Objective-C/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="Objective-C" scheme="https://justinqy.github.io/tags/Objective-C/"/>
     
   </entry>
   
