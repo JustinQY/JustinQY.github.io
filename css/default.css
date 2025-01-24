@@ -412,7 +412,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif;
+  font-family: sans-serif, 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans';
 }
 code,
 pre {
@@ -1064,13 +1064,13 @@ a.has-text-grey-lightest:focus {
   font-weight: 700 !important;
 }
 .is-family-primary {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif, 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans' !important;
 }
 .is-family-secondary {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif, 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans' !important;
 }
 .is-family-sans-serif {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif, 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans' !important;
 }
 .is-family-monospace {
   font-family: monospace !important;
