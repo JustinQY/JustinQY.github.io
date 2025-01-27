@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-01-27T03:41:21.176Z</updated>
+  <updated>2025-01-27T15:50:04.432Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,132 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>math</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/math/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/math/</id>
+    <published>2025-01-27T15:47:41.000Z</published>
+    <updated>2025-01-27T15:50:04.432Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;How to calculate mathematics in python&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Math" scheme="https://justinqy.github.io/categories/Python/Math/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tensorflow And Pytorch</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/</id>
+    <published>2025-01-27T15:41:37.000Z</published>
+    <updated>2025-01-27T15:50:04.438Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Applications in tensorflow and pytorch.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Model" scheme="https://justinqy.github.io/categories/Python/Model/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Plotting Data</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/plotting/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/plotting/</id>
+    <published>2025-01-27T15:41:06.000Z</published>
+    <updated>2025-01-27T15:50:04.437Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;How to plot charts for dataset&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Plot" scheme="https://justinqy.github.io/categories/Python/Plot/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/pandas/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/pandas/</id>
+    <published>2025-01-27T15:40:54.000Z</published>
+    <updated>2025-01-27T15:50:04.434Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Applications in pandas&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Pandas" scheme="https://justinqy.github.io/categories/Python/Pandas/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Numpy</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/numpy/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/numpy/</id>
+    <published>2025-01-27T15:40:42.000Z</published>
+    <updated>2025-01-27T15:50:04.436Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Applications in numpy&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Numpy" scheme="https://justinqy.github.io/categories/Python/Numpy/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python Virtual Environment</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/virtual_environment/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/virtual_environment/</id>
+    <published>2025-01-27T15:32:14.000Z</published>
+    <updated>2025-01-27T15:50:04.440Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Python Venv&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
+    
+    <category term="Venv" scheme="https://justinqy.github.io/categories/Python/Venv/"/>
+    
+    
+    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Math In Machine Learning</title>
@@ -299,136 +425,6 @@
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scikit Learn Implementation</title>
-    <link href="https://justinqy.github.io/2024/07/12/python/scikit_learn/"/>
-    <id>https://justinqy.github.io/2024/07/12/python/scikit_learn/</id>
-    <published>2024-07-12T19:30:45.000Z</published>
-    <updated>2025-01-12T23:37:09.930Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录scikit learn库的使用~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="第三方库" scheme="https://justinqy.github.io/categories/Python/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-    <category term="scikit learn" scheme="https://justinqy.github.io/tags/scikit-learn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Logistic Regression (逻辑回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/11/AI/machine_learning/notes/logistic_regression/"/>
-    <id>https://justinqy.github.io/2024/07/11/AI/machine_learning/notes/logistic_regression/</id>
-    <published>2024-07-11T14:41:08.000Z</published>
-    <updated>2025-01-17T22:27:44.120Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;logistic regression model~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Logistic Regression" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Logistic-Regression/"/>
-    
-    
-    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Useful Methods in Kaggle</title>
-    <link href="https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful_methods_in_Kaggle/"/>
-    <id>https://justinqy.github.io/2024/07/10/AI/machine_learning/kaggle/useful_methods_in_Kaggle/</id>
-    <published>2024-07-10T21:00:57.000Z</published>
-    <updated>2025-01-12T23:34:50.459Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;methods in Kaggle~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/categories/Kaggle/"/>
-    
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kaggle新手入门指北</title>
-    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/"/>
-    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/kaggle/kaggle%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/</id>
-    <published>2024-07-09T01:18:25.000Z</published>
-    <updated>2025-01-12T23:34:50.462Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Kaggle小白快速上手指北~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/categories/Kaggle/"/>
-    
-    
-    <category term="Kaggle" scheme="https://justinqy.github.io/tags/Kaggle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linear Regression (线性回归模型)</title>
-    <link href="https://justinqy.github.io/2024/07/08/AI/machine_learning/notes/linear_regression/"/>
-    <id>https://justinqy.github.io/2024/07/08/AI/machine_learning/notes/linear_regression/</id>
-    <published>2024-07-08T17:36:00.000Z</published>
-    <updated>2025-01-17T02:20:18.408Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;linear regression model~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Linear Regression" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Linear-Regression/"/>
-    
-    
-    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python第三方库</title>
-    <link href="https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/"/>
-    <id>https://justinqy.github.io/2024/07/06/python/python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86/</id>
-    <published>2024-07-06T21:53:33.000Z</published>
-    <updated>2025-01-27T05:02:10.631Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;(待填坑)记录平常在leetcode和kaggle中python第三方库的使用~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="第三方库" scheme="https://justinqy.github.io/categories/Python/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
-    
-    
-    <category term="第三方库" scheme="https://justinqy.github.io/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
     
   </entry>
   
