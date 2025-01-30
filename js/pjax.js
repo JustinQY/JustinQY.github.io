@@ -35,4 +35,10 @@
     // })
 
     document.addEventListener('DOMContentLoaded', () => initPjax());
+
+    document.addEventListener("pjax:end", function () {
+        if (typeof MathJax !== "undefined") {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        }
+    });
 }());
