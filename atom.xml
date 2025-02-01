@@ -147,7 +147,7 @@
     <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/"/>
     <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-01-27T03:41:21.176Z</updated>
+    <updated>2025-01-31T03:44:09.011Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
@@ -204,7 +204,7 @@
     <link href="https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/"/>
     <id>https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/</id>
     <published>2025-01-13T20:13:01.000Z</published>
-    <updated>2025-01-27T15:57:26.157Z</updated>
+    <updated>2025-01-31T06:30:49.585Z</updated>
     
     
     <summary type="html">&lt;p&gt;Neural Style Transfer in deep learning&lt;/p&gt;</summary>
@@ -217,7 +217,7 @@
     
     <category term="CV" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/"/>
     
-    <category term="Image Classify" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Image-Classify/"/>
+    <category term="Neural Style Transfer" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Neural-Style-Transfer/"/>
     
     
     <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
@@ -307,10 +307,10 @@
   
   <entry>
     <title>Convolutional Neural Network</title>
-    <link href="https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional-neural-network/"/>
-    <id>https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional-neural-network/</id>
+    <link href="https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional_neural_network/"/>
+    <id>https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional_neural_network/</id>
     <published>2024-12-16T02:29:56.000Z</published>
-    <updated>2025-01-27T15:55:50.571Z</updated>
+    <updated>2025-01-31T06:51:38.406Z</updated>
     
     
     <summary type="html">&lt;p&gt;Brief Introduction of Convolutional Neural Network, related architectures and computer vision practice&lt;/p&gt;</summary>
