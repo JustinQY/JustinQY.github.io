@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-01-27T15:50:04.432Z</updated>
+  <updated>2025-02-09T01:54:15.633Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,11 +17,78 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>math</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/math/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/math/</id>
+    <title>Recurrent Neural Network (RNN)</title>
+    <link href="https://justinqy.github.io/2025/02/06/AI/deep_learning/NLP/recurrent_neural_network/"/>
+    <id>https://justinqy.github.io/2025/02/06/AI/deep_learning/NLP/recurrent_neural_network/</id>
+    <published>2025-02-06T15:05:06.000Z</published>
+    <updated>2025-02-09T01:54:15.633Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Sequence Models and RNN&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    
+    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
+    
+    <category term="NLP" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/NLP/"/>
+    
+    <category term="RNN" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/NLP/RNN/"/>
+    
+    
+    <category term="RNN" scheme="https://justinqy.github.io/tags/RNN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Data Preprocessing</title>
+    <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/"/>
+    <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/</id>
+    <published>2025-02-03T20:48:28.000Z</published>
+    <updated>2025-02-03T20:54:41.931Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Methods of data preprocessing, such as data augmentation when we have no enough data; data cleaning when there is any noise, outliers or missing value in our data.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Data" scheme="https://justinqy.github.io/categories/Machine-Learning/Data/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Data Types in Machine Learning</title>
+    <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/"/>
+    <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/</id>
+    <published>2025-02-03T01:39:10.000Z</published>
+    <updated>2025-02-04T19:45:07.674Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Different data types in ML.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Data" scheme="https://justinqy.github.io/categories/Machine-Learning/Data/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Math Formulas</title>
+    <link href="https://justinqy.github.io/2025/01/27/python/math_formula/"/>
+    <id>https://justinqy.github.io/2025/01/27/python/math_formula/</id>
     <published>2025-01-27T15:47:41.000Z</published>
-    <updated>2025-01-27T15:50:04.432Z</updated>
+    <updated>2025-02-04T19:59:19.757Z</updated>
     
     
     <summary type="html">&lt;p&gt;How to calculate mathematics in python&lt;/p&gt;</summary>
@@ -30,7 +97,7 @@
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
     
-    <category term="Math" scheme="https://justinqy.github.io/categories/Python/Math/"/>
+    <category term="Math Formula" scheme="https://justinqy.github.io/categories/Python/Math-Formula/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -84,7 +151,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/pandas/"/>
     <id>https://justinqy.github.io/2025/01/27/python/pandas/</id>
     <published>2025-01-27T15:40:54.000Z</published>
-    <updated>2025-01-27T15:50:04.434Z</updated>
+    <updated>2025-02-07T16:14:20.295Z</updated>
     
     
     <summary type="html">&lt;p&gt;Applications in pandas&lt;/p&gt;</summary>
@@ -147,13 +214,19 @@
     <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/"/>
     <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-01-31T03:44:09.011Z</updated>
+    <updated>2025-02-04T20:31:36.669Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
     
     
     
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Math" scheme="https://justinqy.github.io/categories/Machine-Learning/Math/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
   </entry>
   
@@ -201,8 +274,8 @@
   
   <entry>
     <title>Neural Style Transfer</title>
-    <link href="https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/"/>
-    <id>https://justinqy.github.io/2025/01/13/AI/deep_learning/neural_style_transfer/</id>
+    <link href="https://justinqy.github.io/2025/01/13/AI/deep_learning/CV/neural_style_transfer/"/>
+    <id>https://justinqy.github.io/2025/01/13/AI/deep_learning/CV/neural_style_transfer/</id>
     <published>2025-01-13T20:13:01.000Z</published>
     <updated>2025-01-31T06:30:49.585Z</updated>
     
@@ -226,13 +299,15 @@
   
   <entry>
     <title>Face Recognition</title>
-    <link href="https://justinqy.github.io/2025/01/11/AI/deep_learning/face_recognition/"/>
-    <id>https://justinqy.github.io/2025/01/11/AI/deep_learning/face_recognition/</id>
+    <link href="https://justinqy.github.io/2025/01/11/AI/deep_learning/CV/face_recognition/"/>
+    <id>https://justinqy.github.io/2025/01/11/AI/deep_learning/CV/face_recognition/</id>
     <published>2025-01-12T01:49:50.000Z</published>
-    <updated>2025-01-27T15:57:26.159Z</updated>
+    <updated>2025-02-02T02:00:20.090Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Face Recognition&lt;/p&gt;</summary>
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;How to solve face recognition problem with one-shot learning, which uses Siamese Network and Triplet loss function. &lt;/li&gt;
+&lt;li&gt;Face verification problem with binary classification, introduce logistic unit and chi-square norm.</summary>
     
     
     
@@ -251,8 +326,8 @@
   
   <entry>
     <title>Object Detection</title>
-    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/object_detection/"/>
-    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/object_detection/</id>
+    <link href="https://justinqy.github.io/2025/01/03/AI/deep_learning/CV/object_detection/"/>
+    <id>https://justinqy.github.io/2025/01/03/AI/deep_learning/CV/object_detection/</id>
     <published>2025-01-03T22:14:23.000Z</published>
     <updated>2025-01-27T15:57:26.160Z</updated>
     
@@ -278,8 +353,8 @@
   
   <entry>
     <title>Images Classifier</title>
-    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/image_classifier/"/>
-    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/image_classifier/</id>
+    <link href="https://justinqy.github.io/2024/12/27/AI/deep_learning/CV/image_classifier/"/>
+    <id>https://justinqy.github.io/2024/12/27/AI/deep_learning/CV/image_classifier/</id>
     <published>2024-12-27T17:53:13.000Z</published>
     <updated>2025-01-27T15:57:26.163Z</updated>
     
@@ -307,8 +382,8 @@
   
   <entry>
     <title>Convolutional Neural Network</title>
-    <link href="https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional_neural_network/"/>
-    <id>https://justinqy.github.io/2024/12/15/AI/deep_learning/convolutional_neural_network/</id>
+    <link href="https://justinqy.github.io/2024/12/15/AI/deep_learning/CV/convolutional_neural_network/"/>
+    <id>https://justinqy.github.io/2024/12/15/AI/deep_learning/CV/convolutional_neural_network/</id>
     <published>2024-12-16T02:29:56.000Z</published>
     <updated>2025-01-31T06:51:38.406Z</updated>
     
@@ -330,8 +405,8 @@
   
   <entry>
     <title>CNN</title>
-    <link href="https://justinqy.github.io/2024/12/09/AI/deep_learning/CNN/"/>
-    <id>https://justinqy.github.io/2024/12/09/AI/deep_learning/CNN/</id>
+    <link href="https://justinqy.github.io/2024/12/09/AI/deep_learning/CV/CNN/"/>
+    <id>https://justinqy.github.io/2024/12/09/AI/deep_learning/CV/CNN/</id>
     <published>2024-12-09T20:51:33.000Z</published>
     <updated>2025-01-27T15:55:50.565Z</updated>
     
@@ -386,69 +461,6 @@
     
     
     <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS面试题记录</title>
-    <link href="https://justinqy.github.io/2024/10/16/iOS/iOS%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    <id>https://justinqy.github.io/2024/10/16/iOS/iOS%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
-    <published>2024-10-16T21:57:53.000Z</published>
-    <updated>2025-01-27T15:53:57.626Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;iOS客户端开发工程师面试题记录~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
-    
-    <category term="Interviews" scheme="https://justinqy.github.io/tags/Interviews/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>代填坑项目</title>
-    <link href="https://justinqy.github.io/2024/07/24/AI/machine_learning/%E4%BB%A3%E5%A1%AB%E5%9D%91%E9%A1%B9%E7%9B%AE/"/>
-    <id>https://justinqy.github.io/2024/07/24/AI/machine_learning/%E4%BB%A3%E5%A1%AB%E5%9D%91%E9%A1%B9%E7%9B%AE/</id>
-    <published>2024-07-24T21:24:50.000Z</published>
-    <updated>2025-01-27T15:58:06.419Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Todo List~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Todo" scheme="https://justinqy.github.io/categories/Todo/"/>
-    
-    
-    <category term="Todo" scheme="https://justinqy.github.io/tags/Todo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Neural Network Model (神经网络模型)</title>
-    <link href="https://justinqy.github.io/2024/07/13/AI/deep_learning/neural_network_model/"/>
-    <id>https://justinqy.github.io/2024/07/13/AI/deep_learning/neural_network_model/</id>
-    <published>2024-07-13T21:04:51.000Z</published>
-    <updated>2025-01-27T15:55:50.570Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;Todo&gt;Neural Network Model~~~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
-    
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="Standard Neural Network" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/Standard-Neural-Network/"/>
-    
-    
-    <category term="Neural Network" scheme="https://justinqy.github.io/tags/Neural-Network/"/>
     
   </entry>
   
