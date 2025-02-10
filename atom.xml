@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-02-09T01:54:15.633Z</updated>
+  <updated>2025-02-10T03:26:25.668Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Useful Plots in ML</title>
+    <link href="https://justinqy.github.io/2025/02/09/AI/machine_learning/notes/useful_plots_in_ML/"/>
+    <id>https://justinqy.github.io/2025/02/09/AI/machine_learning/notes/useful_plots_in_ML/</id>
+    <published>2025-02-09T20:15:55.000Z</published>
+    <updated>2025-02-10T03:26:25.668Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Some types of plots and how can they be helpful for machine learning tasks, such as feature selection.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Recurrent Neural Network (RNN)</title>
@@ -46,7 +61,7 @@
     <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/"/>
     <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-02-03T20:54:41.931Z</updated>
+    <updated>2025-02-10T04:42:27.138Z</updated>
     
     
     <summary type="html">&lt;p&gt;Methods of data preprocessing, such as data augmentation when we have no enough data; data cleaning when there is any noise, outliers or missing value in our data.&lt;/p&gt;</summary>
@@ -55,7 +70,7 @@
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Data" scheme="https://justinqy.github.io/categories/Machine-Learning/Data/"/>
+    <category term="Data Preprocess" scheme="https://justinqy.github.io/categories/Machine-Learning/Data-Preprocess/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -67,7 +82,7 @@
     <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/"/>
     <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/</id>
     <published>2025-02-03T01:39:10.000Z</published>
-    <updated>2025-02-04T19:45:07.674Z</updated>
+    <updated>2025-02-10T03:35:32.029Z</updated>
     
     
     <summary type="html">&lt;p&gt;Different data types in ML.&lt;/p&gt;</summary>
@@ -76,7 +91,7 @@
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Data" scheme="https://justinqy.github.io/categories/Machine-Learning/Data/"/>
+    <category term="Data Types" scheme="https://justinqy.github.io/categories/Machine-Learning/Data-Types/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -214,7 +229,7 @@
     <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/"/>
     <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_machinelearning/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-02-04T20:31:36.669Z</updated>
+    <updated>2025-02-09T20:14:31.246Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
@@ -442,25 +457,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Objective-C</title>
-    <link href="https://justinqy.github.io/2024/10/17/iOS/Objective-C/"/>
-    <id>https://justinqy.github.io/2024/10/17/iOS/Objective-C/</id>
-    <published>2024-10-17T19:17:29.000Z</published>
-    <updated>2024-12-29T04:46:09.370Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;OC&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/categories/iOS/"/>
-    
-    
-    <category term="iOS" scheme="https://justinqy.github.io/tags/iOS/"/>
     
   </entry>
   
