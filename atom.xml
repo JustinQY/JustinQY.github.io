@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-02-10T03:26:25.668Z</updated>
+  <updated>2025-02-20T23:15:45.468Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Models</title>
+    <link href="https://justinqy.github.io/2025/02/20/AI/Models/"/>
+    <id>https://justinqy.github.io/2025/02/20/AI/Models/</id>
+    <published>2025-02-20T23:04:56.000Z</published>
+    <updated>2025-02-20T23:15:45.468Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Steps to learn and master a kind of model~&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Useful Plots in ML</title>
@@ -61,7 +76,7 @@
     <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/"/>
     <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-02-19T03:38:30.309Z</updated>
+    <updated>2025-02-19T03:42:02.791Z</updated>
     
     
     <summary type="html">&lt;p&gt;Methods of data preprocessing, such as data augmentation when we have no enough data; data cleaning when there is any noise, outliers or missing value in our data.&lt;/p&gt;</summary>
@@ -271,7 +286,7 @@
     <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/"/>
     <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/</id>
     <published>2025-01-17T02:18:33.000Z</published>
-    <updated>2025-02-10T21:21:02.916Z</updated>
+    <updated>2025-02-19T04:17:21.127Z</updated>
     
     
     <summary type="html">&lt;p&gt;Notions about gradient descent.&lt;/p&gt;</summary>
@@ -280,9 +295,7 @@
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
-    
-    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Model-Optimization/"/>
+    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Model-Optimization/"/>
     
     
   </entry>
@@ -438,25 +451,6 @@
     
     
     <category term="CNN" scheme="https://justinqy.github.io/tags/CNN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Terms in programming</title>
-    <link href="https://justinqy.github.io/2024/12/04/python/terms_in_python_programming/"/>
-    <id>https://justinqy.github.io/2024/12/04/python/terms_in_python_programming/</id>
-    <published>2024-12-04T15:36:44.000Z</published>
-    <updated>2025-01-12T23:39:39.700Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;–&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
     
   </entry>
   
