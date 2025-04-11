@@ -89,8 +89,8 @@
   
   <entry>
     <title>Useful Plots in ML</title>
-    <link href="https://justinqy.github.io/2025/02/09/AI/machine_learning/notes/useful_plots_in_ML/"/>
-    <id>https://justinqy.github.io/2025/02/09/AI/machine_learning/notes/useful_plots_in_ML/</id>
+    <link href="https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/"/>
+    <id>https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/</id>
     <published>2025-02-09T20:15:55.000Z</published>
     <updated>2025-02-10T03:26:25.668Z</updated>
     
@@ -127,10 +127,10 @@
   
   <entry>
     <title>Data Preprocessing</title>
-    <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/"/>
-    <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/notes/data_preprocessing/</id>
+    <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/"/>
+    <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-04-11T01:20:07.731Z</updated>
+    <updated>2025-04-11T04:33:30.704Z</updated>
     
     
     <summary type="html">&lt;p&gt;Including methods implemented during EDA and data lacking. &lt;/p&gt;</summary>
@@ -148,8 +148,8 @@
   
   <entry>
     <title>Data Types in Machine Learning</title>
-    <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/"/>
-    <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/notes/data_types/</id>
+    <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/"/>
+    <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/</id>
     <published>2025-02-03T01:39:10.000Z</published>
     <updated>2025-02-10T03:35:32.029Z</updated>
     
@@ -295,10 +295,10 @@
   
   <entry>
     <title>Math In Machine Learning</title>
-    <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_ML/"/>
-    <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/notes/math_in_ML/</id>
+    <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/"/>
+    <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-04-11T01:18:03.466Z</updated>
+    <updated>2025-04-11T03:45:58.780Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
@@ -316,8 +316,8 @@
   
   <entry>
     <title>Model Evaluation</title>
-    <link href="https://justinqy.github.io/2025/01/17/AI/machine_learning/notes/model_evaluation/"/>
-    <id>https://justinqy.github.io/2025/01/17/AI/machine_learning/notes/model_evaluation/</id>
+    <link href="https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/"/>
+    <id>https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/</id>
     <published>2025-01-17T23:26:21.000Z</published>
     <updated>2025-01-18T01:08:30.877Z</updated>
     
@@ -337,8 +337,8 @@
   
   <entry>
     <title>Optimization for Gradient Descent and Learning Algorithm</title>
-    <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/"/>
-    <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/notes/optimizing_gradient_descent/</id>
+    <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/"/>
+    <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/</id>
     <published>2025-01-17T02:18:33.000Z</published>
     <updated>2025-02-19T04:17:21.127Z</updated>
     
