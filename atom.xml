@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-03-30T15:32:07.468Z</updated>
+  <updated>2025-04-11T21:52:34.534Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>decision_tree</title>
+    <link href="https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/"/>
+    <id>https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/</id>
+    <published>2025-04-11T04:35:42.000Z</published>
+    <updated>2025-04-11T21:52:34.534Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Definition, implementation and pros and cons of decision tree models.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>TV Show Script Generation</title>
@@ -130,7 +145,7 @@
     <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/"/>
     <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-04-11T04:33:30.704Z</updated>
+    <updated>2025-04-12T02:23:22.326Z</updated>
     
     
     <summary type="html">&lt;p&gt;Including methods implemented during EDA and data lacking. &lt;/p&gt;</summary>
@@ -400,33 +415,6 @@
     <category term="CV" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/"/>
     
     <category term="Face Recognition" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Face-Recognition/"/>
-    
-    
-    <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Object Detection</title>
-    <link href="https://justinqy.github.io/2025/01/03/AI/CV/object_detection/"/>
-    <id>https://justinqy.github.io/2025/01/03/AI/CV/object_detection/</id>
-    <published>2025-01-03T22:14:23.000Z</published>
-    <updated>2025-03-26T17:35:52.342Z</updated>
-    
-    
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;Algorithms for object detection.&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
-    
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="CV" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/"/>
-    
-    <category term="Object Detection" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Object-Detection/"/>
     
     
     <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
