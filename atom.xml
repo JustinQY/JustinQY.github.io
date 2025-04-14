@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-04-11T21:52:34.534Z</updated>
+  <updated>2025-04-14T02:15:11.793Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -21,13 +21,19 @@
     <link href="https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/"/>
     <id>https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/</id>
     <published>2025-04-11T04:35:42.000Z</published>
-    <updated>2025-04-11T21:52:34.534Z</updated>
+    <updated>2025-04-14T02:15:11.793Z</updated>
     
     
     <summary type="html">&lt;p&gt;Definition, implementation and pros and cons of decision tree models.&lt;/p&gt;</summary>
     
     
     
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Decision Tree" scheme="https://justinqy.github.io/categories/Machine-Learning/Decision-Tree/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
   </entry>
   
@@ -107,13 +113,19 @@
     <link href="https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/"/>
     <id>https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/</id>
     <published>2025-02-09T20:15:55.000Z</published>
-    <updated>2025-02-10T03:26:25.668Z</updated>
+    <updated>2025-04-14T03:20:07.172Z</updated>
     
     
     <summary type="html">&lt;p&gt;Some types of plots and how can they be helpful for machine learning tasks, such as feature selection.&lt;/p&gt;</summary>
     
     
     
+    <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
+    
+    <category term="Plots" scheme="https://justinqy.github.io/categories/Machine-Learning/Plots/"/>
+    
+    
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
   </entry>
   
@@ -145,7 +157,7 @@
     <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/"/>
     <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-04-12T02:23:22.326Z</updated>
+    <updated>2025-04-14T02:14:55.030Z</updated>
     
     
     <summary type="html">&lt;p&gt;Including methods implemented during EDA and data lacking. &lt;/p&gt;</summary>
@@ -166,7 +178,7 @@
     <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/"/>
     <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/</id>
     <published>2025-02-03T01:39:10.000Z</published>
-    <updated>2025-02-10T03:35:32.029Z</updated>
+    <updated>2025-04-14T02:39:38.471Z</updated>
     
     
     <summary type="html">&lt;p&gt;Different data types in ML.&lt;/p&gt;</summary>
@@ -313,7 +325,7 @@
     <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/"/>
     <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-04-11T03:45:58.780Z</updated>
+    <updated>2025-04-14T02:19:58.746Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
@@ -334,7 +346,7 @@
     <link href="https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/"/>
     <id>https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/</id>
     <published>2025-01-17T23:26:21.000Z</published>
-    <updated>2025-01-18T01:08:30.877Z</updated>
+    <updated>2025-04-14T03:24:03.176Z</updated>
     
     
     <summary type="html">&lt;p&gt;Evaluate a model and decide what to do next.&lt;/p&gt;</summary>
@@ -343,10 +355,10 @@
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/"/>
+    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Model-Optimization/"/>
     
-    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Supervised-Learning/Model-Optimization/"/>
     
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
   </entry>
   
@@ -355,7 +367,7 @@
     <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/"/>
     <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/</id>
     <published>2025-01-17T02:18:33.000Z</published>
-    <updated>2025-02-19T04:17:21.127Z</updated>
+    <updated>2025-04-14T03:20:07.169Z</updated>
     
     
     <summary type="html">&lt;p&gt;Notions about gradient descent.&lt;/p&gt;</summary>
@@ -367,6 +379,8 @@
     <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Model-Optimization/"/>
     
     
+    <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
+    
   </entry>
   
   <entry>
@@ -374,20 +388,16 @@
     <link href="https://justinqy.github.io/2025/01/13/AI/CV/neural_style_transfer/"/>
     <id>https://justinqy.github.io/2025/01/13/AI/CV/neural_style_transfer/</id>
     <published>2025-01-13T20:13:01.000Z</published>
-    <updated>2025-01-31T06:30:49.585Z</updated>
+    <updated>2025-04-14T03:24:03.173Z</updated>
     
     
     <summary type="html">&lt;p&gt;Neural Style Transfer in deep learning&lt;/p&gt;</summary>
     
     
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    <category term="CV" scheme="https://justinqy.github.io/categories/CV/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="CV" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/"/>
-    
-    <category term="Neural Style Transfer" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Neural-Style-Transfer/"/>
+    <category term="Neural Style Transfer" scheme="https://justinqy.github.io/categories/CV/Neural-Style-Transfer/"/>
     
     
     <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
@@ -399,7 +409,7 @@
     <link href="https://justinqy.github.io/2025/01/11/AI/CV/face_recognition/"/>
     <id>https://justinqy.github.io/2025/01/11/AI/CV/face_recognition/</id>
     <published>2025-01-12T01:49:50.000Z</published>
-    <updated>2025-02-02T02:00:20.090Z</updated>
+    <updated>2025-04-14T03:24:03.178Z</updated>
     
     
     <summary type="html">&lt;ol&gt;
@@ -408,13 +418,9 @@
     
     
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    <category term="CV" scheme="https://justinqy.github.io/categories/CV/"/>
     
-    <category term="Supervised Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/"/>
-    
-    <category term="CV" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/"/>
-    
-    <category term="Face Recognition" scheme="https://justinqy.github.io/categories/Deep-Learning/Supervised-Learning/CV/Face-Recognition/"/>
+    <category term="Face Recognition" scheme="https://justinqy.github.io/categories/CV/Face-Recognition/"/>
     
     
     <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
