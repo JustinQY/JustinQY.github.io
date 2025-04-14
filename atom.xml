@@ -42,16 +42,19 @@
     <link href="https://justinqy.github.io/2025/03/27/AI/NLP/tvshow_script_generation/"/>
     <id>https://justinqy.github.io/2025/03/27/AI/NLP/tvshow_script_generation/</id>
     <published>2025-03-27T20:23:17.000Z</published>
-    <updated>2025-03-30T15:32:07.468Z</updated>
+    <updated>2025-04-14T04:24:34.353Z</updated>
     
     
-      
-      
-    <summary type="html"></summary>
-      
+    <summary type="html">&lt;p&gt;Notes for NLP project~&lt;/p&gt;</summary>
     
     
     
+    <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
+    
+    <category term="Project" scheme="https://justinqy.github.io/categories/NLP/Project/"/>
+    
+    
+    <category term="NLP" scheme="https://justinqy.github.io/tags/NLP/"/>
     
   </entry>
   
@@ -60,13 +63,19 @@
     <link href="https://justinqy.github.io/2025/03/19/AI/NLP/BERT-reading/"/>
     <id>https://justinqy.github.io/2025/03/19/AI/NLP/BERT-reading/</id>
     <published>2025-03-20T00:40:49.000Z</published>
-    <updated>2025-03-20T01:11:22.767Z</updated>
+    <updated>2025-04-14T04:23:56.940Z</updated>
     
     
     <summary type="html">&lt;p&gt;Record problems in the “BERT” paper.&lt;/p&gt;</summary>
     
     
     
+    <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
+    
+    <category term="Transformers" scheme="https://justinqy.github.io/categories/NLP/Transformers/"/>
+    
+    
+    <category term="NLP" scheme="https://justinqy.github.io/tags/NLP/"/>
     
   </entry>
   
@@ -75,18 +84,16 @@
     <link href="https://justinqy.github.io/2025/03/18/AI/NLP/sentiment_analysis_record/"/>
     <id>https://justinqy.github.io/2025/03/18/AI/NLP/sentiment_analysis_record/</id>
     <published>2025-03-19T02:36:26.000Z</published>
-    <updated>2025-03-27T20:34:06.432Z</updated>
+    <updated>2025-04-14T04:23:56.930Z</updated>
     
     
     <summary type="html">&lt;p&gt;Recording a task to solve a movie comment sentiment analysis task~&lt;/p&gt;</summary>
     
     
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
     
-    <category term="NLP" scheme="https://justinqy.github.io/categories/Deep-Learning/NLP/"/>
-    
-    <category term="Practices" scheme="https://justinqy.github.io/categories/Deep-Learning/NLP/Practices/"/>
+    <category term="Practices" scheme="https://justinqy.github.io/categories/NLP/Practices/"/>
     
     
     <category term="Practices" scheme="https://justinqy.github.io/tags/Practices/"/>
@@ -134,18 +141,16 @@
     <link href="https://justinqy.github.io/2025/02/06/AI/NLP/recurrent_neural_network/"/>
     <id>https://justinqy.github.io/2025/02/06/AI/NLP/recurrent_neural_network/</id>
     <published>2025-02-06T15:05:06.000Z</published>
-    <updated>2025-03-27T20:32:45.951Z</updated>
+    <updated>2025-04-14T04:23:56.937Z</updated>
     
     
     <summary type="html">&lt;p&gt;Sequence Models and RNN&lt;/p&gt;</summary>
     
     
     
-    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
     
-    <category term="NLP" scheme="https://justinqy.github.io/categories/Deep-Learning/NLP/"/>
-    
-    <category term="RNN" scheme="https://justinqy.github.io/categories/Deep-Learning/NLP/RNN/"/>
+    <category term="RNN" scheme="https://justinqy.github.io/categories/NLP/RNN/"/>
     
     
     <category term="RNN" scheme="https://justinqy.github.io/tags/RNN/"/>
