@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-04-14T04:25:46.212Z</updated>
+  <updated>2025-05-01T19:11:31.976Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Word Embeddings</title>
+    <link href="https://justinqy.github.io/2025/04/20/AI/NLP/word_embeddings/"/>
+    <id>https://justinqy.github.io/2025/04/20/AI/NLP/word_embeddings/</id>
+    <published>2025-04-20T21:27:28.000Z</published>
+    <updated>2025-05-01T19:11:31.976Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Words to vector, catch word meanings by word embeddings.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
+    
+    
+    <category term="Embedding" scheme="https://justinqy.github.io/tags/Embedding/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Decision Tree</title>
     <link href="https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/"/>
     <id>https://justinqy.github.io/2025/04/11/AI/machine_learning/decision_tree/</id>
     <published>2025-04-11T04:35:42.000Z</published>
-    <updated>2025-04-14T04:25:46.212Z</updated>
+    <updated>2025-05-01T19:11:31.988Z</updated>
     
     
     <summary type="html">&lt;p&gt;Definition, implementation and pros and cons of decision tree models.&lt;/p&gt;</summary>
@@ -29,8 +48,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Decision Tree" scheme="https://justinqy.github.io/categories/Machine-Learning/Decision-Tree/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -42,7 +59,7 @@
     <link href="https://justinqy.github.io/2025/03/27/AI/NLP/tvshow_script_generation/"/>
     <id>https://justinqy.github.io/2025/03/27/AI/NLP/tvshow_script_generation/</id>
     <published>2025-03-27T20:23:17.000Z</published>
-    <updated>2025-04-14T04:24:34.353Z</updated>
+    <updated>2025-05-01T19:11:31.986Z</updated>
     
     
     <summary type="html">&lt;p&gt;Notes for NLP project~&lt;/p&gt;</summary>
@@ -50,8 +67,6 @@
     
     
     <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
-    
-    <category term="Project" scheme="https://justinqy.github.io/categories/NLP/Project/"/>
     
     
     <category term="NLP" scheme="https://justinqy.github.io/tags/NLP/"/>
@@ -63,7 +78,7 @@
     <link href="https://justinqy.github.io/2025/03/19/AI/NLP/BERT_reading/"/>
     <id>https://justinqy.github.io/2025/03/19/AI/NLP/BERT_reading/</id>
     <published>2025-03-20T00:40:49.000Z</published>
-    <updated>2025-04-14T16:57:18.577Z</updated>
+    <updated>2025-05-01T19:11:31.982Z</updated>
     
     
     <summary type="html">&lt;p&gt;Record problems in the “BERT” paper.&lt;/p&gt;</summary>
@@ -72,10 +87,8 @@
     
     <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
     
-    <category term="Transformers" scheme="https://justinqy.github.io/categories/NLP/Transformers/"/>
     
-    
-    <category term="NLP" scheme="https://justinqy.github.io/tags/NLP/"/>
+    <category term="BERT" scheme="https://justinqy.github.io/tags/BERT/"/>
     
   </entry>
   
@@ -84,7 +97,7 @@
     <link href="https://justinqy.github.io/2025/03/18/AI/NLP/sentiment_analysis_record/"/>
     <id>https://justinqy.github.io/2025/03/18/AI/NLP/sentiment_analysis_record/</id>
     <published>2025-03-19T02:36:26.000Z</published>
-    <updated>2025-04-14T16:57:18.573Z</updated>
+    <updated>2025-05-01T19:11:31.950Z</updated>
     
     
     <summary type="html">&lt;p&gt;Recording a task to solve a movie comment sentiment analysis task~&lt;/p&gt;</summary>
@@ -93,10 +106,8 @@
     
     <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
     
-    <category term="Practices" scheme="https://justinqy.github.io/categories/NLP/Practices/"/>
     
-    
-    <category term="Practices" scheme="https://justinqy.github.io/tags/Practices/"/>
+    <category term="NLP" scheme="https://justinqy.github.io/tags/NLP/"/>
     
   </entry>
   
@@ -105,13 +116,17 @@
     <link href="https://justinqy.github.io/2025/02/20/AI/Models/"/>
     <id>https://justinqy.github.io/2025/02/20/AI/Models/</id>
     <published>2025-02-20T23:04:56.000Z</published>
-    <updated>2025-02-20T23:15:45.468Z</updated>
+    <updated>2025-05-01T19:11:31.990Z</updated>
     
     
     <summary type="html">&lt;p&gt;Steps to learn and master a kind of model~&lt;/p&gt;</summary>
     
     
     
+    <category term="Deep Learning" scheme="https://justinqy.github.io/categories/Deep-Learning/"/>
+    
+    
+    <category term="Deep Learning" scheme="https://justinqy.github.io/tags/Deep-Learning/"/>
     
   </entry>
   
@@ -120,7 +135,7 @@
     <link href="https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/"/>
     <id>https://justinqy.github.io/2025/02/09/AI/machine_learning/plots_in_ML/</id>
     <published>2025-02-09T20:15:55.000Z</published>
-    <updated>2025-04-14T03:20:07.172Z</updated>
+    <updated>2025-05-01T19:11:31.970Z</updated>
     
     
     <summary type="html">&lt;p&gt;Some types of plots and how can they be helpful for machine learning tasks, such as feature selection.&lt;/p&gt;</summary>
@@ -129,8 +144,6 @@
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
     
-    <category term="Plots" scheme="https://justinqy.github.io/categories/Machine-Learning/Plots/"/>
-    
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
     
@@ -138,10 +151,10 @@
   
   <entry>
     <title>Recurrent Neural Network (RNN)</title>
-    <link href="https://justinqy.github.io/2025/02/06/AI/NLP/recurrent_neural_network/"/>
-    <id>https://justinqy.github.io/2025/02/06/AI/NLP/recurrent_neural_network/</id>
+    <link href="https://justinqy.github.io/2025/02/06/AI/NLP/RNN/"/>
+    <id>https://justinqy.github.io/2025/02/06/AI/NLP/RNN/</id>
     <published>2025-02-06T15:05:06.000Z</published>
-    <updated>2025-04-14T04:23:56.937Z</updated>
+    <updated>2025-05-01T19:11:31.961Z</updated>
     
     
     <summary type="html">&lt;p&gt;Sequence Models and RNN&lt;/p&gt;</summary>
@@ -150,19 +163,17 @@
     
     <category term="NLP" scheme="https://justinqy.github.io/categories/NLP/"/>
     
-    <category term="RNN" scheme="https://justinqy.github.io/categories/NLP/RNN/"/>
-    
     
     <category term="RNN" scheme="https://justinqy.github.io/tags/RNN/"/>
     
   </entry>
   
   <entry>
-    <title>Data Preprocessing</title>
-    <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/"/>
-    <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocessing/</id>
+    <title>Data Preprocess</title>
+    <link href="https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocess/"/>
+    <id>https://justinqy.github.io/2025/02/03/AI/machine_learning/data_preprocess/</id>
     <published>2025-02-03T20:48:28.000Z</published>
-    <updated>2025-04-14T02:14:55.030Z</updated>
+    <updated>2025-05-01T19:11:31.959Z</updated>
     
     
     <summary type="html">&lt;p&gt;Including methods implemented during EDA and data lacking. &lt;/p&gt;</summary>
@@ -170,8 +181,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Data Preprocess" scheme="https://justinqy.github.io/categories/Machine-Learning/Data-Preprocess/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -183,7 +192,7 @@
     <link href="https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/"/>
     <id>https://justinqy.github.io/2025/02/02/AI/machine_learning/data_types/</id>
     <published>2025-02-03T01:39:10.000Z</published>
-    <updated>2025-04-14T02:39:38.471Z</updated>
+    <updated>2025-05-01T19:11:31.969Z</updated>
     
     
     <summary type="html">&lt;p&gt;Different data types in ML.&lt;/p&gt;</summary>
@@ -191,8 +200,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Data Types" scheme="https://justinqy.github.io/categories/Machine-Learning/Data-Types/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -204,7 +211,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/math_formula/"/>
     <id>https://justinqy.github.io/2025/01/27/python/math_formula/</id>
     <published>2025-01-27T15:47:41.000Z</published>
-    <updated>2025-02-04T19:59:19.757Z</updated>
+    <updated>2025-05-01T19:11:31.984Z</updated>
     
     
     <summary type="html">&lt;p&gt;How to calculate mathematics in python&lt;/p&gt;</summary>
@@ -212,8 +219,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Math Formula" scheme="https://justinqy.github.io/categories/Python/Math-Formula/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -225,7 +230,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/"/>
     <id>https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/</id>
     <published>2025-01-27T15:41:37.000Z</published>
-    <updated>2025-01-27T15:50:04.438Z</updated>
+    <updated>2025-05-01T19:11:31.942Z</updated>
     
     
     <summary type="html">&lt;p&gt;Applications in tensorflow and pytorch.&lt;/p&gt;</summary>
@@ -233,8 +238,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Model" scheme="https://justinqy.github.io/categories/Python/Model/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -246,7 +249,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/plotting/"/>
     <id>https://justinqy.github.io/2025/01/27/python/plotting/</id>
     <published>2025-01-27T15:41:06.000Z</published>
-    <updated>2025-01-27T15:57:26.162Z</updated>
+    <updated>2025-05-01T19:11:31.964Z</updated>
     
     
     <summary type="html">&lt;p&gt;How to plot charts for dataset&lt;/p&gt;</summary>
@@ -254,8 +257,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Plot" scheme="https://justinqy.github.io/categories/Python/Plot/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -267,7 +268,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/pandas/"/>
     <id>https://justinqy.github.io/2025/01/27/python/pandas/</id>
     <published>2025-01-27T15:40:54.000Z</published>
-    <updated>2025-02-19T02:49:43.521Z</updated>
+    <updated>2025-05-01T19:11:31.948Z</updated>
     
     
     <summary type="html">&lt;p&gt;Applications in pandas&lt;/p&gt;</summary>
@@ -275,8 +276,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Pandas" scheme="https://justinqy.github.io/categories/Python/Pandas/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -288,7 +287,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/numpy/"/>
     <id>https://justinqy.github.io/2025/01/27/python/numpy/</id>
     <published>2025-01-27T15:40:42.000Z</published>
-    <updated>2025-02-16T19:51:22.083Z</updated>
+    <updated>2025-05-01T19:11:31.935Z</updated>
     
     
     <summary type="html">&lt;p&gt;Applications in numpy&lt;/p&gt;</summary>
@@ -296,8 +295,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Numpy" scheme="https://justinqy.github.io/categories/Python/Numpy/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -309,7 +306,7 @@
     <link href="https://justinqy.github.io/2025/01/27/python/virtual_environment/"/>
     <id>https://justinqy.github.io/2025/01/27/python/virtual_environment/</id>
     <published>2025-01-27T15:32:14.000Z</published>
-    <updated>2025-01-27T15:50:04.440Z</updated>
+    <updated>2025-05-01T19:11:31.956Z</updated>
     
     
     <summary type="html">&lt;p&gt;Python Venv&lt;/p&gt;</summary>
@@ -317,8 +314,6 @@
     
     
     <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    <category term="Venv" scheme="https://justinqy.github.io/categories/Python/Venv/"/>
     
     
     <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
@@ -330,7 +325,7 @@
     <link href="https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/"/>
     <id>https://justinqy.github.io/2025/01/25/AI/machine_learning/math_in_ML/</id>
     <published>2025-01-25T22:08:03.000Z</published>
-    <updated>2025-04-14T02:19:58.746Z</updated>
+    <updated>2025-05-01T19:11:31.930Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mathematics in machine learning~&lt;/p&gt;</summary>
@@ -338,8 +333,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Math" scheme="https://justinqy.github.io/categories/Machine-Learning/Math/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -351,7 +344,7 @@
     <link href="https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/"/>
     <id>https://justinqy.github.io/2025/01/17/AI/machine_learning/model_evaluation/</id>
     <published>2025-01-17T23:26:21.000Z</published>
-    <updated>2025-04-14T03:24:03.176Z</updated>
+    <updated>2025-05-01T19:11:31.967Z</updated>
     
     
     <summary type="html">&lt;p&gt;Evaluate a model and decide what to do next.&lt;/p&gt;</summary>
@@ -359,8 +352,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Model-Optimization/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -372,7 +363,7 @@
     <link href="https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/"/>
     <id>https://justinqy.github.io/2025/01/16/AI/machine_learning/optimizing_gradient_descent/</id>
     <published>2025-01-17T02:18:33.000Z</published>
-    <updated>2025-04-14T03:20:07.169Z</updated>
+    <updated>2025-05-01T19:11:31.972Z</updated>
     
     
     <summary type="html">&lt;p&gt;Notions about gradient descent.&lt;/p&gt;</summary>
@@ -380,8 +371,6 @@
     
     
     <category term="Machine Learning" scheme="https://justinqy.github.io/categories/Machine-Learning/"/>
-    
-    <category term="Model Optimization" scheme="https://justinqy.github.io/categories/Machine-Learning/Model-Optimization/"/>
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
@@ -393,7 +382,7 @@
     <link href="https://justinqy.github.io/2025/01/13/AI/CV/neural_style_transfer/"/>
     <id>https://justinqy.github.io/2025/01/13/AI/CV/neural_style_transfer/</id>
     <published>2025-01-13T20:13:01.000Z</published>
-    <updated>2025-04-14T03:24:03.173Z</updated>
+    <updated>2025-05-01T19:11:31.963Z</updated>
     
     
     <summary type="html">&lt;p&gt;Neural Style Transfer in deep learning&lt;/p&gt;</summary>
@@ -401,31 +390,6 @@
     
     
     <category term="CV" scheme="https://justinqy.github.io/categories/CV/"/>
-    
-    <category term="Neural Style Transfer" scheme="https://justinqy.github.io/categories/CV/Neural-Style-Transfer/"/>
-    
-    
-    <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Face Recognition</title>
-    <link href="https://justinqy.github.io/2025/01/11/AI/CV/face_recognition/"/>
-    <id>https://justinqy.github.io/2025/01/11/AI/CV/face_recognition/</id>
-    <published>2025-01-12T01:49:50.000Z</published>
-    <updated>2025-04-14T03:24:03.178Z</updated>
-    
-    
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;How to solve face recognition problem with one-shot learning, which uses Siamese Network and Triplet loss function. &lt;/li&gt;
-&lt;li&gt;Face verification problem with binary classification, introduce logistic unit and chi-square norm.</summary>
-    
-    
-    
-    <category term="CV" scheme="https://justinqy.github.io/categories/CV/"/>
-    
-    <category term="Face Recognition" scheme="https://justinqy.github.io/categories/CV/Face-Recognition/"/>
     
     
     <category term="Computer Vision" scheme="https://justinqy.github.io/tags/Computer-Vision/"/>
