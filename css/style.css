@@ -412,13 +412,13 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei';
+  font-family: 'Open Sans', 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei';
 }
 body {
   color: #4a4a4a;
@@ -1064,19 +1064,19 @@ a.has-text-grey-lightest:focus {
   font-weight: 700 !important;
 }
 .is-family-primary {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif !important;
 }
 .is-family-secondary {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif !important;
 }
 .is-family-sans-serif {
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif !important;
 }
 .is-family-monospace {
   font-family: monospace !important;
 }
 .is-family-code {
-  font-family: 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei' !important;
+  font-family: 'Open Sans', 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei' !important;
 }
 .is-block {
   display: block !important;
@@ -5214,33 +5214,33 @@ fieldset[disabled] .button {
 }
 .container.is-fluid {
   max-width: none;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 100%;
 }
 @media screen and (min-width: 1088px) {
   .container {
-    max-width: 960px;
+    max-width: 1056px;
   }
 }
 @media screen and (max-width: 1279px) {
   .container.is-widescreen {
-    max-width: 1152px;
+    max-width: 1248px;
   }
 }
 @media screen and (max-width: 1471px) {
   .container.is-fullhd {
-    max-width: 1344px;
+    max-width: 1440px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1152px;
+    max-width: 1248px;
   }
 }
 @media screen and (min-width: 1472px) {
   .container {
-    max-width: 1344px;
+    max-width: 1440px;
   }
 }
 .content li + li {
@@ -11299,7 +11299,7 @@ figure.highlight figcaption * {
 }
 figure.highlight figcaption span {
   font-weight: 500;
-  font-family: 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei';
+  font-family: 'Open Sans', 'Fira Code', 'Source Code Pro', monospace, 'Microsoft YaHei';
 }
 figure.highlight figcaption .level-left *:not(:last-child) {
   margin-right: 0.5em;
@@ -11600,7 +11600,7 @@ figure.highlight.foldable div.level-left {
 .cc-window,
 .cc-revoke {
   font-size: 1.1rem !important;
-  font-family: 'Noto Serif SC', 'Microsoft YaHei', Ubuntu, Roboto, 'Open Sans', sans-serif !important;
+  font-family: sans-serif !important;
 }
 .cc-window {
   color: #4a4a4a !important;
@@ -11643,18 +11643,18 @@ figure.highlight.foldable div.level-left {
 @media screen and (min-width: 1280px) {
   .is-1-column .container,
   .is-2-column .container {
-    max-width: 960px;
-    width: 960px;
+    max-width: 1248px;
+    width: 1248px;
   }
 }
 @media screen and (min-width: 1472px) {
   .is-2-column .container {
-    max-width: 1152px;
-    width: 1152px;
+    max-width: 1440px;
+    width: 1440px;
   }
   .is-1-column .container {
-    max-width: 960px;
-    width: 960px;
+    max-width: 1056px;
+    width: 1056px;
   }
 }
 @media screen and (min-width: 769px), print {

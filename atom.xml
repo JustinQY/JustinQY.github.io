@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-06-03T19:36:09.904Z</updated>
+  <updated>2025-10-09T04:03:17.135Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,93 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RAG_from_scratch</title>
+    <link href="https://justinqy.github.io/2025/09/24/AI/RAG/RAG_from_scratch/"/>
+    <id>https://justinqy.github.io/2025/09/24/AI/RAG/RAG_from_scratch/</id>
+    <published>2025-09-24T19:15:01.000Z</published>
+    <updated>2025-10-09T04:03:17.135Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;LangChain~ Retrieval Augmentation Generation~~&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>IBMinterviewrecords</title>
+    <link href="https://justinqy.github.io/2025/08/28/AI/Interview/IBMinterviewrecords/"/>
+    <id>https://justinqy.github.io/2025/08/28/AI/Interview/IBMinterviewrecords/</id>
+    <published>2025-08-28T20:05:39.000Z</published>
+    <updated>2025-08-28T20:37:32.038Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Interview Questions by IBM Data Scientist Intern&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/categories/Interview/"/>
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/tags/Interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Co-op Interview Prepare</title>
+    <link href="https://justinqy.github.io/2025/07/01/AI/Interview/coop_interview_prepare/"/>
+    <id>https://justinqy.github.io/2025/07/01/AI/Interview/coop_interview_prepare/</id>
+    <published>2025-07-01T20:30:16.000Z</published>
+    <updated>2025-07-04T18:15:08.450Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Interview preparation for 2025 September co-op positions.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/categories/Interview/"/>
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/tags/Interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>langChain</title>
+    <link href="https://justinqy.github.io/2025/06/16/AI/Projects/LangChain/"/>
+    <id>https://justinqy.github.io/2025/06/16/AI/Projects/LangChain/</id>
+    <published>2025-06-16T14:36:00.000Z</published>
+    <updated>2025-07-04T19:12:28.040Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;LangChain产品线以及文档拆分, 向量化技术栈总结~~&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RAG_QAbot</title>
+    <link href="https://justinqy.github.io/2025/06/11/AI/Projects/RAG_QAbot/"/>
+    <id>https://justinqy.github.io/2025/06/11/AI/Projects/RAG_QAbot/</id>
+    <published>2025-06-11T16:22:16.000Z</published>
+    <updated>2025-06-16T14:35:52.276Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;RAG based Question-Answering System~~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="RAG" scheme="https://justinqy.github.io/categories/RAG/"/>
+    
+    
+    <category term="RAG" scheme="https://justinqy.github.io/tags/RAG/"/>
+    
+  </entry>
   
   <entry>
     <title>AWS Basic Services</title>
@@ -40,7 +127,7 @@
     <link href="https://justinqy.github.io/2025/05/28/AI/machine_learning/recommender_system/"/>
     <id>https://justinqy.github.io/2025/05/28/AI/machine_learning/recommender_system/</id>
     <published>2025-05-28T20:28:48.000Z</published>
-    <updated>2025-06-04T19:49:59.373Z</updated>
+    <updated>2025-06-06T17:26:28.491Z</updated>
     
     
     <summary type="html">&lt;p&gt;Algorithms for Recommender Systems~&lt;/p&gt;</summary>
@@ -283,101 +370,6 @@
     
     
     <summary type="html">&lt;p&gt;How to calculate mathematics in python&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tensorflow And Pytorch</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/tensorflow_pytorch/</id>
-    <published>2025-01-27T15:41:37.000Z</published>
-    <updated>2025-05-01T19:11:31.942Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Applications in tensorflow and pytorch.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Plotting Data</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/plotting/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/plotting/</id>
-    <published>2025-01-27T15:41:06.000Z</published>
-    <updated>2025-05-01T19:11:31.964Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;How to plot charts for dataset&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pandas</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/pandas/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/pandas/</id>
-    <published>2025-01-27T15:40:54.000Z</published>
-    <updated>2025-05-01T19:11:31.948Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Applications in pandas&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Numpy</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/numpy/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/numpy/</id>
-    <published>2025-01-27T15:40:42.000Z</published>
-    <updated>2025-05-01T19:11:31.935Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Applications in numpy&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python Virtual Environment</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/virtual_environment/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/virtual_environment/</id>
-    <published>2025-01-27T15:32:14.000Z</published>
-    <updated>2025-05-01T19:11:31.956Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Python Venv&lt;/p&gt;</summary>
     
     
     
