@@ -6,7 +6,7 @@
   <link href="https://justinqy.github.io/atom.xml" rel="self"/>
   
   <link href="https://justinqy.github.io/"/>
-  <updated>2025-10-09T04:03:17.135Z</updated>
+  <updated>2026-01-20T02:30:19.082Z</updated>
   <id>https://justinqy.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Self Introduction &amp; BQ Questions</title>
+    <link href="https://justinqy.github.io/2025/10/29/Interview/self_introduction_bq/"/>
+    <id>https://justinqy.github.io/2025/10/29/Interview/self_introduction_bq/</id>
+    <published>2025-10-29T20:29:04.000Z</published>
+    <updated>2026-01-20T02:30:19.082Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Interview preparation~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/categories/Interview/"/>
+    
+    
+    <category term="Interview" scheme="https://justinqy.github.io/tags/Interview/"/>
+    
+  </entry>
   
   <entry>
     <title>RAG_from_scratch</title>
@@ -358,25 +377,6 @@
     
     
     <category term="ML" scheme="https://justinqy.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Math Formulas</title>
-    <link href="https://justinqy.github.io/2025/01/27/python/math_formula/"/>
-    <id>https://justinqy.github.io/2025/01/27/python/math_formula/</id>
-    <published>2025-01-27T15:47:41.000Z</published>
-    <updated>2025-05-01T19:11:31.984Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;How to calculate mathematics in python&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://justinqy.github.io/tags/Python/"/>
     
   </entry>
   
