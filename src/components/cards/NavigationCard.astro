@@ -6,6 +6,7 @@ interface NavItem {
   title: string;
   subtitle: string;
   href: string;
+  newTab?: boolean;
 }
 
 const { items } = Astro.props as { items: NavItem[] };
@@ -28,7 +29,12 @@ function withBase(href: string) {
   <nav aria-label="identity websites">
     {
       items.map((item) => (
-        <a class="nav-item" href={withBase(item.href)}>
+        <a
+          class="nav-item"
+          href={withBase(item.href)}
+          target={item.newTab ? '_blank' : undefined}
+          rel={item.newTab ? 'noopener noreferrer' : undefined}
+        >
           <span class="nav-icon">
             <Icon name={item.icon} />
           </span>

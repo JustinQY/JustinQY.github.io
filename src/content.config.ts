@@ -129,6 +129,7 @@ const navigationItemSchema = z.object({
   title: z.string(),
   subtitle: z.string(),
   href: z.string(),
+  newTab: z.boolean().optional().default(false),
 });
 
 const siteConfig = defineCollection({

@@ -146,10 +146,11 @@ subtitle = "Code, notes, and experiments"
 href = "https://github.com/JustinQY"
 
 [[config.home.navigation]]
-icon = "compass"
-title = "About"
-subtitle = "Background and current focus"
-href = "/about"
+icon = "file-text"
+title = "Resume"
+subtitle = "View my professional resume"
+href = "/resume/Gary_McMaster.pdf"
+newTab = true
 
 [[config.home.connect]]
 label = "GitHub"
