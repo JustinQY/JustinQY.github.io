@@ -1,0 +1,197 @@
+[config.site]
+title = "Homelander"
+description = "Personal developer portfolio and technical blog by Gary."
+pageTitle = "Gary | iOS Developer & ML Enthusiast"
+pageDescription = "A clean developer portfolio and blog for software quality, test automation, backend systems, data, and machine learning notes."
+repository = "https://github.com/JustinQY/JustinQY.github.io"
+footerNote = "Built with Astro Navfolio."
+
+[config.vibe]
+showTrail = true
+
+[config.theme]
+palette = "green-soft"
+
+[config.code]
+lightTheme = "catppuccin-latte"
+darkTheme = "catppuccin-macchiato"
+lineNumbers = true
+wrap = true
+preserveIndent = true
+collapseStyle = "collapsible-auto"
+
+[config.comments]
+enabled = false
+provider = "none"
+show_on_posts = false
+
+[config.search]
+enabled = true
+shortcut = "mod+k"
+placeholder = "Search articles..."
+maxResults = 8
+
+[config.blog]
+postsPerPage = 6
+
+[config.comments.giscus]
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict = "0"
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "top"
+light_theme = "light"
+dark_theme = "dark"
+lang = "en"
+loading = "lazy"
+
+[config.comments.utterances]
+repo = ""
+issue_term = "pathname"
+label = "comment"
+theme = "github-light"
+
+[config.comments.waline]
+server_url = ""
+lang = "en"
+dark = "html.dark"
+pageview = false
+comment = false
+
+[config.profile]
+name = "Gary Qiao"
+handle = "@ApolloPro"
+role = "Data Scientist Intern · iOS Software Developer · ML Enthusiast"
+company = "McMaster University"
+location = "Toronto, ON, Canada"
+email = "qiaoy33@mcmaster.ca"
+website = "https://justinqy.github.io/"
+github = "https://github.com/JustinQY"
+meta = ""
+avatar = "/images/logo-cat.png"
+
+[[config.topNav.links]]
+label = "Home"
+href = "/"
+
+[[config.topNav.links]]
+label = "Blog"
+href = "/blog"
+
+[[config.topNav.links]]
+label = "Projects"
+href = "/projects"
+
+[[config.topNav.links]]
+label = "Vibe"
+href = "/vibe"
+
+[[config.topNav.links]]
+label = "About"
+href = "/about"
+
+[config.home]
+layout = "grid"
+
+[config.home.quote]
+text = [
+  "",
+  "",
+  ""
+]
+image = "/images/logo-with-name.png"
+
+[config.home.intro]
+title = "There~"
+name = ""
+body = [
+  "This is Gary Qiao",
+  "",
+  "Previously iOS Software Developer at top tech companies Kuaishou Technology and Baidu,inc.",
+  "",
+  "Currently Master of Engineering at McMaster University, learning and building around data, machine learning, NLP, RAG, and practical developer tools.",
+  "",
+  "This site collects my technical notes, project showcases, and life vibes."
+]
+image = "/images/logo-cat.png"
+
+[config.home.latest]
+count = 3
+heatmapWeeks = 24
+showHeatmapLatest = true
+excludeDraft = true
+startDate = ""
+dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "pen"
+title = "Blog"
+subtitle = "Technical notes and learning records"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "Projects"
+subtitle = "Selected practical builds and experiments"
+href = "/projects"
+
+[[config.home.navigation]]
+icon = "github"
+title = "GitHub"
+subtitle = "Code, notes, and experiments"
+href = "https://github.com/JustinQY"
+
+[[config.home.navigation]]
+icon = "compass"
+title = "About"
+subtitle = "Background and current focus"
+href = "/about"
+
+[[config.home.connect]]
+label = "GitHub"
+href = "https://github.com/JustinQY"
+icon = "github"
+
+[[config.home.connect]]
+label = "LinkedIn"
+href = "https://www.linkedin.com/in/garyqiao"
+icon = "external-link"
+
+[[config.home.connect]]
+label = "Blog"
+href = "/blog"
+icon = "book"
+
+[[config.home.connect]]
+label = "Projects"
+href = "/projects"
+icon = "repo"
+
+[[config.home.connect]]
+label = "Email"
+href = "mailto:TODO@example.com"
+icon = "mail"
+
+[[config.home.doing]]
+text = "Studying M.Eng at McMaster University"
+mark = "01"
+
+[[config.home.doing]]
+text = "Building software quality and automation knowledge"
+mark = "02"
+
+[[config.home.doing]]
+text = "Learning machine learning, NLP, and RAG systems"
+mark = "03"
+
+[[config.home.doing]]
+text = "Writing technical notes for long-term review"
+mark = "04"
+
+[[config.home.doing]]
+text = "TODO: add current professional project highlights"
+mark = "05"
