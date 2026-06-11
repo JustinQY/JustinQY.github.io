@@ -1,7 +1,7 @@
 [config.site]
 title = "Homelander"
 description = "Personal developer portfolio and technical blog by Gary."
-pageTitle = "Gary | iOS Developer & ML Enthusiast"
+pageTitle = "Gary | iOS Developer & AI Enthusiast"
 pageDescription = "A clean developer portfolio and blog for software quality, test automation, backend systems, data, and machine learning notes."
 repository = "https://github.com/JustinQY/JustinQY.github.io"
 footerNote = "Built with Astro Navfolio."
@@ -79,12 +79,12 @@ label = "Home"
 href = "/"
 
 [[config.topNav.links]]
-label = "Blog"
-href = "/blog"
-
-[[config.topNav.links]]
 label = "Projects"
 href = "/projects"
+
+[[config.topNav.links]]
+label = "Blog"
+href = "/blog"
 
 [[config.topNav.links]]
 label = "Vibe"
@@ -111,7 +111,7 @@ name = ""
 body = [
   "This is Gary Qiao",
   "",
-  "Previously iOS Software Developer at top tech companies Kuaishou Technology and Baidu,inc.",
+  "Previously iOS Software Developer at top tech companies Kuaishou Technology and Baidu,inc. in China",
   "",
   "Currently Master of Engineering at McMaster University, learning and building around data, machine learning, NLP, RAG, and practical developer tools.",
   "",
@@ -182,17 +182,9 @@ text = "Studying M.Eng at McMaster University"
 mark = "01"
 
 [[config.home.doing]]
-text = "Building software quality and automation knowledge"
+text = "Working as a Data Scientist Intern in the Government of Ontario"
 mark = "02"
 
 [[config.home.doing]]
-text = "Learning machine learning, NLP, and RAG systems"
+text = "Enhancing ML, NLP, AI Agent knowledge and skills by doing projects"
 mark = "03"
-
-[[config.home.doing]]
-text = "Writing technical notes for long-term review"
-mark = "04"
-
-[[config.home.doing]]
-text = "TODO: add current professional project highlights"
-mark = "05"

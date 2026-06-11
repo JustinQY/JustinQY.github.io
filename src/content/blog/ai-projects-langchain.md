@@ -18,14 +18,17 @@ LangChain产品线以及文档拆分, 向量化技术栈总结~~
 > Use OpenAI's Models for this document.
 
 # LangChain
+
 ![LangChain Products Architecture.png](/images/blog/screencatch/langchain_products_architecture.png)
 
 ## LangChain
+
 ```python
 pip install -qU "langchain[openai]"
 ```
 
 ### Initial a chat model
+
 ```python
 from langchain.chat_models import init_chat_model
 
@@ -34,13 +37,12 @@ model = init_chat_model("gpt-4o-mini", model_provider="openai")
 model.invoke("Hello world")
 ```
 
-
-
 ### Embedding
 
 ### Vector Store
 
 ## LangGraph
+
 Agent ~= control flow defined by an LLM
 
 ```python
@@ -48,9 +50,10 @@ pip install -U langgraph
 ```
 
 ### Node, Edge and State
-* State: State is the input of the Graph. It can be a `TypedDict` datatype.
-* Node: Each node modifies and returns a new state. It may contain some actions.
-* Edge: Edges link the nodes. Each edge defines which node to visit from the current node based on some logics.
+
+- State: State is the input of the Graph. It can be a `TypedDict` datatype.
+- Node: Each node modifies and returns a new state. It may contain some actions.
+- Edge: Edges link the nodes. Each edge defines which node to visit from the current node based on some logics.
 
 ### State Schema
 
@@ -62,10 +65,8 @@ pip install -U langgraph
 
 ### State Reducer
 
-
-
-
 ### Graph Construction
+
 ```python
 # Define State class
 from typing_extensions import TypedDict
@@ -76,7 +77,7 @@ class State(TypedDict):
 # Define a node
 def node_1(state):
     return {"graph_state": state["graph_state"] + "something new"}
-    
+
 # Define an edge (conditional)
 from typing import Literal
 
@@ -105,6 +106,7 @@ graph = builder.compile()
 ```
 
 ### Graph Invocation
+
 ```python
 graph.invoke({"graph_state" : "Hello world!"})
 ```
@@ -112,7 +114,9 @@ graph.invoke({"graph_state" : "Hello world!"})
 The output state of the graph will be the 'answer' of our LangGraph.
 
 ### Messages
+
 Define messages for chat models. It's a list that preserves the conversation between user and llm.
+
 ```python
 # Define messages list including some messages
 
@@ -135,19 +139,21 @@ result = llm.invoke(messages)
 
 ![Message Structure by LangGraph.png](/images/blog/screencatch/message_structure.png)
 
-
 ### Chain
+
 A Chain can consist of several loops of operations and LLM invocation.
 
 ### Tools
+
 We can define a function as a tool and bind it to the chat model. To use this tool, the model will add some payload to it.(e.g. Parse it by JSON, load the method name, params and so on.)
+
 ```python
 llm = ChatOpenAI(model="gpt-4o")
 llm_with_tools = llm.bind_tools([tool_method])
 ```
 
-
 ### Routers
+
 The process of letting chat models to select which branch to visit is like a router. (Simple example of an Agent)
 
 We can use build-in methods to implement tool nodes and conditional tool edges.
@@ -172,7 +178,6 @@ builder.add_edge("tool_node", END)
 graph = builder.compile()
 ```
 
-
 ```python
 START
   |
@@ -186,11 +191,12 @@ Tool_Condition_Node ---
 End <------------------
 ```
 
-
 ### Agent
+
 We can build a generic agent architecture based on **ReAct**, which contains:
+
 1. Act: let the model call tool methods
-2. Observe: pass the tool output back to the model 
+2. Observe: pass the tool output back to the model
 3. Reason: let the model reason about the tool output to decide what to do next (e.g., call another tool or just respond directly)
 
 ```python
@@ -201,9 +207,9 @@ builder.add_edge("tools", "assistant")
 
 ```
 
-
 ### Agent with Memory
-With memory added to our agents, they will be able to handle multi-turn conversations. 
+
+With memory added to our agents, they will be able to handle multi-turn conversations.
 
 LangGraph can use a checkpointer to automatically save the graph state after each step.
 
@@ -212,6 +218,7 @@ One of the easiest checkpointers to use is the MemorySaver, an in-memory key-val
 By adding memory, LangGraph will use `checkpoints` to automatically save graph state after each step. All these checkpoints will be saved in a `thread`.
 
 1. `MemorySaver()` —— One of the easiest checkpointers
+
 ```python
 # 'MemorySaver' is an in-memory key-value store for Graph state
 
@@ -222,6 +229,7 @@ react_graph_memory = builder.compile(checkpointer=memory)
 ```
 
 2. `thread`
+
 ```python
 # Use 'thread' to store our collection of states
 
@@ -231,25 +239,25 @@ messages = react_graph_memory.invoke({"messages": messages}, config)
 ```
 
 ### LangGraph Studio
+
 ```python
 langgraph dev
 
 ```
 
-
-
-
 ## LangSmith
+
 LangSmith is like a monitor platform that could trace the pipeline of your LangChain and LangGraph process.
 
 We can visualize each step of the progress, including the time cost, content and step name.
 ![LangSmith.png](/images/blog/screencatch/langsmith.png)
 
-
 ## FAISS
 
 ## Web Search
+
 ### Tavily
 
 #### References
+
 1. https://academy.langchain.com/courses/take/intro-to-langgraph

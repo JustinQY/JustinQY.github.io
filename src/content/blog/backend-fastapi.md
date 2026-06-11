@@ -17,18 +17,20 @@ sidebar:
 
 Recording the progress of deploying the NLP project by fastAPI, docker and streamlit.
 
-
 ## FastAPI
+
 Create an api for others to use to generate scripts by sending a prompt.
+
 1. Create a new project of `app`.
 2. Write codes needed to handle the inputs by users.
 3. Start the api by `uvicorn <filename>:app --reload`. (Run this under the dir of `app.py`)
+
 ```python
 from fastapi import FastAPI
 
 app = FastAPI()
 
-# define the input type class 
+# define the input type class
 class InputClass {
     prompt: str
 }
@@ -40,11 +42,14 @@ fun generate_script(input: InputClass):
 ```
 
 ## Docker
+
 Use docker to pack the fastAPI and project.
+
 1. Derive the `requirement.txt` file.
 2. Create the `dockerfile`.
 3. Set up the `docker mirror`.
 4. Run the docker container (local).
+
 ```python
 # 1.derive requirement.txt
 pip freeze > requirements.txt

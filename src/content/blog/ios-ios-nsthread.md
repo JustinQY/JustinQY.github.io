@@ -6,10 +6,10 @@ draft: false
 showHeroImage: false
 tags:
   - iOS
-  - 多线程
+  - Multithreading
 categories:
   - iOS
-  - 多线程
+  - Multithreading
 comments: false
 sidebar:
   enable: true
@@ -18,7 +18,6 @@ sidebar:
 ---
 
 NSthread记录~~~
-
 
 ## 创建子线程
 
@@ -32,20 +31,20 @@ NSthread记录~~~
     第二个参数：方法选择器 -> 调用的方法
     第三个参数：前面调用的方法需要传递的参数 -> nil
     */
-    NSThread *thread = [[NSThread alloc] initWithTarget:self 
-      selector:@selector(run:) 
+    NSThread *thread = [[NSThread alloc] initWithTarget:self
+      selector:@selector(run:)
         object:@"test"];
- 
+
     //启动线程
     [thread start];
-    
+
     //设置线程属性
     thread.name = @"线程A";
     [thread setName:@"线程A"];
-    
+
     //设置线程优先级 -- 优先级大小(0.0 ~ 1.0), 默认为0.5
     thread.threadPriority = 1.0;
-    
+
     //线程生命周期 -- 当任务执行完成之后被释放
 }
 
@@ -75,18 +74,18 @@ NSthread记录~~~
 
     //新建状态
     NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run:) object:@"test"];
- 
+
 	//就绪或运行状态
     [thread start];
 }
 
 - (void)test:(NSString *)para {
     NSLog(@"-----test-----%@", [NSThread currentThread]);
-    
+
     //阻塞状态
     [NSThread sleepFortimeinterval:2.0];
     [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:3.0]];
-    
+
 	//死亡状态
     [NSThread exit];
 }
@@ -119,13 +118,13 @@ NSthread记录~~~
 - (void)download {
     //确定图片URL
     NSURL *url = [NSURL URLWithString:@"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa1.att.hudong.com%2F62%2F02%2F01300542526392139955025309984.jpg&refer=http%3A%2F%2Fa1.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613890070&t=9b041b83f4ddfe8c165547120f5aa589"];
-        
+
     //根据URL下载图片二进制数据到本地
     NSData *imageData = [NSData dataWithContentsOfURL:url];
-        
+
     //图片格式转换
     UIImage *image = [UIImage imageWithData:imageData];
-        
+
     //回到主线程显示UI的三种方法
     //方法1
     /*
@@ -134,13 +133,13 @@ NSthread记录~~~
      参数3：当前方法剩余部分的执行是否等待参数1方法执行完毕
      */
     [self performSelectorOnMainThread:@selector(showImage:) withObject:image waitUntilDone:YES];
-    
+
     //方法2 -- 主动选择执行线程为主线程
     [self performSelector:@selector(showImage:) onThread:[NSThread mainThread] withObject:image waitUntilDone:YES];
-    
+
     //方法3 -- 直接用self.imageView调用主线程方法
     [self.imageView performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:YES];
-    
+
 }
 
 - (void)showImage:(UIImage *)image {

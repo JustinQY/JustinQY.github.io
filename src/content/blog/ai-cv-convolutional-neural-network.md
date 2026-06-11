@@ -18,15 +18,16 @@ sidebar:
 
 Brief Introduction of Convolutional Neural Network, related architectures and computer vision practice
 
-
 ---
 
 ## Computer Vision Problems
 
 ### 1. Image Classification
+
 e.g. given an image of 64x64x3, say if it's an image of cats?
 
 ### 2. Object Detection
+
 e.g. given an image, detect the objects(cars, pedestrains and motors) in this image
 
 ### 3. Neural Style Transfer
@@ -35,10 +36,12 @@ e.g. given an image, detect the objects(cars, pedestrains and motors) in this im
 
 ## Deep Learning on Large Images
 
-### 1. Standard Neural Network 
+### 1. Standard Neural Network
+
 For a standard neural network(with all fully-connected layers), an input image of 1000*1000*3 may need W[1]: (1000, 3 million) = 3 billion parameters
 
 ### 2. Convolutional Neural Network
+
 Only need to train parameters in each filters(kernels), and the number of parameters won't be affected by the size of input images
 
 ---
@@ -48,14 +51,16 @@ Only need to train parameters in each filters(kernels), and the number of parame
 ### 1. Some building blocks
 
 #### Edge Detection
-* Standard NN (given all pixels of the input image): early layers may detect edges, then some later layers may detect part of the object, then even later layers detect complete objects
-* Convolutional NN (given the original input image):
-  * detect **vertical edges**
-  * detect **horizontal edges**
+
+- Standard NN (given all pixels of the input image): early layers may detect edges, then some later layers may detect part of the object, then even later layers detect complete objects
+- Convolutional NN (given the original input image):
+  - detect **vertical edges**
+  - detect **horizontal edges**
 
 ##### Edges Detector
-1. construct **filters** (3*3, 5*5 or 1*1 matrix, the size of filters usually **odd**)
-2. operation: convolution, represented by '*' in deep learning. 
+
+1. construct **filters** (3*3, 5*5 or 1\*1 matrix, the size of filters usually **odd**)
+2. operation: convolution, represented by '\*' in deep learning.
 3. one convolution operation: place the filter to the original input image, take the element-wise product and add all resulting numbers, then you got the first number of output
 
 ```python
@@ -69,6 +74,7 @@ Conv2D
 ```
 
 ##### Vertical Edge Detection
+
 ```python
 # filter
 |1  0  -1|
@@ -77,6 +83,7 @@ Conv2D
 ```
 
 ##### Horizontal Edge Detection
+
 ```python
 # filter
 | 1   1   1|
@@ -85,10 +92,12 @@ Conv2D
 ```
 
 ##### **Why can these filters detect vertical/horizontal edges?**
+
 As for the vertical edge filter, it gets darker vertically from left to right.(In gray images, lager the number is, brighter the pixel is)
-After running a convolution operation, the filter vertically can make the left part brighter, the right part darker. 
+After running a convolution operation, the filter vertically can make the left part brighter, the right part darker.
 
 ##### Some other filters
+
 ```python
 # Sobel filter
 |1  0  -1|
@@ -102,7 +111,9 @@ After running a convolution operation, the filter vertically can make the left p
 ```
 
 #### Padding
+
 Using convolutions has two downsides (Why we need padding):
+
 1. everytime after convolution, the width and height of the image shrinks
 2. pixels on the corners and edges are used much less in the output
 
@@ -110,81 +121,98 @@ What's padding:
 Before using convolutions, pad the image with additional border. (e.g. original input image size: 6*6 -> 8*8)
 
 ##### Valid Padding
+
 means 'no padding'
 
 ##### Same Padding
+
 means 'pad the input image to make the size of the output == size of the original input'
 
 #### Stride
+
 Normal Cases: filter moves 1 step on the input image after every calculation (both vertically and horizontally)
 With Stride: filter moves **s** steps on the input image after every calculation (both vertically and horizontally)
 
 ##### Calculate the size of output
-filter size: f * f
+
+filter size: f _ f
 padding: p
 stride: s
-input image size: n * n
+input image size: n _ n
 **output image size**: floor((n - f + 2p) / s) + 1
 
 ### Convolutions over Volume
+
 #### Single filter
+
 Convolutions on RGB images:
-input image shape: n_h * n_w * 3(number of channels)
-filter shape: f * f * 3(number of channels)
+input image shape: n*h * n*w * 3(number of channels)
+filter shape: f _ f _ 3(number of channels)
 convolution operation: from matrix element-wise to cube element-wise, each channel of input and filter run convolution, each number of output comes from the sum of all channels
-output shape: n_h' * n_w'
+output shape: n_h' \* n_w'
 
 #### Multiple filters
+
 Convolutions on RGB images:
-input image shape: n_h * n_w * 3(number of channels)
-filter shape: f * f * 3(number of channels) with n_c‘ filters
+input image shape: n*h * n*w * 3(number of channels)
+filter shape: f _ f _ 3(number of channels) with n*c‘ filters
 convolution operation: each filter convolves with input image and generate one channel of the output. so if there are c filters, the volume of the output will be c
-output shape: n_h' * n_w' * n_c'
+output shape: n_h' * n*w' * n_c'
 
 ### Convolutional Layers
+
 After convolving the input image with a set of filters, we add a 'bias' to each of the channel(generated by each filter) and apply an activation function(like ReLU) to each of them.
 Then stack them together, wo got the output after a complete convolutional layer.
 
 #### A complete convolutional layer
+
 1. input image(on behalf of 'a[i-1]')
 2. a set of filters, each filter has the same volume with input (on behalf of 'w[i]' )
 3. bias(constant number, on behalf of 'b[i]')
-4. activation function(like ReLU, on behalf of 'g(z[i])', which z[i] = w[i]*a[i-1] + b[i])
+4. activation function(like ReLU, on behalf of 'g(z[i])', which z[i] = w[i]\*a[i-1] + b[i])
 5. output image('a[i]', which is g(z[i]))
 
 #### Number of parameters in a convolution layer
+
 1. params in each filter: _**f * f * channels**_
 2. bias for each filter: **_1_**
-3. for m filters in a layer: **_(f * f * channels + 1) * m_**
-Sum of the parameters in a convolutional layer: **_(f * f * channels + 1) * m_**
+3. for m filters in a layer: **_(f * f * channels + 1) \* m_**
+   Sum of the parameters in a convolutional layer: **_(f * f * channels + 1) \* m_**
 
 ### Feature Maps (特征图)
+
 Feature maps are outputs from each filter. It describes some characteristic (特征) of the input image.
 
 > During each conv layer, convolutional neural network will extract some characteristic and create feature maps.
-> 
-> * Shallow layers' feature maps focus on details (like edges).
-> * Deep layers' feature maps focus on overall structure (like face, objects)
+>
+> - Shallow layers' feature maps focus on details (like edges).
+> - Deep layers' feature maps focus on overall structure (like face, objects)
 
 Feature maps in use:
-* Object Detection (目标检测): YOLO, Fast R-CNN (detect boundary boxes on feature maps)
-* Semantic Segmentation (语义分割): UNet, DeepLab (divide categories at pixel-level through feature maps)
-* Neural Style Transfer (神经风格迁移): calculate 'Gram matrix' through intermediate layer's feature map 
+
+- Object Detection (目标检测): YOLO, Fast R-CNN (detect boundary boxes on feature maps)
+- Semantic Segmentation (语义分割): UNet, DeepLab (divide categories at pixel-level through feature maps)
+- Neural Style Transfer (神经风格迁移): calculate 'Gram matrix' through intermediate layer's feature map
 
 ### Pooling Layers
+
 Pooling layers don't have parameters, instead, pooling layers use 'hyper parameters' such as filter size f and stride s.
 (no params to learn)
 
 #### Max Pooling
+
 choose the biggest value from each filter area on the input image
 
 #### Average Pooling
+
 calculate the average value of numbers from each filter area on the input image
 
 ### Fully-Connected Layers
+
 Like normal layers in standard neural networks, fully-connected layers are usually used after several conv layers in conv networks.
 
 ### Convolutional Neural Network
+
 Here is a normal cnn structure:
 
 ```
@@ -208,8 +236,11 @@ classification result: e.g.say if it's a cat or not
 ```
 
 ### Advantages of Conv Nets
+
 #### Parameter Sharing
+
 A feature detector that is useful in one part of the image is probably useful in another part of the image.
 
 #### Sparsity of Connections
+
 In each layer, each output value only depends on a small number of inputs.

@@ -18,7 +18,6 @@ sidebar:
 
 --
 
-
 1. arguments: 实参, 调用函数时传入的参数
 2. parameters: 形参, 定义函数时包含的参数
 3.

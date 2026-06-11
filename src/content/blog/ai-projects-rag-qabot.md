@@ -17,10 +17,7 @@ sidebar:
 
 RAG based Question-Answering System~~
 
-
-
 ## Loading Documents
-
 
 ### DocumentLoaders
 

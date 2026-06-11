@@ -18,13 +18,12 @@ sidebar:
 
 Todo List~~~
 
-
 1. Neural Network Notes
 2. K-neighbors and SVM method
 3. Relu function
-3. multiclass classification (softmax) and numerical round-off error (using linear output and 'from_logits=True')
-4. Adam algorithm(Adaptive Moment Estimation)
-5. CNN (Convolutional Neural Network)
-6. forward prop and backward prop
-7. vectorization in gradient descent (coding: np.dot(w, x))
-8. python broadcasting: one dimension should equal and the other must be 1
+4. multiclass classification (softmax) and numerical round-off error (using linear output and 'from_logits=True')
+5. Adam algorithm(Adaptive Moment Estimation)
+6. CNN (Convolutional Neural Network)
+7. forward prop and backward prop
+8. vectorization in gradient descent (coding: np.dot(w, x))
+9. python broadcasting: one dimension should equal and the other must be 1

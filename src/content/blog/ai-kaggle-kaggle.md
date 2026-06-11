@@ -18,14 +18,12 @@ sidebar:
 
 ~
 
-
 ## Titanic - Machine Learning from Disaster
 
 ---
 
 预测泰坦尼克游客是否能够幸存
 [题目地址](https://www.kaggle.com/competitions/titanic)
-
 
 ## House Prices - Advanced Regression Techniques
 

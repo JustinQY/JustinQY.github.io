@@ -1,10 +1,10 @@
 ---
-title: "Migration Note"
-date: "2026-06-03T00:00:00-04:00"
+title: 'Migration Note'
+date: '2026-06-03T00:00:00-04:00'
 draft: false
-type: "text"
-mood: "focused"
-location: "Hamilton, ON, Canada"
+type: 'text'
+mood: 'focused'
+location: 'Hamilton, ON, Canada'
 tags:
   - Migration
   - TODO

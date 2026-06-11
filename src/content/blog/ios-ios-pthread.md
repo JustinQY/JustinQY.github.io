@@ -6,10 +6,10 @@ draft: false
 showHeroImage: false
 tags:
   - iOS
-  - 多线程
+  - Multithreading
 categories:
   - iOS
-  - 多线程
+  - Multithreading
 comments: false
 sidebar:
   enable: true
@@ -19,7 +19,6 @@ sidebar:
 
 多线程pthread记录~~~
 
-
 ```objective-c
 // ViewController.m
 
@@ -27,23 +26,23 @@ sidebar:
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     //1.创建线程对象
     pthread_t thread;
-    
+
     //2.线程创建函数
     //1).线程对象 -- 地址传递
     //2).线程的属性
     //3).指向函数的指针
     //4).前面函数要接收的参数 -- NULL
     pthread_create(&thread, NULL, func, NULL);
-    
+
     //3.判断两条线程是否相等
     pthread_equal();
 }
 
 void *func(*void) {
-    
+
     NSLog(@"%@-----", [NSThread currentThread]);
     return NULL;
 }

@@ -6,10 +6,10 @@ draft: false
 showHeroImage: false
 tags:
   - iOS
-  - 内存管理
+  - Memory Management
 categories:
   - iOS
-  - 内存管理
+  - Memory Management
 comments: false
 sidebar:
   enable: true
@@ -19,15 +19,12 @@ sidebar:
 
 MRC & ARC
 
-
 ### 内存管理模型
 
 #### 一. 需要进行内存管理的对象
 
 1.  任何继承了NSObject的对象需要进行内存管理
 2.  非对象类型(int、char、float、double、struct、enum等) 不需要进行内存管理
-
-
 
 #### 二. 内存结构
 
@@ -43,8 +40,6 @@ MRC & ARC
 
 ##### 4. 代码段（text区）
 
-
-
 #### 三. OC内存管理模型
 
 ##### 1. 自动垃圾收集（iOS运行环境不支持）
@@ -52,8 +47,6 @@ MRC & ARC
 ##### 2. 手动引用计数（MRC）和自动释放池（AutoReleasePool）
 
 ##### 3. 自动引用计数（ARC）
-
-
 
 #### 四. MRC & AutoReleasePool -- 手动引用计数与自动释放池
 
@@ -86,7 +79,7 @@ MRC & ARC
 1.  autorelease是一种支持**引用计数**的内存管理方式，给对象发送一条autorelease信息，会将对象放到一个自动释放池中，**当自动释放池被销毁时，会对池子中的所有对象发送一次release消息**（只是发送release消息，并不是将对象直接释放）。
 
 2.  autorelease方法会返回对象本身，其实质上是延迟了给对象发送release消息的操作。
-3.  NSAutoreleasePool *pool创建等同与@autoreleasepool创建，前者需要调用 [pool drain]来销毁自动释放池。
+3.  NSAutoreleasePool \*pool创建等同与@autoreleasepool创建，前者需要调用 [pool drain]来销毁自动释放池。
 
 4.  自动释放池中不适宜放占用内存较大的对象或大量循环操作。
 
@@ -95,8 +88,6 @@ MRC & ARC
 1.  当A对象要拥有B对象，同时B对象要拥有A对象，此时会形成循环retain，导致A和B对象永远无法释放。
 
 2.  尽量避免双端互相引用，或者一端用retain，一端用assign。
-
-
 
 #### 五. ARC -- 自动引用计数
 
@@ -107,9 +98,9 @@ MRC & ARC
 ##### 2. ARC的判断原则 -- 强指针
 
 1.  ARC通过**强指针**判断一个对象是否需要释放。
-2.  默认所有对象的指针变量都是强指针，或者被**“__strong”**修饰的指针。
+2.  默认所有对象的指针变量都是强指针，或者被**“\_\_strong”**修饰的指针。
 
-3.  被**__weak**修饰的指针是**弱指针**。
+3.  被**\_\_weak**修饰的指针是**弱指针**。
 4.  只要还有一个强指针变量指向对象，对象就会保持在内存中。
 
 ##### 3. ARC的注意事项

@@ -19,7 +19,6 @@ sidebar:
 
 linear regression model~
 
-
 ## 线性回归模型(Linear Regression)
 
 ---
@@ -29,6 +28,7 @@ linear regression model~
 In a word, linear regression predicts **sequential** values.
 
 ### **模型表示**
+
 $$
 f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot \vec{x} + b
 $$
@@ -39,39 +39,47 @@ $$
 
 b表示一个偏差, 它不受特征值集合的维度影响, 因此是一个常数.
 
-
 ### **代价函数(cost function)**
+
 为了使模型的预测结果尽可能准确或者符合预期, 我们需要尽可能找到一组最合适的 $\vec{w}$ 和 b.
 
 对于已有数据集, 假设模型的预测结果为 $\hat{y}^{(i)}$ , 而实际值为 $y^{(i)}$ , 预测结果和实际值的差距为 $y^{(i)}$ - $\hat{y}^{(i)}$ , 即**建模误差**(modeling error)
 
 而代价函数的大致定义就是: 对于整个输入集, 所有建模误差的平方和. 即
+
 $$
 J = \frac{1}{2m} \sum_{i=1}^{m} \left( \hat{y}^{(i)} - y^{(i)} \right)^2
 $$
+
 其中, J是关于 $\vec{w}$ 和 b 的函数, 而 $\hat{y}$ 就是 $f_{\vec{w},b}(\vec{x})$.
 
 ### **梯度下降(gradient descent)**
+
 我们的目标是找到 $\vec{w}$ 和 b 使得**代价函数J**最小. 一种自动化通过程序实现的方式称作“梯度下降”.
 
 课程中举例: 想象一下你正站立在山的这一点上，站立在你想象的公园这座红色山上，在梯度下降算法中，我们要做的就是旋转360度，看看我们的周围，并问自己要在某个方向上，用小碎步尽快下山。这些小碎步需要朝什么方向？如果我们站在山坡上的这一点，你看一下周围，你会发现最佳的下山方向，你再看看周围，然后再一次想想，我应该从什么方向迈着小碎步下山？然后你按照自己的判断又迈出一步，重复上面的步骤，从这个新的点，你环顾四周，并决定从什么方向将会最快下山，然后又迈进了一小步，并依此类推，直到你接近局部最低点的位置。
 
 梯度下降的算法公式:
 repeat **simultaneously** until converge: {
+
 $$
 w = w - \alpha \frac{\partial}{\partial w} J(w, b)
 $$
+
 $$
 b = b - \alpha \frac{\partial}{\partial b} J(w, b)
 $$
+
 }
 
 其中 $\alpha$ 是学习率 (learning rate), 表示每一次梯度下降的“步长”(即w和b在某个下降的方向上减少的程度, 学习率越大则w和b下降越快, 反之则越慢)
 
 上下等式的 $\partial J(w, b)$ 是指代价函数J分别对 w 和 b 求偏导, 其结果应该是:
+
 $$
 \frac{\partial}{\partial w} J(w, b) = \frac{1}{m} \sum_{i=1}^{m} \left( \hat{y}^{(i)} - y^{(i)} \right) x^{(i)}
 $$
+
 $$
 \frac{\partial}{\partial b} J(w, b) = \frac{1}{m} \sum_{i=1}^{m} \left( \hat{y}^{(i)} - y^{(i)} \right)
 $$
@@ -83,9 +91,10 @@ $$
 
 <br/>
 
-
 ### **线性回归模型和梯度下降算法**
+
 经过上面的学习, 我们便掌握了一种机器学习预测模型(线性回归模型)和一种机器学习模型训练算法(梯度下降算法).
 
 ## Reference
+
 1. https://www.coursera.org/learn/machine-learning/lecture

@@ -19,8 +19,8 @@ sidebar:
 
 logistic regression model~
 
-
 ## **Logistic Regression**
+
 ---
 
 Compared with linear regression, logistic regression is used to solve questions which only have limited possible answers.
@@ -36,6 +36,7 @@ For classification problems, we also starts by using the linear regression model
 However, we would like the predictions of our classification model to be between 0 and 1 since our output variable 𝑦 is either 0 or 1.
 
 So here we're introducing "**sigmoid function**" which maps all input values to values between 0 and 1.
+
 $$
 sigmoid: g(z) = \frac{1}{1 + e^{-z}}
 $$
@@ -45,11 +46,13 @@ $$
 ---
 
 A logistic regression model applies the sigmoid to the familiar linear regression model:
+
 $$
 f_{w,b}(\mathbf{x}^{(i)}) = g(\mathbf{w} \cdot \mathbf{x}^{(i)} + b)
 $$
 
 where
+
 $$
 g(z) = \frac{1}{1 + e^{-z}}
 $$
@@ -60,7 +63,7 @@ $$
 
 We now know the answers of classification problems are discrete, and logistic regression models predict values range from 0 to 1 after using sigmoid function.
 
-But how do we get the final predict, like a tumour is malignant or benign? We can't give a predict like, 'this tumor has 75% chance to be benign'. It must be a certain answer. 
+But how do we get the final predict, like a tumour is malignant or benign? We can't give a predict like, 'this tumor has 75% chance to be benign'. It must be a certain answer.
 
 So, we need to make **decision boundary**.
 
@@ -69,7 +72,7 @@ Assume that 'y = 1' represents the positive result, like 'benign', and 'y = 0' r
 if $f_{w,b}(x) >= 0.5$ , y = 1
 if $f_{w,b}(x) < 0.5$ , y = 0
 
-According to the logistic regression description above, 
+According to the logistic regression description above,
 
 $f_{w,b}(x) = 0.5$ means $g(z) = 0.5$, then we can get the value of $z$.
 
@@ -88,6 +91,7 @@ So we are using a new function called 'Logistic Loss Function'.
 <br/>
 
 #### **Loss Function**
+
 ---
 
 **Loss** is a measure of the difference of a single example to its target value.
@@ -100,7 +104,9 @@ For a single data point:
 <br/>
 
 #### **Cost Function**
+
 To form the cost function, we combine the losses.
+
 $$
 J(w, b) = \frac{1}{m} \sum_{i=0}^{m-1} \left[ loss(f_{w,b}(\mathbf{x}^{(i)}), y^{(i)}) \right]
 $$
@@ -108,27 +114,28 @@ $$
 <br/>
 
 ### **Gradient Descent in Logistic Regression**
+
 ---
 
-Logistic regression uses almost the same pattern as linear regression, except the function "f". 
+Logistic regression uses almost the same pattern as linear regression, except the function "f".
+
 $$
 \frac{\partial}{\partial w} J(w, b) = \frac{1}{m} \sum_{i=1}^{m} \left( f^{(i)} - y^{(i)} \right) x^{(i)}
 $$
+
 $$
 \frac{\partial}{\partial b} J(w, b) = \frac{1}{m} \sum_{i=1}^{m} \left( f^{(i)} - y^{(i)} \right)
 $$
 
 where $ f = g(z) = sigmoid(z), z = \vec{w} \cdot \vec{x} + b $
 
-
 ### Summary
+
 ---
 
-From this lesson, we now learn a new regression model called 'Logistic Regression' and how to implement gradient descent on it. It's used to solve classification problems. 
+From this lesson, we now learn a new regression model called 'Logistic Regression' and how to implement gradient descent on it. It's used to solve classification problems.
 
 We also learn a method called 'Regularization' and add the regularization term to cost function for both linear and logistic regression, in order to solve overfitting problem.
-
-
 
 ## Support Vector Machine (SVM)
 

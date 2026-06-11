@@ -19,15 +19,15 @@ sidebar:
 
 Record problems in the "BERT" paper.
 
-
 ## Process Analysis
+
 1. masked language model: randomly mask some of the input tokens, and predict the originally vocab id of the mask ones.
 2. next sentence prediction: pretrains text-pair representations
 3. Unsupervised Feature-based Approaches.
 4. Pre-trained word embeddings.
-5. 
-
+5.
 
 ## Problems
+
 1. what is a masked language model?
 2.

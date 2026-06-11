@@ -17,16 +17,19 @@ sidebar:
 
 Operations in Amazon Web Services~
 
-
 ## Type of Cloud Computing
+
 ![img.png](/images/blog/cloud-aws/img.png)
-* IaaS (Infrastructure as a Service)
-> Amazon EC2, GCP(Google Cloud Platform), Azure...
 
-* PaaS (Platform as a Service)
-> Elastic Beanstalk (on AWS), Google App Engine (on GCP), Windows Azure
+- IaaS (Infrastructure as a Service)
 
-* SaaS (Software as a Service)
-> Many AWS services, Google Apps(Gmail), Zoom, Dropbox 
+  > Amazon EC2, GCP(Google Cloud Platform), Azure...
+
+- PaaS (Platform as a Service)
+
+  > Elastic Beanstalk (on AWS), Google App Engine (on GCP), Windows Azure
+
+- SaaS (Software as a Service)
+  > Many AWS services, Google Apps(Gmail), Zoom, Dropbox
 
 ## VPC (Amazon Virtual Private Cloud)

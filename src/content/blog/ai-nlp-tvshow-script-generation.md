@@ -18,10 +18,11 @@ sidebar:
 
 Notes for NLP project~
 
-
 ## Questions and Solutions
+
 ### 1. Llama2 Model takes more than 40G GPU RAM to train.
-Solution: 
+
+Solution:
 LoRA: Low-Rank Adaptation of Large Language Models
 
 Concepts:
@@ -31,6 +32,7 @@ The original weights matrix will be frozen and the low rank matrix will be train
 
 Method:
 Use `LoraConfig` to add a LoRA adapter to the model. `LoraConfig` is integrated in `peft` by HuggingFace.
+
 ```python
 from peft import get_peft_model, LoraConfig, TaskType
 
@@ -44,15 +46,18 @@ config = LoraConfig(
 )
 ```
 
-### 2. 
-
+### 2.
 
 ## Reference
+
 ### “LoRA: Low-Rank Adaptation of Large Language Models”
+
 #### “In self-attention layers, we only apply LoRA to the query and value projection matrices (i.e., W_q and W_v), since modifying the key matrix W_k is less helpful empirically.”
-` target_modules=["q_proj", "v_proj"] `
+
+`target_modules=["q_proj", "v_proj"]`
 
 #### $\Delta W = BA$
 
 #### “For GPT-2 models, we set rank r=8 and scaling α=32 by default, unless otherwise stated.”
+
 $r = 8, \alpha = 32$

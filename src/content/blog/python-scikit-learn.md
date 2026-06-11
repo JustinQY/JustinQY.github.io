@@ -18,13 +18,12 @@ sidebar:
 
 记录scikit learn库的使用~~~
 
-
-
 ## Logistic Regression
 
 ---
 
 ### Loading Dataset
+
 ```python
 import numpy as np
 
@@ -33,6 +32,7 @@ y = np.array([0, 0, 0, 1, 1, 1])
 ```
 
 ### Split the train/test set
+
 ```python
 from sklearn.model_selection import train_test_split
 
@@ -41,6 +41,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_
 ```
 
 ### Fit the Model
+
 ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -49,6 +50,7 @@ lr_model.fit(X, y)
 ```
 
 ### Make Predictions
+
 ```python
 y_pred = lr_model.predict(X)
 
@@ -56,6 +58,7 @@ print("Prediction on training set:", y_pred)
 ```
 
 ### Evaluate Accuracy
+
 ```python
 print("Accuracy on training set:", lr_model.score(X, y))
 ```

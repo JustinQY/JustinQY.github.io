@@ -18,43 +18,48 @@ sidebar:
 
 Recording a task to solve a movie comment sentiment analysis task~
 
-
-
 # Data Preprocessing
+
 ## Dataset downloading
+
 Download movie comments dataset (IMDb) from Hugging Face
+
 ```python
 dataset = load_dataset("imdb")
 ```
 
 ## Data Cleaning
+
 Part of the data processing. Remove the useless characters.
+
 ```python
 
 ```
 
 ## Tokenize the data
+
 ### Load a tokenizer (pretrained)
 
 ### tokenize and transform the data
 
-
 ## Split the data into training set, validation set and test set
 
+## Transform the dataset to DataLoader
 
-## Transform the dataset to DataLoader 
 ---
+
 ### Create specific dataset class (inherit 'Dataset')
+
 ```python
 class SentimentDataset(Dataset):
     def __init__(self, dataset):
         self.dataset = dataset
-       
-       
+
+
     def __len__(self):
         return len(self.dataset)
-    
-    
+
+
     def __getitem__(self, idx):
         item = self.dataset[idx]
         inputs_ids = torch.tensor(item["input_ids"], dtype=torch.long)
@@ -63,13 +68,12 @@ class SentimentDataset(Dataset):
         return {"input_ids": input_ids, "attention_mask": attention_mask, "label": label}
 ```
 
-
 ### Create DataLoader (convenient for batch training)
-
 
 # Load and Fine-Tune a Pretrained Model
 
 ## Load a pretrained transformer model
+
 ```python
 model = AutoModelForSequenceClassification.from_pretrained(
     "bert-based-uncased",
@@ -82,6 +86,7 @@ model = AutoModelForSequenceClassification.from_pretrained(
 ## Fine tune the model
 
 ### Training Arguments Setting
+
 ```python
 training_args = TrainingArguments(
     output_dir="./results",
@@ -102,6 +107,7 @@ training_args = TrainingArguments(
 ```
 
 ### Trainer Setting
+
 ```python
 trainer = Trainer(
     model=model,
@@ -114,14 +120,19 @@ trainer = Trainer(
 ```
 
 ### Train the model
+
 ```python
 trainer.train()
 ```
 
 # Evaluate the Model
+
 ## Confusion Matrix
+
 ### Compute metrics
+
 Define function to compute: Accuracy, Precision, Recall, F1
+
 ```python
 def compute_metrics(pred):
     labels = pred.label_ids

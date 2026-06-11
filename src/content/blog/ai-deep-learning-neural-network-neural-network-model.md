@@ -19,16 +19,16 @@ sidebar:
 
 <Todo>Neural Network Model~~~
 
-
 ## Why do we need Neural Network?
+
 ---
 
 There is a weakness in both linear regression and logistic regression: the model needs to do a large amount of calculation when there are too many input features.
 
-That's why we need neural network. 
-
+That's why we need neural network.
 
 ## What's Neural Network?
+
 ---
 
 Neural Network is an algorithm to simulate the way human brain learns.

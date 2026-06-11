@@ -6,10 +6,10 @@ draft: false
 showHeroImage: false
 tags:
   - iOS
-  - 多线程
+  - Multithreading
 categories:
   - iOS
-  - 多线程
+  - Multithreading
 comments: false
 sidebar:
   enable: true
@@ -18,7 +18,6 @@ sidebar:
 ---
 
 多线程死锁理解笔记(乱)~~~
-
 
 使用disptach_sync在串行队列(包括主队列)导致的死锁问题原理解释:
 

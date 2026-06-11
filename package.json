@@ -15,7 +15,7 @@
     "vibe:new": "bun scripts/new-content.ts vibe",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "bun run lint && prettier --check .",
+    "format:check": "prettier --check .",
     "prepare": "husky"
   },
   "dependencies": {
@@ -44,6 +44,10 @@
     "typescript": "^6.0.3"
   },
   "lint-staged": {
-    "*": "bun run format:check"
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --check"
+    ],
+    "*.{astro,md,mdx,json,css,scss,yml,yaml}": "prettier --check"
   }
 }

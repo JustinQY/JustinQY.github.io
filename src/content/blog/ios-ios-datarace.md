@@ -6,10 +6,10 @@ draft: false
 showHeroImage: false
 tags:
   - iOS
-  - 多线程
+  - Multithreading
 categories:
   - iOS
-  - 多线程
+  - Multithreading
 comments: false
 sidebar:
   enable: true
@@ -19,40 +19,40 @@ sidebar:
 
 多线程数据竞争demo~~~
 
-
 #### 数据竞争代码举例以及用互斥锁解决
+
 ```objective-c
 // ViewController.m
 //售票员卖票demo
 
-@interface ViewController() 
-   
+@interface ViewController()
+
 @property(nonatomic, strong) NSThread *threadA;
 @property(nonatomic, strong) NSThread *threadB;
 @property(nonatomic, strong) NSThread *threadC;
-    
+
 @end
-    
+
 @implementation ViewController
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+
     self.ticketCount = 100;
     //开启三个售票员线程
     self.threadA = [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
     self.threadB = [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
     self.threadC = [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
-    
+
     //线程属性设置
     self.threadA.name = @"售票员A";
     self.threadB.name = @"售票员B";
     self.threadC.name = @"售票员C";
-    
+
     //启动线程
     [self.threadA start];
     [self.threadB start];
     [self.threadC start];
-    
+
 }
 
 - (void)saleTicket {

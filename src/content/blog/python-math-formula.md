@@ -18,10 +18,10 @@ sidebar:
 
 How to calculate mathematics in python
 
-
 1. covariance
    `np.cov(x1, x2)`
 2. correlation
+
 ```python
 numpy: np.corrcoef(x1, x2)
 pandas: df.corr()

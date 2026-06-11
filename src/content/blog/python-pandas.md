@@ -18,7 +18,6 @@ sidebar:
 
 Applications in pandas
 
-
 "pandas is kind of excel in python"
 
 1. Dataframe
@@ -40,6 +39,7 @@ Applications in pandas
    df = df.drop(column_list, axis=1) # drop some columns
    ```
 5. rename column:
+
    ```python
    # rename by column name:
    df.rename(columns={"A":"a", "B":"b"})
@@ -47,25 +47,31 @@ Applications in pandas
    # rename by index
    df.rename(index={0: "x", 1: "y"})
    ```
+
 6. get column name list:
    ```python
    column_list = df.columns # return "Index['column1', 'column2'...'column10']"
    ```
 7. get continuous part of dataframe
+
    ```python
    df_part1 = df.iloc[:, :6] # first 5 columns of df
-   
+
    df_part2 = df.iloc[:5, :] # first 5 rows of df
-   
+
    df_index = df.iloc[1, 2] # element at index (1, 2)
    ```
+
 8. modify a column
+
    ```python
    df['column_name'] = df['column_name'].map({'ClassA': 1, 'ClassB': 2}) # mapping Label to Number
-   
+
    df['column_name'] = df['column_name'].map(lambda x: x * 2) # mapping element using lambda
    ```
+
 9. form a dataframe by multiple arrays
+
    ```python
    df = pd.DataFrame({
       'Column1': array1,
@@ -74,6 +80,7 @@ Applications in pandas
    ```
 
 10. data frame concat
+
 ```python
 feature_list = df.columns
 new_df = df[feature_list[0:3] + [df.columns[-1]]]

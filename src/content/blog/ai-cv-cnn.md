@@ -18,12 +18,11 @@ sidebar:
 
 Delete after finish YOLO algorithm.
 
-
-1. convolution *(asterisk)
+1. convolution \*(asterisk)
 2. filter(kernel)
-3. image * filter = new image
+3. image \* filter = new image
 4. python: conv_forward, tensorflow: tf.nn.con2d, keras: conv2D
-5. edge detection (vertical && horizontal) 
+5. edge detection (vertical && horizontal)
 6. filter can distinguish whether the input image is 'light to dark' or 'dark to light'
 7. different numbers used in filters (sobel, Scharr)
 8. learn numbers in filter by backprop
@@ -41,11 +40,11 @@ Delete after finish YOLO algorithm.
 20. Residual NN(skip connection/short cut: residual block)
 21. why Residual NN works? identity function is easy for residual block to learn
 22. turn a plain NN to a residual NN: add residual blocks(skip connections)
-23. 1*1 convolution(one-by-one convolution/network in network)
+23. 1\*1 convolution(one-by-one convolution/network in network)
 24. inception network/inception layer: use them all! Question: computation cost (fix: using one-by-one convolution to shrink the channel of the input)
 25. MobileNet v1 (depthwise separable convolution: depthwise + pointwise)
-26. Depthwise Convolution(number of filters = number of channels, filter size: f * f)
-27. Pointwise Convolution / Projection (filter size: f * f * n_channel)
+26. Depthwise Convolution(number of filters = number of channels, filter size: f \* f)
+27. Pointwise Convolution / Projection (filter size: f _ f _ n_channel)
 28. MobileNet v2 (2 main changes: 1.add Residual Connection 2.add expansion layer -> bottleneck block)
 29. EfficientNet (limited computational resource: how to trade-off between resolution of the input image, depth of the network and width of the layers)
 30. Open-Source implementation

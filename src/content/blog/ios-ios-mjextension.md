@@ -19,7 +19,6 @@ sidebar:
 
 MJExtension
 
-
 ### MJExtension -- Json转Model
 
 #### 一. Json数据
@@ -27,8 +26,6 @@ MJExtension
 ##### 定义：
 
 JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。JSON采用完全独立于语言的文本格式，这些特性使JSON成为理想的数据交换语言。易于人阅读和编写，同时也易于机器解析和生成。 ----- Json可以将js对象中表示的一组数据转换为字符串，然后就可以在函数之间传递这个字符串，且js很容易解析它。
-
-
 
 ##### 基础结构：
 
@@ -57,7 +54,5 @@ JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。JSON�
 ##### 特点：
 
 1.  Json是完全动态的，允许在Json结构中改变表示数据的方式
-
-
 
 #### 二. MJExtension的使用
