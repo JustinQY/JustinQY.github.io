@@ -2,7 +2,7 @@
 title: Software Quality & Automation Profile
 description: A placeholder project profile for QA engineering, testing, and automation work extracted from personal positioning.
 date: '2026-06-03T00:00:00-04:00'
-draft: false
+draft: true
 showHeroImage: false
 tags:
   - QA

@@ -136,7 +136,7 @@ href = "/blog"
 [[config.home.navigation]]
 icon = "briefcase"
 title = "Projects"
-subtitle = "Selected practical builds and experiments"
+subtitle = "Data engineering, iOS, and selected explorations"
 href = "/projects"
 
 [[config.home.navigation]]

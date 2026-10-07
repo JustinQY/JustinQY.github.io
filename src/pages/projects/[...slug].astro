@@ -1,9 +1,12 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogArticle from '../../layouts/BlogArticle.astro';
+import ProjectOverview from '../../components/projects/ProjectOverview.astro';
+import { isVisibleProject } from '../../utils/project-visibility';
+import { ArrowLeft } from 'lucide-astro';
 
 export async function getStaticPaths() {
-  const projects = await getCollection('projects', ({ id, data }) => id !== 'index' && !data.draft);
+  const projects = await getCollection('projects', isVisibleProject);
 
   return projects.map((project) => ({
     params: { slug: project.id },
@@ -15,12 +18,45 @@ type Props = CollectionEntry<'projects'>;
 
 const project = Astro.props;
 const { Content, headings } = await render(project);
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BlogArticle
   post={project}
   headings={headings}
   sidebar={{ enable: false, ...project.data.sidebar }}
+  headerVariant="project"
+  headerKicker={project.data.format === 'notes' ? 'Project notes' : 'Case study'}
+  showArticleMeta={false}
+  layoutWidth="wide"
 >
+  <a
+    slot="before-header"
+    class="project-back-link"
+    href={`${basePath}/projects/#${project.data.track}`}
+    data-pagefind-ignore
+  >
+    <ArrowLeft size={16} aria-hidden="true" /> Back to projects
+  </a>
+  <ProjectOverview project={project} showResources={project.id !== 'curam-fhir-ai-mapping'} />
   <Content />
 </BlogArticle>
+
+<style>
+  .project-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: var(--paper-accent);
+    font-family: var(--font-ui-label);
+    font-size: 0.78rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .project-back-link:focus-visible {
+    outline: 2px solid var(--paper-accent);
+    outline-offset: 4px;
+  }
+</style>

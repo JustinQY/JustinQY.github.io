@@ -38,8 +38,10 @@ interface Props {
   };
   headings?: { depth: number; slug: string; text: string }[];
   sidebar?: SidebarConfig;
-  headerVariant?: 'default' | 'archive';
+  headerVariant?: 'default' | 'archive' | 'project';
   headerKicker?: string;
+  showArticleMeta?: boolean;
+  layoutWidth?: 'default' | 'wide';
   title?: string;
   description?: string;
   date?: Date;
@@ -128,6 +130,7 @@ const hasSidebar = shouldRenderSidebar && hasToc;
 <html lang="zh-CN" data-palette={palette}>
   <head>
     <BaseHead title={title} description={description} />
+    {post.data.draft && <meta name="robots" content="noindex, nofollow" />}
     {
       comments.provider === 'waline' && comments.enabled && (
         <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
@@ -138,9 +141,19 @@ const hasSidebar = shouldRenderSidebar && hasToc;
     <BlogTopNav showTocIcon={hasToc} tocItems={tocItems} />
     <div class="blog-background" aria-hidden="true"></div>
 
-    <main class:list={['blog-layout', { 'blog-layout-centered': !hasSidebar }]} data-pagefind-body>
+    <main
+      class:list={[
+        'blog-layout',
+        {
+          'blog-layout-centered': !hasSidebar,
+          'blog-layout-wide': hasSidebar && props.layoutWidth === 'wide',
+        },
+      ]}
+      data-pagefind-body
+    >
       <div class="article-column">
         <article class="article-card">
+          <slot name="before-header" />
           <ArticleHeader
             title={title}
             description={description}
@@ -156,6 +169,7 @@ const hasSidebar = shouldRenderSidebar && hasToc;
             kicker={props.headerKicker}
             pathname={Astro.url.pathname}
             showPageView={isBlogPost}
+            showArticleMeta={props.showArticleMeta}
           />
 
           {
@@ -259,6 +273,12 @@ const hasSidebar = shouldRenderSidebar && hasToc;
     width: min(100%, var(--layout-shell-width));
   }
 
+  .blog-layout-wide {
+    grid-template-columns: minmax(0, 1fr) 252px;
+    gap: 64px;
+    width: min(100%, 1440px);
+  }
+
   .article-column {
     min-width: 0;
   }
@@ -326,6 +346,10 @@ const hasSidebar = shouldRenderSidebar && hasToc;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
+  }
+
+  .blog-layout-wide .article-card {
+    --article-content-max: 100%;
   }
 
   .article-content {
@@ -517,6 +541,12 @@ const hasSidebar = shouldRenderSidebar && hasToc;
 
     .blog-layout-centered {
       display: block;
+      width: min(100%, var(--layout-shell-width));
+    }
+
+    .blog-layout-wide {
+      grid-template-columns: minmax(0, 1fr) 238px;
+      gap: 32px;
       width: min(100%, var(--layout-shell-width));
     }
   }

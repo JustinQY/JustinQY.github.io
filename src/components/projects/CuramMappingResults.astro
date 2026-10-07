@@ -1,0 +1,152 @@
+---
+import ZoomableImage from '../mdx/ZoomableImage.astro';
+import cpinSummary from '../../assets/projects/curam-fhir-ai-mapping/cpin-mapping-summary.png';
+import dwSummary from '../../assets/projects/curam-fhir-ai-mapping/dw-mapping-summary.png';
+
+const results = [
+  { group: 'CPIN', full: '18.8%', partial: '81.2%', none: '0.0%', extensions: '81.2%' },
+  { group: 'DW', full: '12.7%', partial: '86.7%', none: '0.6%', extensions: '87.3%' },
+];
+const screenshots = [
+  {
+    group: 'CPIN',
+    src: cpinSummary,
+    alt: 'Final Excel summary for Curam CPIN tables: 18.8% full match, 81.2% partial match, 0.0% no match, and 81.2% needing extensions.',
+  },
+  {
+    group: 'DW',
+    src: dwSummary,
+    alt: 'Final Excel summary for Curam DW tables: 12.7% full match, 86.7% partial match, 0.6% no match, and 87.3% needing extensions.',
+  },
+];
+---
+
+<div class="mapping-results">
+  <div class="table-scroll" role="region" aria-label="Mapping results by table group" tabindex="0">
+    <table>
+      <caption>Final Excel summary · Two Curam table groups</caption>
+      <thead>
+        <tr>
+          <th scope="col">Table group</th>
+          <th scope="col">Full match</th>
+          <th scope="col">Partial match</th>
+          <th scope="col">No match</th>
+          <th scope="col">Tables need extensions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          results.map((result) => (
+            <tr>
+              <th scope="row">{result.group}</th>
+              <td>{result.full}</td>
+              <td>{result.partial}</td>
+              <td>{result.none}</td>
+              <td>{result.extensions}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="results-note">
+    “Tables need extensions” is a separate indicator, not an additional match category. Percentages
+    are shown as reported in the Excel summaries.
+  </p>
+
+  <div class="summary-screenshots">
+    {
+      screenshots.map((screenshot) => (
+        <figure>
+          <figcaption>
+            <strong>{screenshot.group}</strong> · Final Excel mapping status summary
+          </figcaption>
+          <ZoomableImage
+            src={screenshot.src}
+            alt={screenshot.alt}
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .mapping-results {
+    margin: 26px 0 36px;
+    min-width: 0;
+  }
+  .table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--paper-line);
+    border-radius: 8px;
+    background: var(--paper-surface);
+  }
+  .table-scroll:focus-visible {
+    outline: 2px solid var(--paper-accent);
+    outline-offset: 4px;
+  }
+  table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    font-family: var(--font-ui-label);
+    font-size: 0.85rem;
+  }
+  caption {
+    padding: 16px;
+    color: var(--paper-ink-soft);
+    font-size: 0.78rem;
+    text-align: left;
+  }
+  th,
+  td {
+    padding: 14px 16px;
+    border-top: 1px solid var(--paper-line);
+    text-align: center;
+  }
+  thead th {
+    background: var(--paper-surface-muted);
+    color: var(--paper-ink-soft);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  th:first-child {
+    text-align: left;
+  }
+  .mapping-results .results-note {
+    margin: 12px 0 24px;
+    color: var(--paper-ink-soft);
+    font-family: var(--font-ui-label);
+    font-size: 0.75rem;
+    line-height: 1.7;
+  }
+  .summary-screenshots {
+    display: grid;
+    gap: 26px;
+    margin-top: 28px;
+  }
+  figure {
+    min-width: 0;
+    margin: 0;
+  }
+  figcaption {
+    color: var(--paper-ink-soft);
+    font-family: var(--font-ui-label);
+    font-size: 0.8rem;
+  }
+  figcaption strong {
+    color: var(--paper-accent);
+  }
+  .summary-screenshots :global(.zoomable-image) {
+    width: 100%;
+    margin: 12px 0 0;
+    background: white;
+  }
+  .summary-screenshots :global(img) {
+    width: 100%;
+    height: auto;
+  }
+</style>

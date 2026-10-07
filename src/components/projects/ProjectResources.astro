@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { ArrowUpRight } from 'lucide-astro';
+
+interface Props {
+  links: CollectionEntry<'projects'>['data']['links'];
+}
+
+const { links } = Astro.props;
+---
+
+{
+  links.length > 0 && (
+    <nav class="project-resources" aria-label="Project resources">
+      {links.map((link) => (
+        <a href={link.href} target="_blank" rel="noopener noreferrer">
+          {link.label}
+          <ArrowUpRight size={16} aria-hidden="true" />
+        </a>
+      ))}
+    </nav>
+  )
+}
+
+<style>
+  .project-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 24px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--paper-line);
+    font-family: var(--font-ui-label);
+  }
+  .project-resources a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--paper-accent);
+    font-size: 0.78rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--paper-accent);
+    outline-offset: 4px;
+  }
+</style>

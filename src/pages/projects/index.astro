@@ -1,176 +1,240 @@
 ---
 import { getCollection, render } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
-import BlogArticle from '../../layouts/BlogArticle.astro';
-import { sortByDateDesc } from '../../utils/content-dates';
+import { ArrowUpRight } from 'lucide-astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import Footer from '../../components/Footer.astro';
+import ProjectCard from '../../components/projects/ProjectCard.astro';
+import { portfolioTracks } from '../../data/portfolio';
+import { isVisibleProject } from '../../utils/project-visibility';
 
 const projectEntries = await getCollection('projects');
 const projectIndex = projectEntries.find((entry) => entry.id === 'index');
-const projects = sortByDateDesc(
-  projectEntries.filter((entry) => entry.id !== 'index' && !entry.data.draft),
-);
 
 if (!projectIndex) {
   throw new Error('Missing src/content/projects/index.mdx content entry.');
 }
 
-const { Content, headings } = await render(projectIndex);
-
-const relatedProjects = projects;
-
+const { Content } = await render(projectIndex);
+const projects = projectEntries
+  .filter(isVisibleProject)
+  .sort(
+    (a, b) =>
+      a.data.order - b.data.order ||
+      b.data.date.getTime() - a.data.date.getTime() ||
+      a.id.localeCompare(b.id),
+  );
+const groups = portfolioTracks.map((track) => {
+  const entries = projects.filter((project) => project.data.track === track.id);
+  return { ...track, entries, placeholders: Math.max(0, track.slots - entries.length) };
+});
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
-
-function withBase(href: string) {
-  if (href === '/') {
-    return `${basePath}/` || '/';
-  }
-
-  return `${basePath}${href.startsWith('/') ? href : `/${href}`}`;
-}
 ---
 
-<BlogArticle
-  post={projectIndex}
-  headings={headings}
-  sidebar={{ enable: false, ...projectIndex.data.sidebar }}
-  headerVariant="archive"
-  headerKicker="Project shelf"
-  contentFont="ui"
->
-  <Content />
+<BaseLayout title="Projects | Gary Qiao" description={projectIndex.data.description}>
+  <main class="portfolio" data-pagefind-body>
+    <header class="portfolio-header">
+      <div>
+        <p class="portfolio-kicker">Gary Qiao · Selected work</p>
+        <h1 data-pagefind-meta="title">{projectIndex.data.title}</h1>
+        <div class="portfolio-intro"><Content /></div>
+      </div>
+      <a
+        class="resume-link"
+        href={`${basePath}/resume/Gary_McMaster.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="file-text" size={17} />
+        View resume <ArrowUpRight size={16} aria-hidden="true" />
+      </a>
+    </header>
 
-  {
-    relatedProjects.length > 0 ? (
-      <section class="project-grid" aria-label="Projects">
-        {relatedProjects.map((project) => (
-          <a class="project-card" href={withBase(`/projects/${project.id}/`)}>
-            <span class="project-meta">
-              <FormattedDate date={project.data.date} />
+    <nav class="portfolio-nav" aria-label="Project sections">
+      {groups.map((group) => <a href={`#${group.id}`}>{group.title}</a>)}
+    </nav>
+
+    {
+      groups.map((group, groupIndex) => (
+        <section class="portfolio-section" id={group.id} aria-labelledby={`${group.id}-title`}>
+          <header class="section-header">
+            <div class="section-marker" aria-hidden="true">
+              <Icon name={group.icon} size={22} />
+            </div>
+            <div>
+              <p class="section-context">{group.context}</p>
+              <h2 id={`${group.id}-title`}>{group.title}</h2>
+              <p class="section-description">{group.description}</p>
+            </div>
+            <span class="section-number" aria-hidden="true">
+              {String(groupIndex + 1).padStart(2, '0')}
             </span>
-            <h2>{project.data.title}</h2>
-            <p>{project.data.description}</p>
-            {project.data.tags.length > 0 && (
-              <span class="project-tags" aria-label="Project tags">
-                {project.data.tags.slice(0, 3).map((tag) => (
-                  <small>{tag}</small>
-                ))}
-              </span>
-            )}
-          </a>
-        ))}
-      </section>
-    ) : (
-      <section class="project-empty" aria-label="Projects empty state">
-        <span aria-hidden="true">01</span>
-        <h2>Projects are being collected.</h2>
-        <p>
-          The route is ready; draft entries stay private until they are marked publishable in the
-          content collection.
-        </p>
-      </section>
-    )
-  }
-</BlogArticle>
+          </header>
+          <div class="project-grid">
+            {group.entries.map((project, index) => (
+              <ProjectCard project={project} number={String(index + 1).padStart(2, '0')} />
+            ))}
+            {Array.from({ length: group.placeholders }, (_, index) => (
+              <ProjectCard
+                number={String(group.entries.length + index + 1).padStart(2, '0')}
+                placeholderTitle={group.placeholderTitle}
+                placeholderDescription={group.placeholderDescription}
+              />
+            ))}
+          </div>
+          {group.entries.length === 0 && group.placeholders === 0 && (
+            <p class="section-description">New projects will appear here as they are added.</p>
+          )}
+        </section>
+      ))
+    }
+    <p class="portfolio-note">
+      This portfolio is growing. More project stories will be added over time.
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>
 
 <style>
-  .project-meta,
-  .project-empty span,
-  .project-tags small {
-    font-family: var(--font-ui-label);
+  .portfolio {
+    padding: var(--layout-page-top) var(--layout-page-gutter) var(--layout-page-bottom);
   }
-
-  .project-card p,
-  .project-empty p {
+  .portfolio-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .portfolio-kicker {
+    margin: 0 0 12px;
+    color: var(--paper-accent);
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0 0 22px;
+    color: var(--paper-ink);
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    line-height: 1.1;
+  }
+  .portfolio-intro {
+    max-width: 66ch;
+    color: var(--paper-ink-soft);
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+  .portfolio-intro :global(p) {
+    margin: 0;
+  }
+  .resume-link {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    padding: 11px 14px;
+    border: 1px solid var(--paper-line);
+    border-radius: 7px;
+    background: var(--paper-surface);
+    color: var(--paper-ink);
+    font-size: 0.75rem;
+    text-decoration: none;
+  }
+  .portfolio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 26px;
+    margin-top: 34px;
+    padding: 20px 0;
+    border-top: 1px solid var(--paper-line);
+    border-bottom: 1px solid var(--paper-line);
+  }
+  .portfolio-nav a {
+    color: var(--paper-ink-soft);
+    font-size: 0.78rem;
+    text-decoration: none;
+  }
+  .portfolio-nav a:hover,
+  .resume-link:hover {
+    color: var(--paper-accent);
+  }
+  a:focus-visible {
+    outline: 2px solid var(--paper-accent);
+    outline-offset: 4px;
+  }
+  .portfolio-section {
+    margin-top: 54px;
+    scroll-margin-top: 110px;
+  }
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .section-marker {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--paper-line);
+    border-radius: 9px;
+    background: var(--paper-control);
+    color: var(--paper-accent);
+  }
+  .section-context {
+    margin: 0 0 5px;
+    color: var(--paper-ink-soft);
+    font-size: 0.68rem;
+  }
+  h2 {
+    margin: 0 0 8px;
+    color: var(--paper-ink);
+    font-size: clamp(1.3rem, 3vw, 1.65rem);
+    line-height: 1.4;
+  }
+  .section-description {
     margin: 0;
     color: var(--paper-ink-soft);
-    line-height: 1.78;
+    font-size: 0.83rem;
+    line-height: 1.8;
   }
-
+  .section-number {
+    margin-left: auto;
+    padding-top: 3px;
+    color: var(--paper-ink-faint);
+    font-size: 0.78rem;
+  }
   .project-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    margin-top: 34px;
+    gap: 18px;
   }
-
-  .project-card,
-  .project-empty {
-    border: 1px solid var(--paper-line);
-    border-radius: 8px;
-    background: var(--paper-surface);
-    box-shadow: var(--paper-shadow);
-  }
-
-  .project-card {
-    display: grid;
-    gap: 12px;
-    min-height: 210px;
-    padding: 22px;
-    color: var(--paper-ink);
-    text-decoration: none;
-    transition:
-      transform 180ms ease,
-      border-color 180ms ease,
-      background 180ms ease;
-  }
-
-  .project-card:hover {
-    border-color: var(--paper-line-strong);
-    background: var(--paper-control-hover);
-    transform: translateY(-1px);
-  }
-
-  .project-meta,
-  .project-empty span {
-    color: var(--paper-ink-faint);
-    font-size: 0.76rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-  }
-
-  .project-card h2,
-  .project-empty h2 {
-    margin: 0;
-    color: var(--paper-ink);
-    font-size: 1.32rem;
-    line-height: 1.28;
-  }
-
-  .project-card p {
-    max-width: 58ch;
-  }
-
-  .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-self: end;
-  }
-
-  .project-tags small {
-    padding: 3px 8px;
-    border: 1px solid var(--paper-line);
-    border-radius: 999px;
+  .portfolio-note {
+    margin: 46px 0 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--paper-line);
     color: var(--paper-ink-soft);
-    font-size: 0.74rem;
+    font-size: 0.75rem;
   }
-
-  .project-empty {
-    display: grid;
-    gap: 10px;
-    max-width: 680px;
-    margin-top: 34px;
-    padding: 24px;
-  }
-
   @media (max-width: 720px) {
+    .portfolio {
+      padding: 96px 20px 36px;
+    }
+    .portfolio-header {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .portfolio-section {
+      margin-top: 38px;
+    }
     .project-grid {
       grid-template-columns: 1fr;
     }
-
-    .project-card,
-    .project-empty {
-      padding: 20px;
+    .section-header {
+      gap: 12px;
     }
   }
 </style>

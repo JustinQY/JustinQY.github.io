@@ -306,7 +306,25 @@ const about = defineCollection({
 
 const projects = defineCollection({
   loader: glob({ base: './src/content/projects', pattern: '**/*.{md,mdx}' }),
-  schema: articleSchema,
+  schema: (context) =>
+    articleSchema(context).extend({
+      track: z.enum(['government', 'ios', 'side-project']).default('side-project'),
+      order: z.number().int().nonnegative().default(100),
+      format: z.enum(['case-study', 'notes']).default('case-study'),
+      reviewReady: z.boolean().default(false),
+      organization: z.string().optional(),
+      role: z.string().optional(),
+      period: z.string().optional(),
+      outcome: z.string().optional(),
+      links: z
+        .array(
+          z.object({
+            label: z.string(),
+            href: z.url().refine((href) => /^https?:\/\//i.test(href), 'Use an HTTP or HTTPS URL'),
+          }),
+        )
+        .default([]),
+    }),
 });
 
 const vibe = defineCollection({

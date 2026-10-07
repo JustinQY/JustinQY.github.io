@@ -1,0 +1,85 @@
+---
+title: 'IBM Curam Table → FHIR AI Mapping'
+description: 'A multi-agent framework for assessing IBM Curam tables against HL7 FHIR R4, with specialized agent roles, reusable Skills, and layered evaluation.'
+date: '2026-10-05'
+draft: false
+reviewReady: false
+track: government
+order: 1
+format: case-study
+showHeroImage: false
+tags:
+  - Python
+  - Multi-Agents
+  - GitHub Copilot
+  - Data Mapping
+comments: false
+sidebar:
+  enable: true
+  toc: true
+  relatedPosts: false
+links:
+  - label: Source code
+    href: https://github.com/JustinQY/FHIR_AI_Mapping_Framework
+  - label: FHIR R4 resource index
+    href: https://hl7.org/fhir/R4/resourcelist.html
+---
+
+import CuramMappingOverview from '../../components/projects/CuramMappingOverview.astro';
+import CuramMappingResults from '../../components/projects/CuramMappingResults.astro';
+import CuramMappingWorkflow from '../../components/projects/CuramMappingWorkflow.astro';
+import CuramMappingDesign from '../../components/projects/CuramMappingDesign.astro';
+
+## At a glance
+
+From January to March 2026, I independently designed and built a **multi-agent mapping assessment framework** for IBM Curam → HL7 FHIR R4. Specialized Copilot roles divide planning, mapping, review, and orchestration; reusable Skills guide domain reasoning, while Python checks and BA feedback evaluate the results.
+
+<CuramMappingOverview links={frontmatter.links} />
+
+## The challenge
+
+Curam social-services tables and FHIR resources do not map one-to-one. A broad prompt to “map these tables and summarize the results” combines business interpretation, resource selection, generation, and checking in one response. I decomposed those responsibilities into **bounded tasks, explicit rules, and review gates**, so proposals could be inspected before processing more tables.
+
+## My contribution
+
+I defined four cooperating agent roles and four reusable Skills, implemented the validator and progress tracking, and built the Python preparation and Excel export tools. **Technical design and implementation were entirely my responsibility; BAs assessed business usefulness.**
+
+<CuramMappingDesign kind="agents" />
+
+## How the workflow works
+
+<CuramMappingWorkflow />
+
+The preparation script downloads and normalizes table metadata, checks counts, and generates Word batches—35 tables by default. After planner initialization, **one orchestrator prompt drives all remaining batches**, invoking mapper and reviewer as subagents around the Python validation gate. Progress distinguishes mapped from reviewed batches; failures pause the run for correction. Excel export is started separately.
+
+## Skills that guide the reasoning
+
+Four task-specific `SKILL.md` files turn domain knowledge into reusable guidance. They define permissible choices, evidence to consider, and mistakes to challenge, aiming to reduce unsupported conclusions and irrelevant output.
+
+<CuramMappingDesign kind="skills" />
+
+Within this assessment, FHIR `Task` is reserved for caseworker work items, not workflow-engine runtime records. Each proposal records source context, candidate decisions, precedent use, native mappings, and extension needs. Required extensions force `PARTIAL_MATCH`, making gaps visible to reviewers.
+
+## Evaluation and quality gates
+
+I separated **rule validity, semantic fit, and business usefulness** into three evaluation layers:
+
+<CuramMappingDesign kind="evaluation" />
+
+The orchestrator advances only after validation and reviewer approval. These checks support a reviewable assessment; the Python script does not yet validate every resource name against the full R4 list or verify every target element path.
+
+## Results and business value
+
+Across the project, I processed **2,000+ tables**. BA review of the **full set** found **over 95% of mappings effective**, and the framework **avoided the need to hire two FHIR engineers** for this work. The effectiveness figure measures BA-assessed usefulness, not independently verified FHIR conformance.
+
+The final Excel summaries below cover **CPIN** and **DW**. Their full/partial/no-match distributions describe fit to FHIR; the high share needing extensions shows why explicit gap reporting mattered.
+
+<CuramMappingResults />
+
+## What I learned
+
+The central design choice was making **generation, evidence, and evaluation separate responsibilities**. Next steps are a formal BA acceptance rubric, complete R4 resource/path checks, and a measured single-prompt baseline to quantify error reduction and review effort.
+
+## Source and standard
+
+See the [implementation snapshot](https://github.com/JustinQY/FHIR_AI_Mapping_Framework/tree/fab246e909cad721a822f6cd5f44d68acbbb18f6) and [HL7 FHIR R4 standard](https://hl7.org/fhir/R4/resourcelist.html). Project-wide outcomes reflect my delivery experience and BA feedback beyond the public artifacts.

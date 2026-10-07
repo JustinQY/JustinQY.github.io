@@ -1,0 +1,137 @@
+---
+interface Props {
+  kind: 'agents' | 'skills' | 'evaluation';
+}
+
+const { kind } = Astro.props;
+const sections = {
+  agents: {
+    label: 'Agent responsibilities',
+    headings: ['Agent', 'Responsibility'],
+    rows: [
+      ['Planner', 'Discover and order inputs, check reference availability, initialize progress.'],
+      [
+        'Mapper',
+        'Assess one batch; write structured proposals with rationale and extension needs.',
+      ],
+      ['Reviewer', 'Challenge semantic fit and precedent use; approve or block the batch.'],
+      [
+        'Orchestrator',
+        'Delegate mapping and review, run validation, track progress, and select the next batch.',
+      ],
+    ],
+  },
+  skills: {
+    label: 'Reusable mapping Skills',
+    headings: ['Skill', 'Guidance'],
+    rows: [
+      [
+        'Domain classification',
+        'Choose from ten business domains using descriptions, attributes, and precedents.',
+      ],
+      [
+        'FHIR resource selection',
+        'Select resource-level targets by semantics; justify candidate choices and rejections.',
+      ],
+      [
+        'Reviewed precedents',
+        'Apply reviewed patterns with explicit differences; do not copy historical decisions blindly.',
+      ],
+      [
+        'Mapping QC',
+        'Specify output, extension, semantic-review, and progress-consistency checks.',
+      ],
+    ],
+  },
+  evaluation: {
+    label: 'Three evaluation layers',
+    headings: ['Evaluation layer', 'What it checks'],
+    rows: [
+      [
+        'Python validator',
+        'Required fields, duplicates, allowed domains, forbidden targets, extension consistency; optional expected-count check.',
+      ],
+      [
+        'AI reviewer',
+        'Business semantics, candidate reasoning, resource misuse, precedent suitability, and progress consistency.',
+      ],
+      [
+        'Human BA review',
+        'Business usefulness of the full set of mapping results, after Excel handoff.',
+      ],
+    ],
+  },
+} as const;
+const section = sections[kind];
+---
+
+<div class="design-table">
+  <table aria-label={section.label}>
+    <thead>
+      <tr>{section.headings.map((heading) => <th scope="col">{heading}</th>)}</tr>
+    </thead>
+    <tbody>
+      {
+        section.rows.map(([label, detail]) => (
+          <tr>
+            <>
+              <th scope="row">{label}</th>
+              <td>{detail}</td>
+            </>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .design-table {
+    margin: 24px 0;
+    overflow: hidden;
+    border: 1px solid var(--paper-line);
+    border-radius: 8px;
+    background: var(--paper-surface);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-ui-label);
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+  th,
+  td {
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  th:first-child {
+    width: 26%;
+  }
+  thead {
+    background: var(--paper-surface-muted);
+    color: var(--paper-ink-soft);
+  }
+  tbody tr {
+    border-top: 1px solid var(--paper-line);
+  }
+  td {
+    color: var(--paper-ink-soft);
+  }
+  @media (max-width: 540px) {
+    table {
+      font-size: 0.75rem;
+    }
+    th,
+    td {
+      padding: 10px;
+    }
+    th:first-child {
+      width: 32%;
+    }
+  }
+</style>

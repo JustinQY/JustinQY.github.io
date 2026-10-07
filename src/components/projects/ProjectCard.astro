@@ -1,0 +1,199 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { ArrowUpRight } from 'lucide-astro';
+
+interface Props {
+  project?: CollectionEntry<'projects'>;
+  number: string;
+  placeholderTitle?: string;
+  placeholderDescription?: string;
+}
+
+const { project, number, placeholderTitle, placeholderDescription } = Astro.props;
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const Tag = project ? 'a' : 'article';
+const data = project?.data;
+const showCardTop = !project || data?.draft || data?.format === 'notes';
+---
+
+<Tag
+  class:list={['project-card', { 'project-card-placeholder': !project }]}
+  href={project ? `${basePath}/projects/${project.id}/` : undefined}
+  data-pagefind-ignore={!project || data?.draft || undefined}
+>
+  {
+    showCardTop && (
+      <div class="card-top">
+        <span class="card-number" aria-hidden="true">
+          {number}
+        </span>
+        <span class="card-format">
+          {project ? (data?.draft ? 'Draft · For review' : 'Project notes') : 'Coming soon'}
+        </span>
+      </div>
+    )
+  }
+  <div class="card-body">
+    {data?.organization && <p class="card-organization">{data.organization}</p>}
+    <h3>{data?.title ?? `${placeholderTitle} ${number}`}</h3>
+    <p class="card-description">{data?.description ?? placeholderDescription}</p>
+    {
+      data?.outcome && (
+        <div class="card-outcome">
+          <span>Selected impact</span>
+          <p>{data.outcome}</p>
+        </div>
+      )
+    }
+  </div>
+  {
+    data && (data.role || data.period) && (
+      <p class="card-context">{[data.role, data.period].filter(Boolean).join(' · ')}</p>
+    )
+  }
+  {
+    data && data.tags.length > 0 && (
+      <ul class="card-tags" aria-label="Technologies and topics">
+        {data.tags.map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+    )
+  }
+  <div class="card-footer">
+    <span
+      >{
+        project
+          ? data?.format === 'notes'
+            ? 'Read project notes'
+            : 'View case study'
+          : 'Details to follow'
+      }</span
+    >
+    {project && <ArrowUpRight size={18} aria-hidden="true" />}
+  </div>
+</Tag>
+
+<style>
+  .project-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 26px;
+    border: 1px solid var(--paper-line);
+    border-radius: 10px;
+    background: var(--paper-surface);
+    box-shadow: var(--paper-shadow);
+    color: var(--paper-ink);
+    text-decoration: none;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+  a.project-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--paper-accent);
+    box-shadow: var(--paper-shadow-lift);
+  }
+  a.project-card:focus-visible {
+    outline: 2px solid var(--paper-accent);
+    outline-offset: 4px;
+  }
+  .project-card-placeholder {
+    border-style: dashed;
+    background: var(--paper-surface-muted);
+    box-shadow: none;
+  }
+  .card-top,
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.75rem;
+  }
+  .card-number {
+    color: var(--paper-accent);
+    font-weight: 600;
+  }
+  .card-format {
+    color: var(--paper-ink-soft);
+    font-size: 0.7rem;
+  }
+  h3 {
+    margin: 0 0 12px;
+    color: var(--paper-ink);
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  p {
+    margin: 0;
+  }
+  .card-description {
+    color: var(--paper-ink-soft);
+    font-size: 0.88rem;
+    line-height: 1.8;
+  }
+  .card-organization,
+  .card-context {
+    color: var(--paper-ink-soft);
+    font-size: 0.72rem;
+    line-height: 1.7;
+  }
+  .card-organization {
+    margin-bottom: 8px;
+    color: var(--paper-accent);
+  }
+  .card-outcome {
+    margin-top: 20px;
+    padding-left: 12px;
+    border-left: 2px solid var(--paper-accent);
+    font-size: 0.82rem;
+    line-height: 1.7;
+  }
+  .card-outcome span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--paper-ink-soft);
+    font-size: 0.68rem;
+  }
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .card-tags li {
+    padding: 3px 8px;
+    border: 1px solid var(--paper-line);
+    border-radius: 4px;
+    color: var(--paper-ink-soft);
+    font-size: 0.68rem;
+  }
+  .card-footer {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--paper-line);
+    color: var(--paper-accent);
+  }
+  .project-card-placeholder .card-footer {
+    color: var(--paper-ink-soft);
+  }
+  @media (max-width: 640px) {
+    .project-card {
+      padding: 22px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .project-card {
+      transition: none;
+    }
+    a.project-card:hover {
+      transform: none;
+    }
+  }
+</style>

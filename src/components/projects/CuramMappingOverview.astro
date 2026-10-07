@@ -1,0 +1,79 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ProjectResources from './ProjectResources.astro';
+
+interface Props {
+  links: CollectionEntry<'projects'>['data']['links'];
+}
+
+const { links } = Astro.props;
+
+const facts = [
+  { value: '2,000+', label: 'Tables processed' },
+  { value: '95%+', label: 'Effective mappings · Full-set BA review' },
+];
+---
+
+<div class="mapping-overview">
+  <dl class="scope-facts" aria-label="Project outcomes and ownership">
+    {
+      facts.map((fact) => (
+        <div>
+          <>
+            <dt>{fact.label}</dt>
+            <dd>{fact.value}</dd>
+          </>
+        </div>
+      ))
+    }
+  </dl>
+  <ProjectResources links={links} />
+</div>
+
+<style>
+  .mapping-overview {
+    margin: 30px 0 40px;
+    font-family: var(--font-ui-label);
+  }
+  .scope-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0;
+  }
+  .scope-facts div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 7px;
+    padding: 20px 16px;
+    border: 1px solid var(--paper-line);
+    border-radius: 8px;
+    background: var(--paper-surface);
+  }
+  dt {
+    color: var(--paper-ink-soft);
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+  dd {
+    margin: 0;
+    color: var(--paper-accent);
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+  @media (max-width: 540px) {
+    .scope-facts {
+      gap: 8px;
+    }
+    .scope-facts div {
+      padding: 14px 10px;
+    }
+    dt {
+      font-size: 0.65rem;
+    }
+    dd {
+      font-size: 1.55rem;
+    }
+  }
+</style>

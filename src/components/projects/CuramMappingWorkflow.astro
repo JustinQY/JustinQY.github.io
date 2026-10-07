@@ -1,0 +1,286 @@
+---
+import { ArrowDown, ArrowRight, Repeat2 } from 'lucide-astro';
+
+const preparation = [
+  { title: 'Download HTML', detail: 'Selected tables from CSV' },
+  { title: 'Parse & normalize', detail: 'Table metadata → JSONL' },
+  { title: 'Split by table', detail: 'One JSON file per table' },
+  { title: 'Build batches', detail: 'Word inputs for Copilot' },
+];
+const mapping = [
+  { title: 'Mapper agent', detail: 'Propose mappings + rationale' },
+  { title: 'Python validator', detail: 'Check deterministic rules' },
+  { title: 'Reviewer agent', detail: 'Challenge semantics & fit' },
+];
+const delivery = [
+  { title: 'Mapping JSON', detail: 'Cumulative results' },
+  { title: 'Excel workbook', detail: 'Run export script' },
+  { title: 'Human BA review', detail: 'Assess business usefulness' },
+];
+---
+
+<figure class="workflow-chart" aria-label="Curam to FHIR multi-agent workflow">
+  <div class="flow-phase">
+    <div class="phase-heading">
+      <strong><span>01</span> Python preparation</strong>
+      <small>One script run</small>
+    </div>
+    <ol class="flow-steps preparation">
+      {
+        preparation.map((step, index) => (
+          <li>
+            <div class="flow-node">
+              <>
+                <strong>{step.title}</strong>
+                <span>{step.detail}</span>
+              </>
+            </div>
+            {index < preparation.length - 1 && (
+              <ArrowRight class="step-arrow" size={18} aria-hidden="true" />
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+
+  <div class="phase-connector">
+    <ArrowDown size={20} aria-hidden="true" />
+    <span><strong>Planner agent</strong> · discover inputs & initialize progress</span>
+  </div>
+
+  <div class="flow-phase mapping-phase">
+    <div class="phase-heading">
+      <strong><span>02</span> Orchestrator agent</strong>
+      <small>Delegates & gates each batch</small>
+    </div>
+    <p class="skill-context">
+      Shared Skills · domain classification · resource selection · precedents · QC
+    </p>
+    <ol class="flow-steps">
+      {
+        mapping.map((step, index) => (
+          <li>
+            <div class="flow-node">
+              <>
+                <strong>{step.title}</strong>
+                <span>{step.detail}</span>
+              </>
+            </div>
+            {index < mapping.length - 1 && (
+              <ArrowRight class="step-arrow" size={18} aria-hidden="true" />
+            )}
+          </li>
+        ))
+      }
+    </ol>
+    <div class="batch-loop">
+      <svg class="loop-line" viewBox="0 0 900 32" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          d="M750 0 V22 H150 V0"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          vector-effect="non-scaling-stroke"></path>
+        <path
+          d="M145 6 L150 0 L155 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          vector-effect="non-scaling-stroke"></path>
+      </svg>
+      <span
+        ><Repeat2 size={16} aria-hidden="true" /> Pass → next batch → repeat until all reviewed</span
+      >
+    </div>
+    <p class="stop-note">Validation or review failure → pause for correction</p>
+  </div>
+
+  <div class="phase-connector">
+    <ArrowDown size={20} aria-hidden="true" />
+    <span>All batches reviewed · start Excel export separately</span>
+  </div>
+
+  <div class="flow-phase">
+    <div class="phase-heading">
+      <strong><span>03</span> Export & business review</strong>
+      <small>Separate export step</small>
+    </div>
+    <ol class="flow-steps">
+      {
+        delivery.map((step, index) => (
+          <li>
+            <div class="flow-node">
+              <>
+                <strong>{step.title}</strong>
+                <span>{step.detail}</span>
+              </>
+            </div>
+            {index < delivery.length - 1 && (
+              <ArrowRight class="step-arrow" size={18} aria-hidden="true" />
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+  <figcaption>
+    Specialized agents cooperate through shared Skills and recorded progress. Python preparation and
+    Excel export have separate starting points; human BAs assess the delivered results.
+  </figcaption>
+</figure>
+
+<style>
+  .workflow-chart {
+    margin: 26px 0 32px;
+    font-family: var(--font-ui-label);
+    color: var(--paper-ink);
+  }
+  .flow-phase {
+    padding: 18px;
+    border: 1px solid var(--paper-line);
+    border-radius: 10px;
+    background: var(--paper-surface-muted);
+  }
+  .mapping-phase {
+    border-color: var(--paper-accent);
+  }
+  .phase-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
+  .phase-heading strong span {
+    margin-right: 10px;
+    color: var(--paper-accent);
+  }
+  .phase-heading small {
+    font-size: 0.7rem;
+    color: var(--paper-accent);
+  }
+  .flow-steps {
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .flow-steps li {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .flow-steps li:last-child {
+    flex: 1 1 0;
+  }
+  .flow-node {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-self: stretch;
+    min-width: 0;
+    gap: 6px;
+    padding: 14px 10px;
+    border: 1px solid var(--paper-line);
+    border-radius: 6px;
+    background: var(--paper-surface);
+    text-align: center;
+  }
+  .flow-node strong {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .flow-node span {
+    font-size: 0.68rem;
+    line-height: 1.6;
+    color: var(--paper-ink-soft);
+  }
+  .step-arrow {
+    flex-shrink: 0;
+    margin: 0 7px;
+    color: var(--paper-accent);
+  }
+  .phase-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 12px;
+    color: var(--paper-accent);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .batch-loop {
+    color: var(--paper-accent);
+  }
+  .loop-line {
+    display: block;
+    width: 100%;
+    height: 32px;
+  }
+  .batch-loop span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .batch-loop span svg {
+    flex-shrink: 0;
+  }
+  .workflow-chart .stop-note {
+    margin: 8px 0 0;
+    font-size: 0.68rem;
+    line-height: 1.6;
+    color: var(--paper-ink-soft);
+    text-align: center;
+  }
+  .workflow-chart .skill-context {
+    margin: 0 0 14px;
+    font-size: 0.7rem;
+    line-height: 1.65;
+    color: var(--paper-accent);
+  }
+  figcaption {
+    margin-top: 12px;
+    font-size: 0.72rem;
+    line-height: 1.7;
+    color: var(--paper-ink-soft);
+  }
+  @media (max-width: 700px) {
+    .flow-phase {
+      padding: 14px;
+    }
+    .flow-steps {
+      flex-direction: column;
+    }
+    .flow-steps li {
+      flex-direction: column;
+    }
+    .flow-node {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .step-arrow {
+      margin: 6px 0;
+      transform: rotate(90deg);
+    }
+    .loop-line {
+      display: none;
+    }
+    .batch-loop {
+      margin-top: 14px;
+    }
+  }
+</style>
