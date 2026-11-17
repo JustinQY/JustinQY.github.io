@@ -13,7 +13,7 @@ const { project, number, placeholderTitle, placeholderDescription } = Astro.prop
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 const Tag = project ? 'a' : 'article';
 const data = project?.data;
-const showCardTop = !project || data?.draft || data?.format === 'notes';
+const showCardTop = !project || data?.format === 'notes';
 ---
 
 <Tag

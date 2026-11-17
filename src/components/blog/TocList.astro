@@ -1,0 +1,89 @@
+---
+import type { TocItem } from '../../utils/toc-items';
+
+interface Props {
+  items: TocItem[];
+  id?: string;
+  nested?: boolean;
+  inNav?: boolean;
+}
+
+const { items, id, nested = false, inNav = false } = Astro.props;
+---
+
+<ol id={id} class:list={['toc-list', { 'toc-list-nested': nested }]}>
+  {
+    items.map((item, index) => (
+      <li>
+        <a
+          href={item.href}
+          class="toc-link"
+          data-toc-link
+          data-toc-hash={item.href}
+          data-nav-toc-link={inNav ? '' : undefined}
+        >
+          {!nested && !/^\d+[.)]\s/.test(item.label) && (
+            <span class="toc-number" aria-hidden="true">
+              {index + 1}
+            </span>
+          )}
+          <span class="toc-label">{item.label}</span>
+        </a>
+        {item.children.length > 0 && <Astro.self items={item.children} nested inNav={inNav} />}
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .toc-list {
+    display: grid;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .toc-list-nested {
+    margin: 4px 0 0 10px;
+    padding-left: 7px;
+    border-left: 1px solid var(--paper-line-strong);
+  }
+
+  .toc-link {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    padding: 8px 9px;
+    border-radius: 7px;
+    color: var(--paper-ink-soft);
+    font-size: 0.86rem;
+    line-height: 1.35;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  .toc-list-nested > li > .toc-link {
+    padding-block: 5px;
+    font-size: 0.8rem;
+  }
+
+  .toc-number {
+    flex: 0 0 1.35em;
+    color: var(--paper-ink-faint);
+    font-family: var(--font-ui-label);
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .toc-link:hover,
+  .toc-link[aria-current='true'] {
+    background: var(--paper-control-hover);
+    color: var(--paper-accent);
+  }
+
+  .toc-link[aria-current='true'] {
+    box-shadow: inset 2px 0 0 var(--paper-accent);
+    font-weight: 700;
+  }
+</style>

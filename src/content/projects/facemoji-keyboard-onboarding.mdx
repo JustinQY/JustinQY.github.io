@@ -1,0 +1,203 @@
+---
+title: |-
+  Facemoji iOS
+  Lifecycle-Aware Keyboard Permission Onboarding
+description: 'An app-wide SwiftUI onboarding flow for a UIKit app that guides users through keyboard setup and handles the return from iOS Settings without flicker.'
+date: '2026-11-16'
+draft: false
+track: ios
+order: 1
+format: case-study
+organization: Baidu, Inc.
+showHeroImage: false
+tags:
+  - iOS
+  - SwiftUI
+  - UIKit
+  - App Lifecycle
+  - System Design
+  - AI
+comments: false
+sidebar:
+  enable: true
+  toc: true
+  relatedPosts: false
+---
+
+import CaseStudyTable from '../../components/projects/CaseStudyTable.astro';
+import FacemojiOnboardingScreens from '../../components/projects/FacemojiOnboardingScreens.astro';
+
+# Business Background
+
+Facemoji is a third-party iOS keyboard.
+
+To use all its features, users must first add the keyboard and then enable **Allow Full Access** in iOS Settings.
+
+Both steps take them outside the app, where they may stop before setup is complete.
+
+Facemoji uses their current setup state to guide them to the next step.
+
+---
+
+# Feature at a Glance
+
+I designed and implemented two **SwiftUI onboarding screens** in the existing app. On launch or return from background, the app shows the guide for the step still needed, or resumes normal use if setup is complete.
+
+<FacemojiOnboardingScreens />
+
+---
+
+# The Challenge
+
+### 1. Global Page Display
+
+The guide had to work from anywhere in the app. Wiring it into individual UIKit screens would make its behavior depend on where the user was when they opened Settings.
+
+### 2. Foreground Transition Flickering
+
+If the app presented the guide too late on return, the underlying UIKit screen appeared for one or a few frames before the guide covered it.
+
+```text
+Business screen → brief flash → permission guide
+```
+
+### 3. Unintended Guide Re-presentation
+
+If a guide was already open before the app went into the background, returning without changing permissions could briefly reveal the old guide, then the UIKit screen, then the guide again.
+
+---
+
+# My Contribution
+
+I was primarily responsible for the feature’s architecture and implementation:
+
+- **Architecture and UI:** Designed the app-wide onboarding flow and built the two SwiftUI guides.
+- **Lifecycle integration:** Connected the guides to the UIKit app’s foreground and background transitions using its existing keyboard activation and Full Access checks.
+- **Presentation debugging:** Traced the foreground flash and fixed the unnecessary dismissal and re-presentation during repeated app switching.
+
+---
+
+# Architecture & Navigation Flow
+
+### 1. High-level Architecture
+
+```text
+         Facemoji UIKit app
+                  ↓
+          App lifecycle event
+                  ↓
+      Evaluate existing permissions
+                  │
+         ┌────────┴────────┐
+         ↓                 ↓
+   Keyboard added?    Full Access?
+         └────────┬────────┘
+                  ↓
+     Select a SwiftUI guide if needed
+                  ↓
+         Present at app level
+```
+
+### 2. Permission-based Navigation
+
+<CaseStudyTable
+  label="Keyboard permission states and expected guide"
+  headings={['Keyboard Added', 'Full Access', 'Expected UI']}
+  rows={[
+    ['No', 'No', 'Add Keyboard Guide'],
+    ['Yes', 'No', 'Full Access Guide'],
+    ['Yes', 'Yes', 'Normal App'],
+  ]}
+/>
+
+### 3. UIKit + SwiftUI Integration
+
+The app-level flow reads the permission state, selects the guide, and coordinates its presentation. This lets the SwiftUI screens appear wherever the user is in the UIKit app without adding onboarding logic to individual modules.
+
+The SwiftUI guides also needed to feel visually consistent with the UIKit app. The main integration challenge was coordinating when each guide appeared and disappeared around app transitions.
+
+---
+
+# Application Lifecycle Management & Debugging
+
+## Case 1: Foreground Flickering
+
+### Problem:
+
+The underlying UIKit screen flashed briefly when the app returned from the background.
+
+### Investigation and Root Cause:
+
+I compared when the guide appeared at four lifecycle callbacks:
+
+- `applicationWillEnterForeground`
+- `applicationDidBecomeActive`
+- `sceneWillEnterForeground`
+- `sceneDidBecomeActive`
+
+The observed behavior pointed to a timing mismatch. UIKit could draw the underlying screen before the guide appeared.
+
+### Solution and Result:
+
+I moved guide presentation to the point in the foreground transition that prevented the underlying screen from flashing.
+
+## Case 2: Presentation Lifecycle Coordination
+
+### Problem:
+
+The app evaluated permissions on return without coordinating with the guide it had already presented.
+
+### Observed Behavior:
+
+With permissions unchanged, the guide disappeared and reappeared, briefly exposing the UIKit screen.
+
+### Investigation:
+
+The permission state and guide selection were correct. The visible sequence pointed to a new presentation cycle starting before the app had cleared the old guide.
+
+### Solution:
+
+I moved guide removal into the background transition. On the next foreground transition, the app rechecked permissions and presented the appropriate guide. This kept the old guide’s removal out of the visible return sequence.
+
+### Result:
+
+Repeated app switching no longer caused the visible dismiss-and-reappear sequence.
+
+---
+
+# Edge Cases & Validation
+
+<CaseStudyTable
+  label="Lifecycle edge cases and expected behavior"
+  headings={['Scenario', 'Expected Behavior']}
+  rows={[
+    ['First launch with keyboard missing', 'Show the Add Keyboard guide'],
+    ['Keyboard added with Full Access disabled', 'Show the Full Access guide'],
+    ['Keyboard and Full Access enabled', 'Skip onboarding'],
+    ['Return from Settings without changes', 'Keep showing the required guide'],
+    ['Return after enabling Full Access', 'Resume normal app use'],
+    ['App resumes from background', 'Show the correct guide without flickering'],
+    ['App enters background while a guide is visible', 'Remove or reset guide presentation'],
+    ['Repeated foreground transitions', 'Avoid inconsistent presentation state'],
+  ]}
+/>
+
+---
+
+# Result & Impact
+
+The feature shipped in the production Facemoji iOS app. Users returning from Settings could continue at the relevant setup step, and the lifecycle changes resolved both the underlying screen flash and the visible guide re-presentation seen during repeated app switching.
+
+# What I Learned
+
+## 1. Lifecycle Timing Matters
+
+Choose lifecycle callbacks based on what the user sees during the transition. Even callbacks that sound similar can produce different rendering behavior.
+
+## 2. Business State ≠ Presentation State
+
+Permission flags determine which guide the user needs. Presentation state determines how to show it without interrupting the user.
+
+## 3. Global Features Need Centralized Coordination
+
+Keeping the flow at the app level clarified three responsibilities: lifecycle events determine when to recheck, permission state determines which guide to show, and presentation state tracks the guide currently on screen.

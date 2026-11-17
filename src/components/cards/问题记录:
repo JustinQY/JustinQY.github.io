@@ -1,0 +1,14 @@
+问题记录:
+如何确保模型自动终止?
+1. 每一集训练剧本结尾采用<EOS>, 目的是期望模型能够学习并在合适的位置输出<EOS>并终止生成新剧本.
+但是为了增加模型生成内容的复杂度和避免重复, 在实际生成中使用了“do_sample=True
+temperature=0.9
+top_k=50
+top_p=0.95”参数. 这就会导致即使模型预测下一个token最高概率是<EOS>, 也有很大可能不会输出. 而且<EOS>每次只在每个训练数据结尾出现一次, 只参与一次loss计算所以模型很难学会.
+
+Fix: 
+1.在生成时设置Beam Search并采用early stopping
+2.每集剧本最后增加“End of this episode”
+
+
+2. prompt engineering

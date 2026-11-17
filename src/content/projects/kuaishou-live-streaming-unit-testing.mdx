@@ -1,0 +1,162 @@
+---
+title: |-
+  Kuaishou iOS
+  Unit Test Refactoring for a Live Streaming Framework
+description: 'I rebuilt the XCTest suite for a shared iOS capture framework at Kuaishou, from tests for individual APIs to a flow that sent prerecorded media to a test server.'
+date: '2026-11-16'
+draft: true
+reviewReady: true
+track: ios
+order: 2
+format: case-study
+organization: Kuaishou Technology
+showHeroImage: false
+tags: [iOS, Objective-C, XCTest, Testability]
+comments: false
+sidebar:
+  enable: true
+  toc: true
+  relatedPosts: false
+---
+
+import CaseStudyTable from '../../components/projects/CaseStudyTable.astro';
+
+# Business Background
+
+At Kuaishou, my live streaming team used an iOS framework maintained by the playback team to capture audio and video.
+
+The framework already had tests for individual features. When it changed, QA still had to check many of its behaviors manually.
+
+---
+
+# Project at a Glance
+
+I spent two months to rebuild the test suite in **Objective-C with XCTest**.
+
+First, I traced how the framework worked, then I wrote tests for individual classes and for flows that crossed several classes.
+
+The framework’s **line coverage went from about 40% to about 97%**.
+
+---
+
+# The Challenge
+
+## 1. Unclear API Responsibilities
+
+There was little technical documentation, and some classes did more than their names suggested.
+
+Take a method named '`openCamera(param1, param2)`'. If it also builds the camera configuration, a test failure could come from either step.
+
+Before I could write useful tests, I had to understand ***what each method did and what callers expected from it***.
+
+## 2. Behavior Across Lifecycle Stages
+
+A passing test for one class only tells you how that class behaved in isolation.
+
+I also wanted to know whether the output from one stage worked as input to the next, all the way to the test server (chained verification).
+
+---
+
+# My Contribution
+
+I traced the calls made by my team's live streaming business into the framework and documented how inputs and results moved between classes.
+
+That gave me a map of the behavior existing callers relied on. I used it to clarify API names and responsibilities, update comments, and decide what each test should check.
+
+---
+
+# Architecture & Unit Test Design
+
+## 1. Capture-to-Merge Integration Test
+
+Here is an example: One test followed the recording flow from camera setup to the server’s merge response.
+
+I split a prerecorded clip into audio and video tracks so I could use the same inputs on every run.
+
+At key steps, I used XCTest assertions to compare what the real method returned with the expected output from its mock. That gave me a place to start debugging if the result didn’t match.
+
+The test connected to a real test server. The final assertion checked that the server reported a successful audio and video merge.
+
+Camera behavior on a real device and audio-video sync during playback would need separate checks.
+
+```text
+Split a recorded clip into audio and video
+→ Run the recording flow with those inputs
+→ Compare actual and expected results at key steps
+→ Check that the test server reports a successful merge
+```
+
+## 2. Test Scope
+
+<CaseStudyTable
+  label="Live streaming framework test scope"
+  headings={['Unit Test Scope', 'What It Checks', 'Why It Matters']}
+  rows={[
+    [
+      'Class and public API',
+      'What a public method does for a given input',
+      'A failure points to a specific class or method',
+    ],
+    [
+      'Capture-to-merge integration',
+      'Whether the stages work together and the test server reports success',
+      'Catches problems that only show up when components work together',
+    ],
+  ]}
+/>
+
+---
+
+# Key Engineering Decisions
+
+## 1. Separate Configuration from the Camera Operation
+
+The camera example shows the split I was aiming for.
+
+The method signature should make clear which settings the caller supplies. Inside the class, building the common configuration and opening the camera can be separate steps.
+
+That makes it easier to reason about each step when a test fails. Also, for the long term project maintenance, it keeps the expertise of the system design, e.g. Single Responsibility.
+
+## 2. Test What Callers Can Observe
+
+I organized the unit tests by class. I mocked each class's public methods and checked the results a caller could observe.
+
+When a public method called a private helper, that code ran as part of the test. I didn't mock test methods for private functions because they are designed to be invisible by others.
+
+For example, I could move camera configuration into a private helper and keep the same assertions, as long as the public method still behaved the same way.
+
+---
+
+# Validation & Measurement
+
+**Line coverage** was our main measure of how much of the framework the tests exercised. After each run, we used Xcode’s report to find code the suite had missed. We went back to the test cases and the framework source to see whether a new input or scenario could reach that code through an existing public method.
+
+Some gaps led us to revisit the API itself. We looked at whether the private logic belonged in an existing public method or made sense as a public operation of its own. Any change had to fit the class’s original purpose and preserve the behavior callers already relied on.
+
+We then updated the tests and reran the suite to see which of those lines the new cases reached.
+
+---
+
+# Result & Impact
+
+After the refactor, Xcode reported **97% line coverage**, huge increased from **about 40%**. The new unit test cases could take over **roughly 60% of the manual QA validation work** estimated by QA team.
+
+The project gave the team a concrete example of why unit test coverage mattered. QA could rerun those checks through the suite whenever the framework changed. At the project review, I suggested starting new features with a test, and my manager supported the idea.
+
+---
+
+# What I Learned
+
+2 key points I learned from this project:
+
+**1. Good system design is the foundation of good unit tests.**
+
+Before writing tests, I trace what callers depend on and look for classes or methods that are doing too much. Some design problems only become clear once we start writing test cases.
+
+If I struggle to isolate a behavior or describe the expected result, I take another look at the API and the class behind it. When a class has one clear responsibility, it’s easier to decide what to test and where to look when a test fails.
+
+**2. Leverage test-driven development (TDD) for new behavior.**
+
+Write a failing test that describes what the code should do, write enough code to make it pass, then refactor with the tests in place.
+
+Writing the test first makes the team think about inputs, errors, and what the API promises before we settle on an implementation. Over time, those tests give the team a way to catch regressions as the system changes.

@@ -1,0 +1,65 @@
+---
+interface Props {
+  label: string;
+  headings: string[];
+  rows: string[][];
+}
+
+const { label, headings, rows } = Astro.props;
+---
+
+<div class="table-frame">
+  <table aria-label={label}>
+    <thead>
+      <tr>{headings.map((heading) => <th scope="col">{heading}</th>)}</tr>
+    </thead>
+    <tbody>
+      {
+        rows.map(([label, ...cells]) => (
+          <tr>
+            <th scope="row">{label}</th>
+            {cells.map((cell) => (
+              <td>{cell}</td>
+            ))}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .table-frame {
+    margin-block: 24px;
+    overflow: auto;
+    border: 1px solid var(--paper-line);
+    border-radius: 8px;
+    background: var(--paper-surface);
+  }
+
+  table {
+    border-collapse: collapse;
+    font-family: var(--font-ui-label);
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  th,
+  td {
+    padding: 10px clamp(8px, 2vw, 16px);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead {
+    background: var(--paper-surface-muted);
+  }
+
+  tbody tr {
+    border-top: 1px solid var(--paper-line);
+  }
+
+  td {
+    color: var(--paper-ink-soft);
+  }
+</style>

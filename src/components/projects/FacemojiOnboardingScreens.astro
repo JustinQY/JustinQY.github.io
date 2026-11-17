@@ -1,0 +1,62 @@
+---
+import ZoomableImage from '../mdx/ZoomableImage.astro';
+import fullAccess from '../../assets/projects/facemoji-keyboard-onboarding/allow-full-access.png';
+import addKeyboard from '../../assets/projects/facemoji-keyboard-onboarding/add-keyboard.png';
+---
+
+<div class="onboarding-screens">
+  <figure>
+    <ZoomableImage
+      src={fullAccess}
+      alt="Facemoji guide showing where to enable Allow Full Access in Settings"
+      loading="lazy"
+      decoding="async"
+    />
+    <figcaption>Allow Full Access guide</figcaption>
+  </figure>
+  <figure>
+    <ZoomableImage
+      src={addKeyboard}
+      alt="Facemoji guide showing how to add the keyboard in Settings"
+      loading="lazy"
+      decoding="async"
+    />
+    <figcaption>Add Keyboard guide</figcaption>
+  </figure>
+</div>
+
+<style>
+  .onboarding-screens {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 305px));
+    justify-content: center;
+    gap: 24px;
+    margin-block: 28px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figure :global(.zoomable-image) {
+    width: 100%;
+    margin: 0;
+  }
+
+  figure :global(.zoomable-image img) {
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: 8px;
+    color: var(--paper-ink-soft);
+    font-size: 0.82rem;
+    text-align: center;
+  }
+
+  @media (max-width: 520px) {
+    .onboarding-screens {
+      grid-template-columns: minmax(0, 305px);
+    }
+  }
+</style>

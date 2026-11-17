@@ -45,6 +45,7 @@ const hasCategories = categories.length > 0;
 const hasSeries = series.length > 0;
 const hasGroups = hasCategories || hasSeries;
 const isProjectHeader = variant === 'project';
+const [titleFirstLine, ...titleContinuation] = isProjectHeader ? title.split('\n') : [title];
 const isArchiveHeader = variant === 'archive' || isProjectHeader;
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
@@ -65,7 +66,13 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="archive-heading archive-header-main">
           <p class="archive-kicker">{kicker}</p>
           <h1 class="archive-title" data-pagefind-meta="title">
-            {title}
+            {titleFirstLine}
+            {titleContinuation.length > 0 && (
+              <>
+                <br />
+                <span class="archive-title-continuation">{titleContinuation.join('\n')}</span>
+              </>
+            )}
           </h1>
           {isProjectHeader && description && <p class="archive-note">{description}</p>}
           <div class="meta-line" aria-label="Article metadata">
@@ -206,6 +213,12 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
     max-width: none;
   }
 
+  .archive-title-continuation {
+    font-size: 0.56em;
+    line-height: 1.25;
+    white-space: pre-line;
+  }
+
   .article-header-project .archive-note {
     display: block;
     max-width: none;
@@ -344,6 +357,10 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   }
 
   @media (max-width: 640px) {
+    .archive-title-continuation {
+      font-size: 0.72em;
+    }
+
     .article-header {
       gap: 12px;
       margin-bottom: 30px;

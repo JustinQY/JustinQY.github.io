@@ -40,9 +40,7 @@ const getSectionFromHash = (hash: string): HTMLElement | null => {
 
   const normalizedId = normalizedHash.slice(1);
   const articleHeadings = Array.from(
-    document.querySelectorAll<HTMLElement>(
-      '.article-content h1[id], .article-content h2[id], .article-content h3[id]',
-    ),
+    document.querySelectorAll<HTMLElement>('.article-content :is(h1, h2, h3, h4, h5, h6)[id]'),
   );
 
   return articleHeadings.find((heading) => normalizeIdValue(heading.id) === normalizedId) ?? null;
@@ -104,6 +102,17 @@ const setActiveLink = (activeHash: string): void => {
         link.removeAttribute('aria-current');
       }
     }
+
+    if (root.hasAttribute('data-toc-follow') && root.clientHeight && activeIndex >= 0) {
+      const activeLink = links[activeIndex];
+      const panel = root.getBoundingClientRect();
+      const item = activeLink.getBoundingClientRect();
+      if (item.top < panel.top) {
+        root.scrollTop += item.top - panel.top;
+      } else if (item.bottom > panel.bottom) {
+        root.scrollTop += item.bottom - panel.bottom;
+      }
+    }
   }
 };
 
@@ -122,7 +131,7 @@ const initNavfolioToc = (): (() => void) | null => {
 
   const setActiveByHash = (hash: string): boolean => {
     const section = getSectionFromHash(hash);
-    if (!section) {
+    if (!section || !sections.includes(section)) {
       return false;
     }
 
